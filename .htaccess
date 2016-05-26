@@ -1,0 +1,3 @@
+#Custom Error Documents
+ErrorDocument 403	/xuedesign-2016/error403.html
+ErrorDocument 404	/xuedesign-2016/error404.html

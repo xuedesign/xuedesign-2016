@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /layout
+Disallow: /demo
+Disallow: /project
+Disallow: /content/project_w
+Disallow: /content/project_g
+Disallow: /mobile/projects
