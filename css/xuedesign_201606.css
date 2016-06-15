@@ -1,0 +1,73 @@
+/**
+*
+* @project    xuedesign studio
+* @Author     Elmo Wu <hello@xuedesign.tw>
+* @copyright  2016 xuedesign studio
+* @version    v1.0 - 201606
+*
+*=====================================
+* 1. 通用設定
+* 2. 全站結構
+* 3. 首頁設定
+* 4. 
+* 5. 
+* 6. 
+* 7. 
+* 8. 
+* 9. 
+*=====================================
+**/
+
+/*
+=====================================
+通用設定
+=====================================
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body{
+	margin: 0;
+	padding:0;
+	background: rgb(29,183,255);
+	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+	font-size: 62.5%; /*10px=1rem*/
+	color: #585858}
+/*a:link {text-decoration:none; color:#b76727}
+a:visited {text-decoration:none; color:#8c8c8c}
+a:hover {text-decoration:underline; color:#F50}*/
+form{margin:0; padding:0}
+image{border:0}
+::selection { background: #1c8fb2; color: #fff}
+::-moz-selection { background: #1c8fb2; color: #fff}
+img::selection { background: transparent}
+img::-moz-selection { background: transparent}
+.clean{ clear:both}
+.hidden{ display:none}
+
+
+/*
+=====================================
+全站結構
+=====================================
+*/
+#wrap{
+    display: block;
+    width: 95%;
+    margin: 2.8% auto;
+    background: rgb(247,247,247)
+}
+#main-vision{
+    display:block;
+	max-width:100vw;
+	height:100vh;
+	background:url(../images/pic_mainvision.jpg) no-repeat;
+    background-size: cover;
+	overflow: hidden
+}
+
+/*
+=====================================
+首頁設定
+=====================================
+*/
+
