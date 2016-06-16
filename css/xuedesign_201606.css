@@ -25,12 +25,13 @@
 */
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
+html { font-size:62.5% }
 body{
 	margin: 0;
 	padding:0;
 	background: rgb(29,183,255);
 	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
-	font-size: 62.5%; /*10px=1rem*/
+	font-size: 1rem; /* 1rem=10px */
 	color: #585858}
 /*a:link {text-decoration:none; color:#b76727}
 a:visited {text-decoration:none; color:#8c8c8c}
@@ -52,8 +53,8 @@ img::-moz-selection { background: transparent}
 */
 #wrap{
     display: block;
-    width: 95%;
-    margin: 2.8% auto;
+    width: 96%;
+    margin: 2.2% auto;
     background: rgb(247,247,247)
 }
 #main-vision{
@@ -64,10 +65,70 @@ img::-moz-selection { background: transparent}
     background-size: cover;
 	overflow: hidden
 }
+.my-service,
+.show-case,
+.my-blog,
+.my-contact,
+.copyright{
+    display: block;
+    width: 100%
+}
 
+header,
+.mybox{
+    display: block;
+    width: 1070px;
+    margin: 50px auto
+}
+header{ padding: 0 20px}
 /*
 =====================================
 首頁設定
 =====================================
 */
-
+h1 a{
+    display: block;
+    float: left;
+    width: 244px;
+    height: 82px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+}
+#main-nav{
+    display: block;
+    float: right;
+    padding-top: 53px
+}
+#main-nav li{
+    display: inline;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color: #fff
+}
+#main-nav li a{
+    color: #fff;
+    text-decoration: none
+}
+#main-nav li a:hover{
+    
+}
+#slogan{
+    clear: both;
+    padding-top: 156px;
+    text-align: center
+}
+#slogan>h2{
+    font-size: 8.6rem;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff
+}
+#slogan>h3{
+    font-size: 3.5rem;
+    color: #fff;
+    padding-top: 30px
+}
