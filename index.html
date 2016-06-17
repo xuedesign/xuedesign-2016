@@ -37,37 +37,72 @@
             <h1><a href="index.html" title="回首頁">開始設計工作室 xuedesign studio</a></h1>
             <nav id="main-nav">
                 <ul>
-                    <li>│<a href="profile.html" title="關於我們">關於我們</a>│</li>
-                    <li><a href="portfolio.html" title="案例展示">案例展示</a>│</li>
-                    <li><a href="perspective.html" title="設計觀察">設計觀察</a>│</li>
-                    <li><a href="contact.html" title="與我聯絡">與我聯絡</a>│</li>
+                    <li><a class="hvr-bounce" href="profile.html" title="服務介紹">服務介紹</a></li>
+                    <li><a class="hvr-bounce" href="portfolio.html" title="案例展示">案例展示</a></li>
+                    <li><a class="hvr-bounce" href="perspective.html" title="觀察分享">觀察分享</a></li>
+                    <li><a class="hvr-bounce" href="contact.html" title="聯絡諮詢">聯絡諮詢</a></li>
                 </ul>
             </nav>
             <div id="slogan">
-                <h2>量身打造‧簡而不凡</h2>
+                <h2>量身打理‧簡而不凡</h2>
                 <h3>我們提供從創意到生意的設計執行力</h3>
-                <a href="contact.html" title="設計諮詢/委託">設計諮詢/委託</a>
+                <a class="mybtn-l btn-white" href="contact.html" title="設計諮詢/委託">設計諮詢/委託</a>
             </div>
             <div id="mouse-move">
-                <a href="#" title="請往下捲動瀏覽">請往下捲動瀏覽</a>
+                <a class="icon-mouse" href="#my-service" title="請往下捲動瀏覽">請往下捲動瀏覽</a>
             </div>
         </header>    
     </div>
     
     <div id="my-service">
-        <div class="mybox"></div>
+        <div class="mybox">
+            <h2>協助您搭起與市場對話的橋樑</h2>
+            <h3>我們是開始設計工作室，提供平面、網頁等整合型設計服務，我們專注在消費市場上，為您建構商品的良好視覺，有效傳遞您企業的美好價值，讓品牌形象更加分。</h3>
+            <ul>
+                <li>企業形象網站</li>
+                <li>電子商務平台</li>
+                <li>活動EDM設計</li>
+                <li>商品型錄設計</li>
+                <li>書籍刊物美編</li>
+                <li>商務文宣設計</li>
+            </ul>
+            <a class="mybtn-l btn-blue" href="profile.html" title="更多服務介紹">更多服務介紹</a>
+        </div>
     </div>
     
     <div id="show-case" class="bg_blueline">
-        <div class="mybox"></div>
+        <div class="mybox">
+            <h2>我們與客戶一同完成的作品</h2>
+            <h3>每個專案皆是我們與客戶努力合作共同創造的成果，我們不僅是美感問題的解決者，也是和你站在同一陣線的設計夥伴，我們隨時提供協助。</h3>
+            <a class="mybtn-l btn-white" href="profile.html" title="瀏覽更多案例">瀏覽更多案例</a>
+        </div>
     </div>
     
     <div id="my-blog">
-        <div class="mybox"></div>
+        <div class="mybox">
+            <h2>我們對於設計也總有新的看法</h2>
+            <h3>時代一直在變，我們的想法不停跟著演進，隨時在變是我們挑戰市場的最大優勢。</h3>
+            <a class="mybtn-l btn-blue" href="perspective.html" title="探索更多觀點">探索更多觀點</a>
+        </div>
     </div>
     
     <div id="my-contact" class="bg_blueline">
-        
+        <div id="contact-info">
+            <h2>我們隨時提供協助</h2>
+            <h3>有任何設計上的疑問或困難，歡迎隨時與我們聯繫聊聊：</h3>
+            <ul>
+                <li>聯絡窗口：吳昌學 Elmo Wu</li>
+                <li>諮詢電話：0987-152534</li>
+                <li>電子信箱：hello@xuedesign.tw</li>
+                <li>工作室地址：11164 台北市士林區社中街156巷49號2樓</li>
+                <li>營業時間：週一~週五 09:00am - 18:00 pm</li>
+            </ul>
+            <a class="mybtn-m btn-blue" href="contact.html" title="與我聯繫">與我聯繫</a>
+        </div>
+        <div id="contact-map">
+            <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAA8ShUY49xenkbNahhNq58qhRDW1JK7uYJy83pVOTiluu5kpmTBxTbPmLwnoYIxLW5xJR_1i_1IqMwhw"></script>
+            <script src="script/googlemap.js"></script>    
+        </div>
     </div>
     
     <div id="copyright">
@@ -81,6 +116,11 @@
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="script/wow.min.js"></script>
 <script src="script/jquery.lazyload.js"></script>
+<script src="script/scrollTo.js"></script>
+<script>
+$(function(){
+  $(".icon-mouse").scrollTo(700)
+});</script>
 <script src="script/website.js"></script>
 <script src="script/jquery.retina.js"></script>
 <script type="application/ld+json">

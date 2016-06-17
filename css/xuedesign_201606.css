@@ -8,9 +8,9 @@
 *=====================================
 * 1. 通用設定
 * 2. 全站結構
-* 3. 首頁設定
-* 4. 
-* 5. 
+* 3. 選單設定
+* 4. 按鈕設定
+* 5. 首頁設定
 * 6. 
 * 7. 
 * 8. 
@@ -55,32 +55,165 @@ img::-moz-selection { background: transparent}
     display: block;
     width: 96%;
     margin: 2.2% auto;
-    background: rgb(247,247,247)
-}
+    background: rgb(247,247,247)}
 #main-vision{
     display:block;
 	max-width:100vw;
 	height:100vh;
 	background:url(../images/pic_mainvision.jpg) no-repeat;
     background-size: cover;
-	overflow: hidden
-}
+	overflow: hidden}
 .my-service,
 .show-case,
 .my-blog,
 .my-contact,
 .copyright{
     display: block;
-    width: 100%
-}
+    width: 100%}
 
 header,
 .mybox{
     display: block;
     width: 1070px;
-    margin: 50px auto
-}
+    margin: 50px auto}
 header{ padding: 0 20px}
+
+/*
+=====================================
+選單設定
+=====================================
+*/
+#main-nav{
+    display: block;
+    float: right}
+#main-nav li{
+    display: inline-block;
+    /*width: 120px;
+    height: 30px;*/
+    padding: 5px 15px;
+    margin-top: 43px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    -moz-line-height: 1.6rem;
+    letter-spacing: .1rem;
+    color: #fff;
+    border-right: 1px solid #fff}
+#main-nav li:nth-child(1){
+    border-left: 1px solid #fff}
+#main-nav li a{
+    color: #fff;
+    text-decoration: none}
+#main-nav li a:hover{
+    color: #fff;
+    text-decoration: none}
+
+.hvr-bounce {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s}
+.hvr-bounce:before {
+  display: inline-block;
+  width: 68px;
+  height: 20px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  left: -3px;
+  right: 0;
+  bottom: 0;
+  background: #126db4/*#2098d1*/;
+  padding: 3px 8px;    
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out}
+.hvr-bounce:hover, 
+.hvr-bounce:focus, 
+.hvr-bounce:active{
+  color: #fff}
+.hvr-bounce:hover:before, 
+.hvr-bounce:focus:before, 
+.hvr-bounce:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)}
+
+/*
+=====================================
+選單設定
+=====================================
+*/
+.mybtn-l{
+    display: block;
+    width: 215px;
+    font-size: 2.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border: 3px solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    text-decoration: none}
+.mybtn-m{}
+.btn-white{
+    color: #fff;
+    border-color: #fff}
+.btn-white:hover{
+    color: #fff;
+    border-color: #0d4d80;
+    background: #126db4;
+    -webkit-transition: all 0.5s ease 0s;
+    /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;}
+.btn-blue{}
+
+@keyframes mousemove {
+    0%   { margin-top: 85px }
+    50%  { margin-top: 100px }
+    100% { margin-top: 85px }
+}
+@-webkit-keyframes mousemove {
+    0%   { margin-top: 85px }
+    50%  { margin-top: 100px }
+    100% { margin-top: 85px }
+}		
+.icon-mouse{
+    display: block;
+    width: 17px;
+    height: 49px;
+    margin: 85px auto 0 auto;
+    background: url(../images/icon_mouse.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-name: mousemove;/*模組名稱,自訂*/
+	animation-duration: 1s;/*動畫演譯時間*/
+    animation-iteration-count: infinite;/*動畫循環的次數，無限循環用infinite*/
+   /* animation-direction: alternate;/*動畫在0%到100%之間往復執行*/}
+
+
 /*
 =====================================
 首頁設定
@@ -94,41 +227,23 @@ h1 a{
     background: url(../images/logo.png) no-repeat;
     text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden
-}
-#main-nav{
-    display: block;
-    float: right;
-    padding-top: 53px
-}
-#main-nav li{
-    display: inline;
-    font-size: 1.8rem;
-    font-weight: 300;
-    letter-spacing: .1rem;
-    color: #fff
-}
-#main-nav li a{
-    color: #fff;
-    text-decoration: none
-}
-#main-nav li a:hover{
-    
-}
+    overflow: hidden}
 #slogan{
     clear: both;
     padding-top: 156px;
-    text-align: center
-}
+    text-align: center}
 #slogan>h2{
     font-size: 8.6rem;
     font-weight: 700;
     color: #fff;
     padding-bottom: 15px;
-    border-bottom: 1px solid #fff
-}
+    border-bottom: 1px solid #fff}
 #slogan>h3{
     font-size: 3.5rem;
     color: #fff;
-    padding-top: 30px
+    padding: 30px 0 60px 0}
+#contact-map{
+    display: block;
+    width: 50%;
+    height: 420px
 }
