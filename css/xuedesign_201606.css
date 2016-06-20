@@ -31,6 +31,7 @@ body{
 	padding:0;
 	background: rgb(29,183,255);
 	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	font-size: 1rem; /* 1rem=10px */
 	color: #585858}
 /*a:link {text-decoration:none; color:#b76727}
@@ -44,6 +45,13 @@ img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
+.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
+    -webkit-transition: opacity 1s ease-out; 
+    -moz-transition: opacity 1s ease-out; 
+    -o-transition: opacity 1s ease-out; 
+    transition: opacity 1s ease-out}
+.txt-blue{ color: #21abd4}
+.txt-white{ color: #fff}
 
 
 /*
@@ -63,13 +71,17 @@ img::-moz-selection { background: transparent}
 	background:url(../images/pic_mainvision.jpg) no-repeat;
     background-size: cover;
 	overflow: hidden}
-.my-service,
-.show-case,
-.my-blog,
-.my-contact,
-.copyright{
+#my-service,
+#show-case,
+#my-blog,
+#my-contact,
+#copyright{
     display: block;
     width: 100%}
+#show-case,
+#my-contact{
+    padding: 50px 0;
+    background: url(../images/bg_website.png)}
 
 header,
 .mybox{
@@ -164,14 +176,14 @@ header{ padding: 0 20px}
 */
 .mybtn-l{
     display: block;
-    width: 215px;
-    font-size: 2.2rem;
+    width: 200px;
+    font-size: 2rem;
     line-height: 1.5rem;
     text-align: center;
     border: 3px solid;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
     margin: 0 auto;
     padding: 15px 10px;
     text-decoration: none}
@@ -179,7 +191,11 @@ header{ padding: 0 20px}
 .btn-white{
     color: #fff;
     border-color: #fff}
-.btn-white:hover{
+.btn-blue{
+    color: #5e98d4;
+    border-color: #5e98d4}
+.btn-white:hover,
+.btn-blue:hover{
     color: #fff;
     border-color: #0d4d80;
     background: #126db4;
@@ -187,17 +203,16 @@ header{ padding: 0 20px}
     /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;}
-.btn-blue{}
 
 @keyframes mousemove {
     0%   { margin-top: 85px }
     50%  { margin-top: 100px }
-    100% { margin-top: 85px }
+    100% { margin-top: 84px }
 }
 @-webkit-keyframes mousemove {
     0%   { margin-top: 85px }
     50%  { margin-top: 100px }
-    100% { margin-top: 85px }
+    100% { margin-top: 84px }
 }		
 .icon-mouse{
     display: block;
@@ -209,7 +224,7 @@ header{ padding: 0 20px}
     white-space: nowrap;
     overflow: hidden;
     animation-name: mousemove;/*模組名稱,自訂*/
-	animation-duration: 1s;/*動畫演譯時間*/
+	animation-duration: 2375ms;/*動畫演譯時間*/
     animation-iteration-count: infinite;/*動畫循環的次數，無限循環用infinite*/
    /* animation-direction: alternate;/*動畫在0%到100%之間往復執行*/}
 
@@ -245,5 +260,46 @@ h1 a{
 #contact-map{
     display: block;
     width: 50%;
-    height: 420px
-}
+    height: 420px}
+#my-service h2,
+#show-case h2,
+#my-blog h2,
+#my-contact h2{ 
+    font-size: 3.5rem;
+    line-height: 2.1rem;
+    text-align: center;
+    padding-bottom: 2rem}
+#my-service h3,
+#show-case h3,
+#my-blog h3,
+#my-contact h3{
+    width: 760px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    text-align: center}
+.service_item{
+    display: block;
+    width: 100%;
+    height: 352px;
+    background: url(../images/bg_service-item-left.png) top left no-repeat, url(../images/bg_service-item-right.png) top right no-repeat;
+    margin: 50px 0;
+    padding: 0 116px}
+.service_item li{
+    display: inline-block;
+    width: 165px;
+    height: 165px;
+    background: url(../images/icon_service.png) no-repeat;
+    overflow: hidden;
+    margin: 8px 55px;
+    padding-top: 112px;
+    text-align: center;
+font-size: 1.8rem;
+color: #fff}
+.service_item li.service-01{ background-position: 0 0}
+.service_item li.service-02{ background-position: 0 -165px}
+.service_item li.service-03{ background-position: 0 -330px}
+.service_item li.service-04{ background-position: 0 -495px}
+.service_item li.service-05{ background-position: 0 -660px}
+.service_item li.service-06{ background-position: 0 -825px}
