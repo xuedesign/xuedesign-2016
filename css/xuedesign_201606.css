@@ -80,7 +80,7 @@ img::-moz-selection { background: transparent}
     width: 100%}
 #show-case,
 #my-contact{
-    padding: 50px 0;
+    padding: 30px 0;
     background: url(../images/bg_website.png)}
 
 header,
@@ -171,13 +171,14 @@ header{ padding: 0 20px}
 
 /*
 =====================================
-選單設定
+按鈕設定
 =====================================
 */
 .mybtn-l{
     display: block;
-    width: 200px;
-    font-size: 2rem;
+    width: 160px;
+    font-size: 1.8rem;
+    font-weight: 500;
     line-height: 1.5rem;
     text-align: center;
     border: 3px solid;
