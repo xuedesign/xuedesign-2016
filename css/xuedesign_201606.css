@@ -11,10 +11,6 @@
 * 3. 選單設定
 * 4. 按鈕設定
 * 5. 首頁設定
-* 6. 
-* 7. 
-* 8. 
-* 9. 
 *=====================================
 **/
 
@@ -77,18 +73,22 @@ img::-moz-selection { background: transparent}
 #my-contact,
 #copyright{
     display: block;
-    width: 100%}
+    width: 100%;
+    padding: 50px 0}
 #show-case,
 #my-contact{
-    padding: 30px 0;
     background: url(../images/bg_website.png)}
+#my-contact,
+#copyright{ padding: 0}
 
 header,
-.mybox{
+.mybox,
+#blog_index{
     display: block;
     width: 1070px;
-    margin: 50px auto}
+    margin: 30px auto}
 header{ padding: 0 20px}
+#blog_index{ margin-bottom: 50px;}
 
 /*
 =====================================
@@ -105,14 +105,15 @@ header{ padding: 0 20px}
     padding: 5px 15px;
     margin-top: 43px;
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6rem;
     -moz-line-height: 1.6rem;
+    text-align: center;
     letter-spacing: .1rem;
     color: #fff;
-    border-right: 1px solid #fff}
+    /*border-right: 1px solid #fff*/}
 #main-nav li:nth-child(1){
-    border-left: 1px solid #fff}
+    /*border-left: 1px solid #fff*/}
 #main-nav li a{
     color: #fff;
     text-decoration: none}
@@ -121,53 +122,57 @@ header{ padding: 0 20px}
     text-decoration: none}
 
 .hvr-bounce {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s}
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s}
 .hvr-bounce:before {
-  display: inline-block;
-  width: 68px;
-  height: 20px;
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -3px;
-  left: -3px;
-  right: 0;
-  bottom: 0;
-  background: #126db4/*#2098d1*/;
-  padding: 3px 8px;    
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out}
+    display: inline-block;
+    width: 68px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -3px;
+    left: -3px;
+    right: 0;
+    bottom: 0;
+    background: #126db4/*#2098d1*/;
+    padding: 3px 8px;   
+    text-align: center;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;}
 .hvr-bounce:hover, 
 .hvr-bounce:focus, 
 .hvr-bounce:active{
-  color: #fff}
+    color: #fff}
 .hvr-bounce:hover:before, 
 .hvr-bounce:focus:before, 
 .hvr-bounce:active:before {
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)}
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)}
 
 /*
 =====================================
@@ -182,9 +187,9 @@ header{ padding: 0 20px}
     line-height: 1.5rem;
     text-align: center;
     border: 3px solid;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     margin: 0 auto;
     padding: 15px 10px;
     text-decoration: none}
@@ -225,7 +230,7 @@ header{ padding: 0 20px}
     white-space: nowrap;
     overflow: hidden;
     animation-name: mousemove;/*模組名稱,自訂*/
-	animation-duration: 2375ms;/*動畫演譯時間*/
+	animation-duration: 1800ms/*2375ms*/;/*動畫演譯時間*/
     animation-iteration-count: infinite;/*動畫循環的次數，無限循環用infinite*/
    /* animation-direction: alternate;/*動畫在0%到100%之間往復執行*/}
 
@@ -256,17 +261,15 @@ h1 a{
     border-bottom: 1px solid #fff}
 #slogan>h3{
     font-size: 3.5rem;
+    font-weight: 600;
     color: #fff;
     padding: 30px 0 60px 0}
-#contact-map{
-    display: block;
-    width: 50%;
-    height: 420px}
 #my-service h2,
 #show-case h2,
 #my-blog h2,
 #my-contact h2{ 
     font-size: 3.5rem;
+    font-weight: 500;
     line-height: 2.1rem;
     text-align: center;
     padding-bottom: 2rem}
@@ -280,6 +283,8 @@ h1 a{
     font-weight: normal;
     line-height: 2.2rem;
     text-align: center}
+
+/*服務項目*/
 .service_item{
     display: block;
     width: 100%;
@@ -304,3 +309,96 @@ color: #fff}
 .service_item li.service-04{ background-position: 0 -495px}
 .service_item li.service-05{ background-position: 0 -660px}
 .service_item li.service-06{ background-position: 0 -825px}
+
+/*設計觀察*/
+.box_blog{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 309px}
+.photo_left{
+    background: url(../images/pic_blogcover-index-01.jpg) top left no-repeat;
+    margin-bottom: 50px}
+.photo_right{
+    background: url(../images/pic_blogcover-index-02.jpg) top right no-repeat}
+.blog_foreword{
+    display: block;
+    position: absolute;
+    bottom:-20px;    
+    z-index: 10;    
+    width: 494px;
+    height: 244px;
+    padding: 36px;
+    background: rgba(255, 255, 255, .8)}
+.foreword_right{
+    right: 0}
+.foreword_left{
+    left: 0}
+.blog_foreword h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+    padding-bottom: 24px}
+.blog_foreword p{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding-bottom: 20px}
+.blog_foreword a{
+    display: block;
+    font-size: 1.5rem;
+    text-align: right;
+    color: #21abd4;
+    text-decoration: none}
+.blog_foreword a:hover{
+    color: #f50;
+    text-decoration: none}
+
+/*聯絡我們*/
+#contact-info{
+    display: block;
+    float: left;
+    width: 50%}
+#contact-map{
+    display: block;
+    float: right;
+    width: 50%;
+    height: 420px}
+
+/*FB Messenger*/
+#box_messenger{
+    display: block;
+    position: fixed;
+    bottom:50px;
+    right:50px;
+    z-index: 99}
+#widget{
+    display: inline-block; 
+    overflow: hidden; 
+    height: auto; 
+    min-width: 100px; 
+    text-align: center; 
+    line-height: normal; 
+    white-space: nowrap; 
+    vertical-align: middle}
+.bg_arrow{
+    width: 11px; 
+    height: 8px; 
+    background: url('https://assets.modernapp.co/assets/images/arrow-bottom.png') no-repeat; 
+    margin: -1px auto 0 auto}
+.icon_talk{
+    display: inline-block; 
+    width: 47px; 
+    height: 47px; 
+    background: url('https://assets.modernapp.co/assets/images/facebook-message-button-icon-round-white2x.png') no-repeat; background-size: 47px 47px;
+    margin-top: 5px}
+.talktome{
+    color: black; 
+    padding: 6px; 
+    -webkit-border-radius: 6px; 
+    -moz-border-radius: 6px; 
+    border-radius: 6px; 
+    border: 1px solid #e0e0e0; 
+    background-color: white; 
+    -webkit-box-shadow: 0px 5px 18px -5px rgba(184,184,184,0.5); 
+    -moz-box-shadow: 0px 5px 18px -5px rgba(184,184,184,0.5); 
+    box-shadow: 0px 5px 18px -5px rgba(184,184,184,0.5)}
