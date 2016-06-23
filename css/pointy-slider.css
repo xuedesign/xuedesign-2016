@@ -305,6 +305,6 @@ Slider Navigation
   }
   .cd-slider-navigation li.selected a {
     background-color: transparent;
-    color: #f3b96c;
+    color: rgb(86,196,248) /*#f3b96c*/;
   }
 }

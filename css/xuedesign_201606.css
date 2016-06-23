@@ -41,11 +41,20 @@ img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
+/*.jf-loading body { /*載入中不顯示
+    opacity: 0;
+    visibility: hidden}
+.jf-active body { /*如果處理成功，直接顯示
+    opacity: 1;
+    visibility: visible}
+.jf-inactive body {/*如果處理失敗，直接顯示
+    opacity: 1;
+    visibility: visible}*/
 .jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
-    -webkit-transition: opacity 1s ease-out; 
-    -moz-transition: opacity 1s ease-out; 
-    -o-transition: opacity 1s ease-out; 
-    transition: opacity 1s ease-out}
+      -webkit-transition: opacity 1.5s ease-out; 
+      -moz-transition: opacity 1.5s ease-out; 
+      -o-transition: opacity 1.5s ease-out; 
+      transition: opacity 1.5s ease-out}
 .txt-blue{ color: #21abd4}
 .txt-white{ color: #fff}
 
@@ -179,21 +188,26 @@ header{ padding: 0 20px}
 按鈕設定
 =====================================
 */
-.mybtn-l{
+.mybtn-l,
+.mybtn-m{
     display: block;
-    width: 160px;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.5rem;
+    letter-spacing: 1px;
     text-align: center;
     border: 3px solid;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin: 0 auto;
-    padding: 15px 10px;
     text-decoration: none}
-.mybtn-m{}
+.mybtn-l{ 
+    width: 160px;
+    padding: 15px 10px}
+.mybtn-m{ 
+    width: 120px;
+    padding: 8px 10px}
 .btn-white{
     color: #fff;
     border-color: #fff}
@@ -233,7 +247,6 @@ header{ padding: 0 20px}
 	animation-duration: 1800ms/*2375ms*/;/*動畫演譯時間*/
     animation-iteration-count: infinite;/*動畫循環的次數，無限循環用infinite*/
    /* animation-direction: alternate;/*動畫在0%到100%之間往復執行*/}
-
 
 /*
 =====================================
@@ -350,7 +363,7 @@ color: #fff}
     color: #21abd4;
     text-decoration: none}
 .blog_foreword a:hover{
-    color: #f50;
+    color: #0d4d80;
     text-decoration: none}
 
 /*聯絡我們*/
@@ -358,11 +371,68 @@ color: #fff}
     display: block;
     float: left;
     width: 50%}
+#box_info{
+    display: block;
+    width: 65%;
+    margin: 60px auto 0 auto}
+#box_info>h2,
+#box_info>h3{
+    text-align: left}
+#box_info>h2{ padding-bottom: 1rem}
+#box_info>h3{ padding-bottom: 2rem}
+#box_info ul{ padding-bottom: 40px}
+#box_info li{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #fff;
+    letter-spacing: .1rem}
 #contact-map{
     display: block;
     float: right;
     width: 50%;
-    height: 420px}
+    height: 380px}
+
+/*版權列*/
+#copyright{
+    clear: both;
+    min-height: 118px;
+    background: rgba(9, 31, 114, .8);
+    padding: 1px 0 5px 0}
+#copyright>hr{
+    border:0; 
+    height:1px; 
+    background-color:#2bacf7;
+	color:#2bacf7}
+.box_copyright{
+    display: block;
+    float: left;
+    width: 33.3%;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #f7f7f7}
+.box_copyright h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 5px}
+.box_copyright li a{
+    display: block;
+    float: left;
+    font-size: 2em;
+    margin-right: 15px;
+    color: #fff}
+.box_copyright li a:hover{
+    color: #1db7ff}
+.foot-logo{
+    display: block;
+    width: 95px;
+    height: 27px;
+    background: url(../images/logo-footer.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 7px}
+
 
 /*FB Messenger*/
 #box_messenger{
