@@ -80,7 +80,8 @@ img::-moz-selection { background: transparent}
 #show-case,
 #my-blog,
 #my-contact,
-#copyright{
+#copyright,
+#top-bar{
     display: block;
     width: 100%;
     padding: 50px 0}
@@ -92,7 +93,8 @@ img::-moz-selection { background: transparent}
 
 header,
 .mybox,
-#blog_index{
+#blog_index,
+#top-menu{
     display: block;
     width: 1070px;
     margin: 30px auto}
@@ -119,10 +121,7 @@ header{ padding: 0 20px}
     -moz-line-height: 1.6rem;
     text-align: center;
     letter-spacing: .1rem;
-    color: #fff;
-    /*border-right: 1px solid #fff*/}
-#main-nav li:nth-child(1){
-    /*border-left: 1px solid #fff*/}
+    color: #fff}
 #main-nav li a{
     color: #fff;
     text-decoration: none}
@@ -130,7 +129,8 @@ header{ padding: 0 20px}
     color: #fff;
     text-decoration: none}
 
-.hvr-bounce {
+.hvr-bounce,
+.hvr-bounce-sub{
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
@@ -144,9 +144,9 @@ header{ padding: 0 20px}
     transition-property: color;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s}
-.hvr-bounce:before {
+.hvr-bounce:before,
+.hvr-bounce-sub:before{
     display: inline-block;
-    width: 68px;
     height: 20px;
     content: "";
     position: absolute;
@@ -156,7 +156,6 @@ header{ padding: 0 20px}
     right: 0;
     bottom: 0;
     background: #126db4/*#2098d1*/;
-    padding: 3px 8px;   
     text-align: center;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
@@ -168,20 +167,71 @@ header{ padding: 0 20px}
     transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;}
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+.hvr-bounce:before{ 
+    width: 75px;
+    margin:-2px 0 0 -7px;
+    padding: 8px 8px 3px 15px}
+.hvr-bounce-sub:before{ 
+    width: 60px;
+    margin-left: -8px;
+    padding: 3px 8px 5px 15px}
 .hvr-bounce:hover, 
 .hvr-bounce:focus, 
-.hvr-bounce:active{
+.hvr-bounce:active,
+.hvr-bounce-sub:hover, 
+.hvr-bounce-sub:focus, 
+.hvr-bounce-sub:active{
     color: #fff}
 .hvr-bounce:hover:before, 
 .hvr-bounce:focus:before, 
-.hvr-bounce:active:before {
+.hvr-bounce:active:before,
+.hvr-bounce-sub:hover:before, 
+.hvr-bounce-sub:focus:before, 
+.hvr-bounce-sub:active:before{
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)}
+
+/*上層固定式選單*/
+#top-bar{
+    padding: 0;
+	height:40px;
+	background:rgb(29,183,255);
+	position:fixed;
+    top:-65px;
+    z-index: 150}
+#top-menu{
+    margin: 0 auto;}
+#top-menu h2 a{
+    float: left;
+    margin: 6px 20px 0 0}
+.menu-list{
+    display: block;
+    float: left;
+    width: 60%;
+    padding-top: 8px}
+.menu-list li{
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    /*text-shadow: 1px 1px 5px #8d8d8d;*/
+    margin: 0 25px;
+    padding-left: 15px}
+.menu-list li a{
+    color: #fff;
+    text-decoration: none}
+#btn_totop{
+    display: block;
+    float: right;
+    font-size: 2.3rem;
+    color: #fff;
+    margin-top: 8px}
+#btn_totop:hover{
+    color: #126db4}
 
 /*
 =====================================
@@ -423,15 +473,16 @@ color: #fff}
     color: #fff}
 .box_copyright li a:hover{
     color: #1db7ff}
-.foot-logo{
+.foot-logo,
+#top-menu h2 a{
     display: block;
     width: 95px;
     height: 27px;
     background: url(../images/logo-footer.png) no-repeat;
     text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden;
-    margin-bottom: 7px}
+    overflow: hidden}
+.foot-logo{ margin-bottom: 7px}
 
 
 /*FB Messenger*/
@@ -439,7 +490,7 @@ color: #fff}
     display: block;
     position: fixed;
     bottom:50px;
-    right:50px;
+    right:35px;
     z-index: 99}
 #widget{
     display: inline-block; 
@@ -450,6 +501,13 @@ color: #fff}
     line-height: normal; 
     white-space: nowrap; 
     vertical-align: middle}
+#box_talk{
+    display: none}
+#widget:hover>#box_talk{
+    display: block;
+    -webkit-transition: all 1s ease 0.5s;
+    -moz-transition: all 1s ease 0.5s;
+    transition: all 1s ease 0.5s}
 .bg_arrow{
     width: 11px; 
     height: 8px; 

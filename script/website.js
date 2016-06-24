@@ -18,21 +18,32 @@ $(function() {
 	  
 //返回頁首
 $(function(){
-  $("#btn_totop").scrollTo(700)
+  $("#top-menu").scrollTo(700)
+});
+$(function(){
+  $("#mouse-move").scrollTo(700)
 });
 
 //頂端隱藏選單
-$(function(){$(window).load(function(){$(window).bind("scroll resize",function(){var o=$(this),t=o.scrollTop();522>t&&$("#top_menu").stop().animate({top:"-60px"}),t>522&&$("#top_menu").stop().animate({top:"0px"})}).scroll()})});
+$(function(){
+	$(window).load(function(){
+		$(window).bind('scroll resize', function(){
+			var $this = $(this);
+			var $this_Top=$this.scrollTop();
+			
+			//當高度小於100時，關閉區塊	
+			if($this_Top < 150){
+				$('#top-bar').stop().animate({top:"-65px"});
+				}
+			if($this_Top > 150){
+				$('#top-bar').stop().animate({top:"0px"});
+						
+			}
+		}).scroll();
+	});
+});
+
 
 //wow動畫
 wow=new WOW({animateClass:"animated",offset:100,callback:function(a){console.log("WOW: animating <"+a.tagName.toLowerCase()+">")}}),wow.init();
-
-//行動版選單
-$(document).ready(function() {
-	  $(".toggle").click(function() {
-		  $(this).toggleClass("active");
-		  $(".nav").slideToggle();
-	  });
-	  $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
-  });
 
