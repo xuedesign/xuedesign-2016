@@ -10,7 +10,11 @@
 * 2. 全站結構
 * 3. 選單設定
 * 4. 按鈕設定
-* 5. 首頁設定
+* 5. 頁面頂端+版權列設定
+* 6. 服務介紹
+* 7. 案例展示
+* 8. 觀點分享
+* 9. 聯絡諮詢
 *=====================================
 **/
 
@@ -69,23 +73,18 @@ img::-moz-selection { background: transparent}
     width: 96%;
     margin: 2.2% auto;
     background: rgb(247,247,247)}
-#main-vision{
+#sub-vision{
     display:block;
 	max-width:100vw;
-	height:100vh;
-	background:url(../images/pic_mainvision.jpg) no-repeat;
+	height: 500px/*50vh*/;
     background-size: cover;
 	overflow: hidden}
-#my-service,
-#show-case,
-#my-blog,
 #my-contact,
 #copyright,
 #top-bar{
     display: block;
     width: 100%;
     padding: 50px 0}
-#show-case,
 #my-contact{
     background: url(../images/bg_website.png)}
 #my-contact,
@@ -93,13 +92,11 @@ img::-moz-selection { background: transparent}
 
 header,
 .mybox,
-#blog_index,
 #top-menu{
     display: block;
     width: 1070px;
     margin: 30px auto}
 header{ padding: 0 20px}
-#blog_index{ margin-bottom: 50px;}
 
 /*
 =====================================
@@ -300,7 +297,7 @@ header{ padding: 0 20px}
 
 /*
 =====================================
-首頁設定
+頁面頂端+版權列設定
 =====================================
 */
 h1 a{
@@ -317,8 +314,8 @@ h1 a{
     padding-top: 156px;
     text-align: center}
 #slogan>h2{
-    font-size: 8.6rem;
-    font-weight: 700;
+    font-size: 5rem;
+    font-weight: 600;
     color: #fff;
     padding-bottom: 30px;
     border-bottom: 1px solid #fff;
@@ -327,22 +324,16 @@ h1 a{
     font-size: 2rem;
     vertical-align: middle}
 #slogan>h3{
-    font-size: 3.5rem;
-    font-weight: 600;
+    font-size: 2.2rem;
+    font-weight: 400;
     color: #fff;
     padding: 30px 0 60px 0}
-#my-service h2,
-#show-case h2,
-#my-blog h2,
 #my-contact h2{ 
     font-size: 3.5rem;
     font-weight: 500;
     line-height: 2.1rem;
     text-align: center;
     padding-bottom: 2rem}
-#my-service h3,
-#show-case h3,
-#my-blog h3,
 #my-contact h3{
     width: 760px;
     margin: 0 auto;
@@ -350,102 +341,6 @@ h1 a{
     font-weight: normal;
     line-height: 2.2rem;
     text-align: center}
-
-/*服務項目*/
-.service_item{
-    display: block;
-    width: 100%;
-    height: 352px;
-    background: url(../images/bg_service-item-left.png) top left no-repeat, url(../images/bg_service-item-right.png) top right no-repeat;
-    margin: 50px 0;
-    padding: 0 116px}
-.service_item li{
-    display: inline-block;
-    width: 165px;
-    height: 165px;
-    background: url(../images/icon_service.png) no-repeat;
-    overflow: hidden;
-    margin: 8px 55px;
-    padding-top: 112px;
-    text-align: center;
-font-size: 1.8rem;
-color: #fff}
-.service_item li.service-01{ background-position: 0 0}
-.service_item li.service-02{ background-position: 0 -165px}
-.service_item li.service-03{ background-position: 0 -330px}
-.service_item li.service-04{ background-position: 0 -495px}
-.service_item li.service-05{ background-position: 0 -660px}
-.service_item li.service-06{ background-position: 0 -825px}
-
-/*設計觀察*/
-.box_blog{
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 309px}
-.photo_left{
-    background: url(../images/pic_blogcover-index-01.jpg) top left no-repeat;
-    margin-bottom: 50px}
-.photo_right{
-    background: url(../images/pic_blogcover-index-02.jpg) top right no-repeat}
-.blog_foreword{
-    display: block;
-    position: absolute;
-    bottom:-20px;    
-    z-index: 10;    
-    width: 494px;
-    height: 244px;
-    padding: 36px;
-    background: rgba(255, 255, 255, .8)}
-.foreword_right{
-    right: 0}
-.foreword_left{
-    left: 0}
-.blog_foreword h4{
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 2rem;
-    padding-bottom: 24px}
-.blog_foreword p{
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    padding-bottom: 20px}
-.blog_foreword a{
-    display: block;
-    font-size: 1.5rem;
-    text-align: right;
-    color: #21abd4;
-    text-decoration: none}
-.blog_foreword a:hover{
-    color: #0d4d80;
-    text-decoration: none}
-
-/*聯絡我們*/
-#contact-info{
-    display: block;
-    float: left;
-    width: 50%}
-#box_info{
-    display: block;
-    width: 65%;
-    margin: 60px auto 0 auto}
-#box_info>h2,
-#box_info>h3{
-    text-align: left}
-#box_info>h2{ padding-bottom: 1rem}
-#box_info>h3{ padding-bottom: 2rem}
-#box_info ul{ padding-bottom: 40px}
-#box_info li{
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 2rem;
-    color: #fff;
-    letter-spacing: .1rem}
-#contact-map{
-    display: block;
-    float: right;
-    width: 50%;
-    height: 380px}
 
 /*版權列*/
 #copyright{
@@ -500,7 +395,7 @@ color: #fff}
     display: inline-block; 
     overflow: hidden; 
     height: auto; 
-    min-width: 100px; 
+    min-width: 120px; 
     text-align: center; 
     line-height: normal; 
     white-space: nowrap; 
@@ -524,7 +419,9 @@ color: #fff}
     background: url('https://assets.modernapp.co/assets/images/facebook-message-button-icon-round-white2x.png') no-repeat; background-size: 47px 47px;
     margin-top: 5px}
 .talktome{
-    color: black; 
+    color: black;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
     padding: 6px; 
     -webkit-border-radius: 6px; 
     -moz-border-radius: 6px; 

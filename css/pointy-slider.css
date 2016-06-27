@@ -45,30 +45,14 @@ Slider
 .cd-slider .cd-half-block {
   height: 50%;
   background-position: center center;
-  background-repeat: no-repeat;
-}
-.cd-slider li:first-of-type .image {
-  background-image: url(../images/pic_project-01.jpg);
-}
-.cd-slider li:nth-of-type(2) .image {
-  background-image: url(../img/img-2.jpg);
-}
-.cd-slider li:nth-of-type(3) .image {
-  background-image: url(../img/img-3.jpg);
-}
-.cd-slider li:nth-of-type(4) .image {
-  background-image: url(../img/img-4.jpg);
-}
-.cd-slider li:nth-of-type(5) .image {
-  background-image: url(../img/img-4.jpg);
-}
+  background-repeat: no-repeat}
+
 .cd-slider .image {
   background-size: cover;
 }
 .cd-slider .content {
   padding: 30px;
   color: #ffffff;
-  background-color: rgba(191,239,254,1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -112,18 +96,6 @@ Slider
 .no-touch .cd-slider .btn:hover {
   background: rgba(254,236,1, .5);
 }*/
-.cd-slider li:nth-of-type(2) .content {
-  background-color: #ccd0c1;
-}
-.cd-slider li:nth-of-type(3) .content {
-  background-color: #f3b96c;
-}
-.cd-slider li:nth-of-type(4) .content {
-  background-color: #f46c6a;
-}
-.cd-slider li:nth-of-type(5) .content {
-  background-color: #f46c6a;
-}
 .cd-slider h2 {
   font-size: 2.2rem;
   margin-bottom: .4em;
