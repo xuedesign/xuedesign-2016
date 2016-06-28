@@ -81,7 +81,8 @@ img::-moz-selection { background: transparent}
 	overflow: hidden}
 #my-contact,
 #copyright,
-#top-bar{
+#top-bar,
+#container{
     display: block;
     width: 100%;
     padding: 50px 0}
@@ -431,3 +432,93 @@ h1 a{
     -webkit-box-shadow: 0px 5px 18px -5px rgba(184,184,184,0.5); 
     -moz-box-shadow: 0px 5px 18px -5px rgba(184,184,184,0.5); 
     box-shadow: 0px 5px 18px -5px rgba(184,184,184,0.5)}
+
+/*
+=====================================
+服務介紹
+=====================================
+*/
+#service-info>section{
+    margin-bottom: 80px
+}
+#service-info h3{
+    font-size: 3rem;
+    color: #21abd4;
+    padding-bottom: 15px;
+}
+#service-info p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-bottom: 40px
+}
+.logomean-left{
+    display: block;
+    float: left;
+    width: 48%;
+    background: url(../images/icon_dot-01.png) top left no-repeat, url(../images/icon_dot-02.png) bottom right no-repeat;
+    margin: 20px 3% 0;
+    padding: 50px
+}
+.logomean-right{
+    display: block;
+    float: right;
+    width: 42%;
+    padding-left: 0}
+#logo-change{
+    display: block;
+    width: 374px;
+    height: 326px
+}
+
+#list_service{
+    display: block
+}
+#list_service h4{
+    display: block;
+    width: 350px;
+    margin: 30px auto;
+    padding-left: 70px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 45px;
+    color: #21abd4;
+    background: url(../images/icon_cloud.png) no-repeat    
+}
+.service_item{
+    display: block;
+    width: 89%;
+    margin: 0 auto
+}
+.service_item li{
+    display: inline-block;
+    width: 220px;
+    height: 124px;
+    background: url(../images/icon_service-sub.png) no-repeat;
+    margin-right: 140px;
+    padding-top: 90px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px
+}
+.service_item li:nth-child(3){ 
+    margin-right: 0
+}
+.service_item .service-01{
+    background-position: 0 0
+}
+.service_item .service-02{
+    background-position: 0 -124px
+}
+.service_item .service-03{
+    background-position: 0 -248px
+}
+.service_item .service-04{
+    background-position: 0 -372px
+}
+.service_item .service-05{
+    background-position: 0 -496px
+}
+.service_item .service-06{
+    background-position: 0 -620px
+}
