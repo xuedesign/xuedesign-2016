@@ -73,8 +73,17 @@
 頁面Banner
 =====================================
 */
-.profile{ /*服務介紹*/
+.cover_profile{ /*服務介紹*/
     background: url(../images/banner/pic_portfile.jpg) no-repeat
+}
+.cover_project{ /*案例展示*/
+    background: url(../images/banner/pic_project.jpg) no-repeat
+}
+.cover_bloglist{ /*觀察分享*/
+    background: url(../images/banner/pic_blog.jpg) no-repeat
+}
+.cover_contact{ /*聯絡諮詢*/
+    background: url(../images/banner/pic_contact.jpg) no-repeat
 }
 
 

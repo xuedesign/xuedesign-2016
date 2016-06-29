@@ -45,15 +45,6 @@ img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-/*.jf-loading body { /*載入中不顯示
-    opacity: 0;
-    visibility: hidden}
-.jf-active body { /*如果處理成功，直接顯示
-    opacity: 1;
-    visibility: visible}
-.jf-inactive body {/*如果處理失敗，直接顯示
-    opacity: 1;
-    visibility: visible}*/
 .jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
       -webkit-transition: opacity 1.5s ease-out; 
       -moz-transition: opacity 1.5s ease-out; 
@@ -421,8 +412,8 @@ h1 a{
     margin-top: 5px}
 .talktome{
     color: black;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
     padding: 6px; 
     -webkit-border-radius: 6px; 
     -moz-border-radius: 6px; 

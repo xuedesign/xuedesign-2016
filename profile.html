@@ -40,6 +40,7 @@
             <li><a class="hvr-bounce-sub" href="portfolio.html" title="案例展示">案例展示</a></li>
             <li><a class="hvr-bounce-sub" href="perspective.html" title="觀察分享">觀察分享</a></li>
             <li><a class="hvr-bounce-sub" href="contact.html" title="聯絡諮詢">聯絡諮詢</a></li>
+            <li><a class="hvr-bounce-sub" href="index.html" title="返回首頁">返回首頁</a></li>
         </ul>
         <a id="btn_totop" href="#wrap"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
         <div class="clean"></div>
@@ -48,7 +49,7 @@
 
 
 <div id="wrap">
-    <div id="sub-vision" class="profile">
+    <div id="sub-vision" class="cover_profile">
         <header>
             <h1><a href="index.html" title="回首頁">開始設計工作室 xuedesign studio</a></h1>
             <nav id="main-nav">
@@ -73,9 +74,9 @@
                 <p class="logomean-left">「開始設計」是間以設計導向為主的設計工作室。我們將自己定位成為你的設計策略夥伴，協助你一同打造一座橫跨品牌與消費市場間的溝通橋樑，用設計創造您的影響力，與市場進行有效率的對談，讓你的每分預算達到最大效益。我們不僅是您設計上的最佳解決方案，更是你理想的合作夥伴。</p>
                 <div class="logomean-right">
                     <div id="logo-change">
-                        <img src="images/pic_logomain-01.jpg" alt="">
-                        <img src="images/pic_logomain-02.jpg" alt="">
-                        <img src="images/pic_logomain-03.jpg" alt="">    
+                        <img src="images/pic_logomain-01.png" alt="">
+                        <img src="images/pic_logomain-02.png" alt="">
+                        <img src="images/pic_logomain-03.png" alt="">    
                     </div>
                 </div>
                 <br class="clean">
@@ -105,10 +106,6 @@
             </section>    
         </div>
     </div>
-    
-    
-    
-    
     
     <div id="my-contact" class="bg_blueline">
         <div id="copyright">
@@ -152,18 +149,18 @@
 
 
 <script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="https://use.fontawesome.com/7b7fd6d88b.js"></script>
-<script src="http://malsup.github.io/jquery.cycle.all.js"></script>
 <script>
-    $(document).ready(function() {
-        $('#logo-change').cycle({
-            fx: 'fade'
-        });
-    });
+$(function(){$(window).load(function(){$(window).bind("scroll resize",function(){var a=$(this).scrollTop();150>a&&$("#top-bar").stop().animate({top:"-65px"});150<a&&$("#top-bar").stop().animate({top:"0"})}).scroll()})});
 </script>
-<script src="script/wow.min.js"></script>
-<!--<script src="script/jquery.lazyload.js"></script>-->
 <script src="script/scrollTo.js"></script>
+<script>$(function(){$("#top-menu").scrollTo(700)});</script>
+<script src="https://use.fontawesome.com/7b7fd6d88b.js"></script>
+<script src="script/wow.min.js"></script>
+<script src="script/jquery.cycle.all.js"></script>
+<script>
+$(document).ready(function(){$("#logo-change").cycle({fx:"fade"})});
+</script>
+<!--<script src="script/jquery.lazyload.js"></script>-->
 <script async defer src="https://assets.modernapp.co/assets/js/embed.js"></script>
 <script src="script/website.js"></script>
 <script src="script/jquery.retina.js"></script>

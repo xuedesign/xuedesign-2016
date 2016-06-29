@@ -20,7 +20,8 @@
 <link rel="apple-touch-icon" href="images/icon@2x.png">
 <title>案例展示│開始設計，讓好設計為您帶來好生意</title>
 <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/xue-page_201606.css?201606"/>
+<link rel="stylesheet" href="css/xue-page.css?201606"/>
+<link rel="stylesheet" href="css/xue-update.css?201606">
 <link rel="stylesheet" href="css/xueresponsive.css?201606"/>
 <link rel="stylesheet" href="css/animate.css"/>
 <script src="http://s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-42818.js"></script>
@@ -39,6 +40,7 @@
             <li><a class="hvr-bounce-sub" href="portfolio.html" title="案例展示">案例展示</a></li>
             <li><a class="hvr-bounce-sub" href="perspective.html" title="觀察分享">觀察分享</a></li>
             <li><a class="hvr-bounce-sub" href="contact.html" title="聯絡諮詢">聯絡諮詢</a></li>
+            <li><a class="hvr-bounce-sub" href="index.html" title="返回首頁">返回首頁</a></li>
         </ul>
         <a id="btn_totop" href="#wrap"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
         <div class="clean"></div>
@@ -47,7 +49,7 @@
 
 
 <div id="wrap">
-    <div id="main-vision">
+    <div id="sub-vision" class="cover_project">
         <header>
             <h1><a href="index.html" title="回首頁">開始設計工作室 xuedesign studio</a></h1>
             <nav id="main-nav">
@@ -59,21 +61,21 @@
                 </ul>
             </nav>
             <div id="slogan">
-                <h2>量身打理 <span>◆</span> 簡而不凡</h2>
-                <h3>我們提供從創意到生意的設計執行力</h3>
-                <a class="mybtn-l btn-white" href="contact.html" title="設計諮詢/委託">設計諮詢/委託</a>
-            </div>
-            <div id="mouse-move">
-                <a class="icon-mouse" href="#my-service" title="請往下捲動瀏覽">請往下捲動瀏覽</a>
+                <h2>案例展示</h2>
+                <h3>每個專案皆是我們與客戶努力合作共同創造的成果</h3>
             </div>
         </header>    
     </div>
     
-    
-    
-    
-    
-    
+    <div id="container">
+        <div id="" class="mybox">
+            
+            
+            
+            
+               
+        </div>
+    </div>
     
     <div id="my-contact" class="bg_blueline">
         <div id="copyright">
@@ -106,7 +108,7 @@
     <div id="box_messenger">
         <div id="widget">
             <div id="box_talk">               
-                <div class="talktome">發訊息給我</div>
+                <div class="talktome">需要協助嗎?<br>發訊息給我們</div>
                 <div class="bg_arrow" style=""></div>
             </div> 
             <a class="icon_talk" rel="external" href="http://m.me/xuedesigntw"></a>
@@ -117,11 +119,14 @@
 
 
 <script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+$(function(){$(window).load(function(){$(window).bind("scroll resize",function(){var a=$(this).scrollTop();150>a&&$("#top-bar").stop().animate({top:"-65px"});150<a&&$("#top-bar").stop().animate({top:"0"})}).scroll()})});
+</script>
+<script src="script/scrollTo.js"></script>
+<script>$(function(){$("#top-menu").scrollTo(700)});</script>
 <script src="https://use.fontawesome.com/7b7fd6d88b.js"></script>
 <script src="script/wow.min.js"></script>
 <script src="script/jquery.lazyload.js"></script>
-<script src="script/pointy-slider.js"></script>
-<script src="script/scrollTo.js"></script>
 <script async defer src="https://assets.modernapp.co/assets/js/embed.js"></script>
 <script src="script/website.js"></script>
 <script src="script/jquery.retina.js"></script>
