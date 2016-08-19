@@ -1,3 +1,4 @@
+@charset "utf-8";
 /**
 *
 * @project    xuedesign studio
@@ -41,20 +42,20 @@ img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-/*.jf-loading body { /*載入中不顯示
+.jf-loading body { /*載入中不顯示*/
     opacity: 0;
     visibility: hidden}
-.jf-active body { /*如果處理成功，直接顯示
+.jf-active body { /*如果處理成功，直接顯示*/
     opacity: 1;
     visibility: visible}
-.jf-inactive body {/*如果處理失敗，直接顯示
+.jf-inactive body { /*如果處理失敗，直接顯示*/
     opacity: 1;
-    visibility: visible}*/
-.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
+    visibility: visible}
+/*.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示
       -webkit-transition: opacity 1.5s ease-out; 
       -moz-transition: opacity 1.5s ease-out; 
       -o-transition: opacity 1.5s ease-out; 
-      transition: opacity 1.5s ease-out}
+      transition: opacity 1.5s ease-out}*/
 .txt-blue{ color: #21abd4}
 .txt-white{ color: #fff}
 
