@@ -68,13 +68,13 @@ img::-moz-selection { background: transparent}
 #wrap{
     display: block;
     width: 96%;
-    margin: 2.2% auto;
+    margin: 2% auto;
     background: rgb(247,247,247)}
 #main-vision{
     display:block;
 	max-width:100vw;
 	height:100vh;
-    background:url(../images/banner/pic_index.jpg) no-repeat;
+    background:url(../images/banner/pic_index-02.jpg) no-repeat;
     background-size: cover;
 	overflow: hidden}
 #my-service,
