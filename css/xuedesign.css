@@ -42,7 +42,7 @@ img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-.jf-loading body { /*載入中不顯示*/
+/*.jf-loading body { /*載入中不顯示*/
     opacity: 0;
     visibility: hidden}
 .jf-active body { /*如果處理成功，直接顯示*/
@@ -50,12 +50,12 @@ img::-moz-selection { background: transparent}
     visibility: visible}
 .jf-inactive body { /*如果處理失敗，直接顯示*/
     opacity: 1;
-    visibility: visible}
-/*.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示
+    visibility: visible}*/
+.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
       -webkit-transition: opacity 1.5s ease-out; 
       -moz-transition: opacity 1.5s ease-out; 
       -o-transition: opacity 1.5s ease-out; 
-      transition: opacity 1.5s ease-out}*/
+      transition: opacity 1.5s ease-out}
 .txt-blue{ color: #21abd4}
 .txt-white{ color: #fff}
 
@@ -125,7 +125,8 @@ header{ padding: 0 20px}
     color: #fff}
 #main-nav li a{
     color: #fff;
-    text-decoration: none}
+    text-decoration: none;
+    text-shadow: 0 0 15px #868686;}
 #main-nav li a:hover{
     color: #fff;
     text-decoration: none}
@@ -261,7 +262,8 @@ header{ padding: 0 20px}
     padding: 8px 10px}
 .btn-white{
     color: #fff;
-    border-color: #fff}
+    border-color: #fff;
+    text-shadow: 0 0 15px #868686}
 .btn-blue{
     color: #5e98d4;
     border-color: #5e98d4}
@@ -321,6 +323,7 @@ h1 a{
     font-size: 8.6rem;
     font-weight: 700;
     color: #fff;
+    text-shadow: 0 0 15px #868686;
     padding-bottom: 30px;
     border-bottom: 1px solid #fff;
     margin: 0 83px}
@@ -330,7 +333,9 @@ h1 a{
 #slogan>h3{
     font-size: 3.5rem;
     font-weight: 600;
+    letter-spacing: 1px;
     color: #fff;
+    text-shadow: 0 0 15px #868686;
     padding: 30px 0 60px 0}
 #my-service h2,
 #show-case h2,

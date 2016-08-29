@@ -5,7 +5,7 @@ Slider
 -------------------------------- */
 .cd-slider-wrapper {
   position: relative;
-  height: 396px/*100vh*/;
+  height: 450px/*100vh*/;
   padding: 10px;
 }
 @media only screen and (min-width: 900px) {
