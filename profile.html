@@ -148,6 +148,10 @@
 
 
 <script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="script/jquery.cycle.all.js"></script>
+<script>
+$(document).ready(function(){$("#logo-change").cycle({fx:"fade"})});
+</script>
 <script>
 $(function(){$(window).load(function(){$(window).bind("scroll resize",function(){var a=$(this).scrollTop();150>a&&$("#top-bar").stop().animate({top:"-65px"});150<a&&$("#top-bar").stop().animate({top:"0"})}).scroll()})});
 </script>
@@ -155,10 +159,6 @@ $(function(){$(window).load(function(){$(window).bind("scroll resize",function()
 <script>$(function(){$("#top-menu").scrollTo(700)});</script>
 <script src="https://use.fontawesome.com/7b7fd6d88b.js"></script>
 <script src="script/wow.min.js"></script>
-<script src="script/jquery.cycle.all.js"></script>
-<script>
-$(document).ready(function(){$("#logo-change").cycle({fx:"fade"})});
-</script>
 <!--<script src="script/jquery.lazyload.js"></script>-->
 <script async defer src="https://assets.modernapp.co/assets/js/embed.js"></script>
 <script src="script/website.js"></script>

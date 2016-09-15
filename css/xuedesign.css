@@ -42,7 +42,7 @@ img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-/*.jf-loading body { /*載入中不顯示*/
+.jf-loading body { /*載入中不顯示*/
     opacity: 0;
     visibility: hidden}
 .jf-active body { /*如果處理成功，直接顯示*/
@@ -50,12 +50,12 @@ img::-moz-selection { background: transparent}
     visibility: visible}
 .jf-inactive body { /*如果處理失敗，直接顯示*/
     opacity: 1;
-    visibility: visible}*/
-.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
+    visibility: visible}
+/*.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示
       -webkit-transition: opacity 1.5s ease-out; 
       -moz-transition: opacity 1.5s ease-out; 
       -o-transition: opacity 1.5s ease-out; 
-      transition: opacity 1.5s ease-out}
+      transition: opacity 1.5s ease-out}*/
 .txt-blue{ color: #21abd4}
 .txt-white{ color: #fff}
 
@@ -89,6 +89,7 @@ img::-moz-selection { background: transparent}
 #show-case,
 #my-contact{
     background: url(../images/bg_website.png)}
+#my-service,
 #my-contact,
 #copyright{ padding: 0}
 
@@ -358,7 +359,21 @@ h1 a{
     text-align: center}
 
 /*服務項目*/
-.service_item{
+.pic_city{
+    display: block;
+    float: left;
+    width: 45%;
+    height: 593px;
+    background: url(../images/pic_city.jpg) center center no-repeat}
+.service-info{
+    display: block;
+    float: right;
+    width: 55%;
+    margin-top: 80px}
+.service-info img{
+    display: block;
+    margin: 30px auto 50px auto}
+/*.service_item{
     display: block;
     width: 100%;
     height: 352px;
@@ -374,14 +389,14 @@ h1 a{
     margin: 8px 55px;
     padding-top: 112px;
     text-align: center;
-font-size: 1.8rem;
-color: #fff}
+    font-size: 1.8rem;
+    color: #fff}
 .service_item li.service-01{ background-position: 0 0}
 .service_item li.service-02{ background-position: 0 -165px}
 .service_item li.service-03{ background-position: 0 -330px}
 .service_item li.service-04{ background-position: 0 -495px}
 .service_item li.service-05{ background-position: 0 -660px}
-.service_item li.service-06{ background-position: 0 -825px}
+.service_item li.service-06{ background-position: 0 -825px}*/
 
 /*設計觀察*/
 .box_blog{
