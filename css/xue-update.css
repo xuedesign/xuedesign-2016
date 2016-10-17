@@ -29,28 +29,28 @@
 }
 
 .cd-slider li:nth-of-type(2) .image {
-    background-image: url(../img/img-2.jpg)
+    background-image: url(https://unsplash.it/535/396)
 }
 .cd-slider li:nth-of-type(2) .content {
     background-color: #ccd0c1;
 }
 
 .cd-slider li:nth-of-type(3) .image {
-    background-image: url(../img/img-3.jpg)
+    background-image: url(https://unsplash.it/535/396/?random)
 }
 .cd-slider li:nth-of-type(3) .content {
     background-color: #f3b96c;
 }
 
 .cd-slider li:nth-of-type(4) .image {
-    background-image: url(../img/img-4.jpg)
+    background-image: url(https://unsplash.it/535/400)
 }
 .cd-slider li:nth-of-type(4) .content {
     background-color: #f46c6a;
 }
 
 .cd-slider li:nth-of-type(5) .image {
-    background-image: url(../img/img-4.jpg)
+    background-image: url(https://unsplash.it/535/401)
 }
 .cd-slider li:nth-of-type(5) .content {
     background-color: #f46c6a;
