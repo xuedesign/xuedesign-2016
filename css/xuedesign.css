@@ -36,8 +36,8 @@ a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#F50}*/
 form{margin:0; padding:0}
 image{border:0}
-::selection { background: #1c8fb2; color: #fff}
-::-moz-selection { background: #1c8fb2; color: #fff}
+::selection { background: #126db4; color: #fff}
+::-moz-selection { background: #126db4; color: #fff}
 img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
@@ -249,7 +249,7 @@ header{ padding: 0 20px}
     line-height: 1.5rem;
     letter-spacing: 1px;
     text-align: center;
-    border: 3px solid;
+    border: 2px solid;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;

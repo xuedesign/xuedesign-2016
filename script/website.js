@@ -13,7 +13,7 @@ window.onload = externalLinks;
 
 //圖片延遲載入
 $(function() {
-          $("img").lazyload({placeholder : "../images/grey.gif",effect: "fadeIn"});
+    $("img").lazyload({placeholder : "../images/grey.gif",effect: "fadeIn"});
       });
 	  
 //返回頁首

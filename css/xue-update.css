@@ -4,14 +4,14 @@
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
 * @copyright  2016 xuedesign studio
-* @version    v1.0 - 201606
+* @version    v1.0 - 201610
 *
 *=====================================
 * 1. 首頁作品展示
 * 2. 首頁文章
 * 3. 頁面Banner
-* 4. 
-* 5. 
+* 4. 作品說明頁Banner
+* 5. 文章內容頁Banner
 *=====================================
 **/
 
@@ -22,39 +22,29 @@
 =====================================
 */
 .cd-slider li:first-of-type .image {
-    background-image: url(../images/pic_project-01.jpg)
-}
+    background-image: url(../images/pic_project-01.jpg)}
 .cd-slider .content {
-    background-color: rgba(191,239,254,1);
-}
+    background-color: rgba(191,239,254,1);}
 
 .cd-slider li:nth-of-type(2) .image {
-    background-image: url(https://unsplash.it/535/396)
-}
+    background-image: url(https://unsplash.it/535/396)}
 .cd-slider li:nth-of-type(2) .content {
-    background-color: #ccd0c1;
-}
+    background-color: #ccd0c1;}
 
 .cd-slider li:nth-of-type(3) .image {
-    background-image: url(https://unsplash.it/535/396/?random)
-}
+    background-image: url(https://unsplash.it/535/396/?random)}
 .cd-slider li:nth-of-type(3) .content {
-    background-color: #f3b96c;
-}
+    background-color: #f3b96c;}
 
 .cd-slider li:nth-of-type(4) .image {
-    background-image: url(https://unsplash.it/535/400)
-}
+    background-image: url(https://unsplash.it/535/400)}
 .cd-slider li:nth-of-type(4) .content {
-    background-color: #f46c6a;
-}
+    background-color: #f46c6a;}
 
 .cd-slider li:nth-of-type(5) .image {
-    background-image: url(https://unsplash.it/535/401)
-}
+    background-image: url(https://unsplash.it/535/401)}
 .cd-slider li:nth-of-type(5) .content {
-    background-color: #f46c6a;
-}
+    background-color: #f46c6a;}
 
 /*
 =====================================
@@ -63,11 +53,9 @@
 */
 .photo_left{
     background: url(../images/pic_blogcover-index-01.jpg) top left no-repeat;
-    margin-bottom: 50px
-}
+    margin-bottom: 50px}
 .photo_right{
-    background: url(../images/pic_blogcover-index-02.jpg) top right no-repeat
-}
+    background: url(../images/pic_blogcover-index-02.jpg) top right no-repeat}
 
 /*
 =====================================
@@ -75,21 +63,25 @@
 =====================================
 */
 .cover_profile{ /*服務介紹*/
-    background: url(../images/banner/pic_portfile.jpg) no-repeat
-}
+    background: url(../images/banner/pic_portfile.jpg) no-repeat}
 .cover_project{ /*案例展示*/
-    background: url(../images/banner/pic_project.jpg) no-repeat
-}
+    background: url(../images/banner/pic_project.jpg) no-repeat}
 .cover_bloglist{ /*觀察分享*/
-    background: url(../images/banner/pic_blog.jpg) no-repeat
-}
+    background: url(../images/banner/pic_blog.jpg) no-repeat}
 .cover_contact{ /*聯絡諮詢*/
-    background: url(../images/banner/pic_contact.jpg) no-repeat
-}
+    background: url(../images/banner/pic_contact.jpg) no-repeat}
 
 
 /*
 =====================================
-
+作品說明頁Banner
 =====================================
 */
+
+
+/*
+=====================================
+文章內容頁Banner
+=====================================
+*/
+

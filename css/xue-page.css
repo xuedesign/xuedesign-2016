@@ -39,17 +39,21 @@ a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#F50}*/
 form{margin:0; padding:0}
 image{border:0}
-::selection { background: #1c8fb2; color: #fff}
-::-moz-selection { background: #1c8fb2; color: #fff}
+::selection { background: #126db4; color: #fff}
+::-moz-selection { background: #126db4; color: #fff}
 img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
-      -webkit-transition: opacity 1.5s ease-out; 
-      -moz-transition: opacity 1.5s ease-out; 
-      -o-transition: opacity 1.5s ease-out; 
-      transition: opacity 1.5s ease-out}
+.jf-loading body { /*載入中不顯示*/
+    opacity: 0;
+    visibility: hidden}
+.jf-active body { /*如果處理成功，直接顯示*/
+    opacity: 1;
+    visibility: visible}
+.jf-inactive body { /*如果處理失敗，直接顯示*/
+    opacity: 1;
+    visibility: visible}
 .txt-blue{ color: #21abd4}
 .txt-white{ color: #fff}
 
@@ -236,7 +240,7 @@ header{ padding: 0 20px}
     line-height: 1.5rem;
     letter-spacing: 1px;
     text-align: center;
-    border: 3px solid;
+    border: 2px solid;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -319,6 +323,7 @@ h1 a{
     vertical-align: middle}
 #slogan>h3{
     font-size: 2.2rem;
+    line-height: 2.8rem;
     font-weight: 400;
     color: #fff;
     text-shadow: 0 0 15px #868686;
@@ -433,26 +438,22 @@ h1 a{
 =====================================
 */
 #service-info>section{
-    margin-bottom: 80px
-}
+    margin-bottom: 80px}
 #service-info h3{
     font-size: 3rem;
     color: #21abd4;
-    padding-bottom: 15px;
-}
+    padding-bottom: 15px;}
 #service-info p{
     font-size: 1.5rem;
     line-height: 2.5rem;
-    padding-bottom: 40px
-}
+    padding-bottom: 40px}
 .logomean-left{
     display: block;
     float: left;
     width: 48%;
     background: url(../images/icon_dot-01.png) top left no-repeat, url(../images/icon_dot-02.png) bottom right no-repeat;
     margin: 20px 3% 0;
-    padding: 50px
-}
+    padding: 50px}
 .logomean-right{
     display: block;
     float: right;
@@ -461,12 +462,10 @@ h1 a{
 #logo-change{
     display: block;
     width: 374px;
-    height: 326px
-}
+    height: 326px}
 
 #list_service{
-    display: block
-}
+    display: block}
 #list_service h4{
     display: block;
     width: 350px;
@@ -476,13 +475,11 @@ h1 a{
     font-weight: 500;
     line-height: 45px;
     color: #21abd4;
-    background: url(../images/icon_cloud.png) no-repeat    
-}
+    background: url(../images/icon_cloud.png) no-repeat}
 .service_item{
     display: block;
     width: 89%;
-    margin: 0 auto
-}
+    margin: 0 auto}
 .service_item li{
     display: inline-block;
     width: 220px;
@@ -493,29 +490,25 @@ h1 a{
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
-    letter-spacing: 1px
-}
+    letter-spacing: 1px}
 .service_item li:nth-child(3){ 
-    margin-right: 0
-}
+    margin-right: 0}
 .service_item .service-01{
-    background-position: 0 0
-}
+    background-position: 0 0}
 .service_item .service-02{
-    background-position: 0 -124px
-}
+    background-position: 0 -124px}
 .service_item .service-03{
-    background-position: 0 -248px
-}
+    background-position: 0 -248px}
 .service_item .service-04{
-    background-position: 0 -372px
-}
+    background-position: 0 -372px}
 .service_item .service-05{
-    background-position: 0 -496px
-}
+    background-position: 0 -496px}
 .service_item .service-06{
-    background-position: 0 -620px
-}
+    background-position: 0 -620px}
+
+#our_doit p,
+#our_sop p{
+	padding: 0 30px 40px 32px}
 
 
 /*
@@ -538,3 +531,7 @@ h1 a{
 聯絡諮詢
 =====================================
 */
+.contact_subtitle{
+    display: block;
+    width: 75%;
+    margin: 0 auto}
