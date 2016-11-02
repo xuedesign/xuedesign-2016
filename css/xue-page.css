@@ -524,6 +524,72 @@ h1 a{
 觀點分享
 =====================================
 */
+#box_blog{}
+#box_blog li{
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    background: #fff}
+#box_blog img{
+    display: block;
+    float: left;
+    width: 435px}
+.article_summary{
+    display: block;
+    float: right;
+    width: 57%;
+    padding: 30px}
+.article_summary h4{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #383838;
+    padding-bottom: 20px}
+.article_summary p{
+    font-size: 1.5rem;
+    line-height: 2.4rem}
+.article_summary a:link{
+    display: block;
+    float: right;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    color: #21abd4;
+    text-decoration: none}
+.article_summary a:visited{
+    color: #8e8e8e;
+    text-decoration: none}
+.article_summary a:hover{
+    color: #0d4d80;
+    text-decoration: none}
+
+#bar_PageNumber{
+    display: block;
+    width: 100%;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    padding: 30px 0;
+    text-align: center}
+#bar_PageNumber a:link{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #444545;
+    text-decoration: none;
+    padding: 0 30px;
+    border-right: 1px solid #bfbfbf}
+#bar_PageNumber a:last-child{
+    border-right: none}
+#bar_PageNumber a:visited{
+    color: #8e8e8e;
+    text-decoration: none}
+#bar_PageNumber a:hover{
+    color: #fff/*#21abd4*/;
+    background: #0d4d80;
+    text-decoration: none;
+    padding: 5px 30px;
+    -webkit-transition: all 0.5s ease 0s;
+    /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;}
 
 
 /*
