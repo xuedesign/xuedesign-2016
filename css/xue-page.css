@@ -306,18 +306,25 @@ h1 a{
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
-#slogan{
+#slogan,
+#blog-title{
     clear: both;
     padding-top: 156px;
     text-align: center}
-#slogan>h2{
-    font-size: 5rem;
+#slogan>h2,
+#blog-title>h2{
     font-weight: 600;
     color: #fff;
-    padding-bottom: 30px;
     border-bottom: 1px solid #fff;
     text-shadow: 0 0 15px #868686;
     margin: 0 83px}
+#slogan>h2{ 
+    font-size: 5rem;
+    padding-bottom: 30px}
+#blog-title>h2{ 
+    font-size: 4rem;
+    line-height: 4.5rem;
+    padding-bottom: 20px}
 #slogan>h2 span{
     font-size: 2rem;
     vertical-align: middle}
@@ -587,10 +594,26 @@ h1 a{
     text-decoration: none;
     padding: 5px 30px;
     -webkit-transition: all 0.5s ease 0s;
-    /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;}
+    transition: all 0.5s ease 0s}
 
+#blog-tag{
+    display: block;
+    margin-top: 20px; 
+    text-align: center}
+#blog-tag span{
+    display: inline-block;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #fff;
+    margin: 0 15px; 
+    padding: 8px 25px;
+    background: rgba(256, 256, 256, .8);
+    border: 2px solid #b4b3b3;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px}
+#blog-main{}
 
 /*
 =====================================
