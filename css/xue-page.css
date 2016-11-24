@@ -33,7 +33,7 @@ body{
 	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
     font-weight: 400;
 	font-size: 1rem; /* 1rem=10px */
-	color: #585858}
+	color: #585858#585858}
 /*a:link {text-decoration:none; color:#b76727}
 a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#F50}*/
@@ -554,20 +554,24 @@ h1 a{
 .article_summary p{
     font-size: 1.5rem;
     line-height: 2.4rem}
-.article_summary a:link{
+.btn_read{
     display: block;
     float: right;
     font-size: 1.5rem;
     letter-spacing: 1px;
     padding-top: 5px;
-    color: #21abd4;
+    color: #21abd4;}
+#box_blog a:link,
+#box_blog a:hover{
+    color: #585858;
     text-decoration: none}
-.article_summary a:visited{
+#box_blog a:visited{
     color: #8e8e8e;
     text-decoration: none}
-.article_summary a:hover{
-    color: #0d4d80;
+.btn_read:hover{
+    color: #585858;
     text-decoration: none}
+
 
 #bar_PageNumber{
     display: block;
@@ -609,7 +613,7 @@ h1 a{
     margin: 0 15px; 
     padding: 8px 25px;
     background: rgba(256, 256, 256, .8);
-    border: 2px solid #b4b3b3;
+    /*border: 2px solid #b4b3b3;*/
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px}

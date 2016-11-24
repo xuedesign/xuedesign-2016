@@ -241,12 +241,13 @@ header{ padding: 0 20px}
 按鈕設定
 =====================================
 */
+.mybtn-xl,
 .mybtn-l,
 .mybtn-m{
     display: block;
     font-size: 1.8rem;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 2.2rem;
     letter-spacing: 1px;
     text-align: center;
     border: 2px solid;
@@ -255,6 +256,9 @@ header{ padding: 0 20px}
     border-radius: 10px;
     margin: 0 auto;
     text-decoration: none}
+.mybtn-xl{ 
+    width: 180px;
+    padding: 15px 10px}
 .mybtn-l{ 
     width: 160px;
     padding: 15px 10px}
@@ -373,6 +377,9 @@ h1 a{
 .service-info img{
     display: block;
     margin: 30px auto 50px auto}
+.service-info h3{
+    width: 80%;
+    margin: 0 auto}
 /*.service_item{
     display: block;
     width: 100%;

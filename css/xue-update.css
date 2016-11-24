@@ -27,22 +27,22 @@
     background-color: rgba(191,239,254,1);}
 
 .cd-slider li:nth-of-type(2) .image {
-    background-image: url(https://unsplash.it/535/396)}
+    background-image: url(../images/pic_project-01.jpg)}
 .cd-slider li:nth-of-type(2) .content {
     background-color: #ccd0c1;}
 
 .cd-slider li:nth-of-type(3) .image {
-    background-image: url(https://unsplash.it/535/396/?random)}
+    background-image: url(../images/pic_project-01.jpg)}
 .cd-slider li:nth-of-type(3) .content {
     background-color: #f3b96c;}
 
 .cd-slider li:nth-of-type(4) .image {
-    background-image: url(https://unsplash.it/535/400)}
+    background-image: url(../images/pic_project-01.jpg)}
 .cd-slider li:nth-of-type(4) .content {
     background-color: #f46c6a;}
 
 .cd-slider li:nth-of-type(5) .image {
-    background-image: url(https://unsplash.it/535/401)}
+    background-image: url(../images/pic_project-01.jpg)}
 .cd-slider li:nth-of-type(5) .content {
     background-color: #f46c6a;}
 

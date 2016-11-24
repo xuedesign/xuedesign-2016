@@ -23,6 +23,10 @@ $(function(){
 $(function(){
   $("#mouse-move").scrollTo(700)
 });
+$(function(){
+  $("#btn-first").scrollTo(700)
+});
+
 
 //頂端隱藏選單
 $(function(){
