@@ -33,7 +33,7 @@ body{
 	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
     font-weight: 400;
 	font-size: 1rem; /* 1rem=10px */
-	color: #585858#585858}
+	color: #585858}
 /*a:link {text-decoration:none; color:#b76727}
 a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#F50}*/
@@ -307,12 +307,14 @@ h1 a{
     white-space: nowrap;
     overflow: hidden}
 #slogan,
-#blog-title{
+#blog-title,
+#project-title{
     clear: both;
     padding-top: 156px;
     text-align: center}
 #slogan>h2,
-#blog-title>h2{
+#blog-title>h2,
+#project-title>h2{
     font-weight: 600;
     color: #fff;
     border-bottom: 1px solid #fff;
@@ -321,20 +323,23 @@ h1 a{
 #slogan>h2{ 
     font-size: 5rem;
     padding-bottom: 30px}
-#blog-title>h2{ 
+#blog-title>h2,
+#project-title>h2{ 
     font-size: 4rem;
     line-height: 4.5rem;
     padding-bottom: 20px}
 #slogan>h2 span{
     font-size: 2rem;
     vertical-align: middle}
-#slogan>h3{
+#slogan>h3,
+#project-title>h3{
     font-size: 2.2rem;
     line-height: 2.8rem;
     font-weight: 400;
     color: #fff;
-    text-shadow: 0 0 15px #868686;
-    padding: 30px 0 60px 0}
+    text-shadow: 0 0 15px #868686}
+#slogan>h3{ padding: 30px 0 60px 0}
+#project-title>h3{ padding: 30px 0 10px 0}
 #my-contact h2{ 
     font-size: 3.5rem;
     font-weight: 500;
@@ -523,8 +528,45 @@ h1 a{
 案例展示
 =====================================
 */
-#box_portfolio{}
+#project-main{
+    display: block;
+    width: 100%;
+    padding-bottom: 30px}
+#project-main img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 8px 0}
+#project-main section{
+    display: block;
+    margin-top: 35px}
+#project-main strong{
+    font-weight: normal}
 
+#project-info h4{
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    color: #2358be}
+#project-info p{
+    font-size: 1.5rem;
+    line-height: 2.2rem}
+#project-info ul{
+    padding-top: 20px}
+#project-info li{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top}
+#project-info a{
+    color: #585858;
+    text-decoration: none}
+#project-info a:visited{
+    color: #8e8e8e;
+    text-decoration: none}
+#project-info a:hover{
+    color: #126db4;
+    text-decoration: none}
 
 /*
 =====================================
@@ -617,11 +659,13 @@ h1 a{
     transition: all 0.5s ease 0s}
 
 
-#blog-tag{
+#blog-tag,
+#project-tag{
     display: block;
-    margin-top: 20px; 
+    margin-top: 20px;
     text-align: center}
-#blog-tag span{
+#blog-tag span,
+#project-tag span{
     display: inline-block;
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -659,11 +703,13 @@ h1 a{
     display: block;
     width: 100%;
     margin: 30px 0 50px}
-#blog-main h3{
+#blog-main h3,
+#project-main h3{
     font-size: 2.5rem;
     line-height: 3.8rem;
     letter-spacing: 1px}
-#blog-main p{
+#blog-main p,
+#project-main p{
     font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: justify;
