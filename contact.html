@@ -61,18 +61,52 @@
             </nav>
             <div id="slogan">
                 <h2>聯絡諮詢</h2>
-                <h3 class="contact_subtitle">我們的營業時間為每週一到週五早上9點至晚上6點。若是在此時段外的信件，我們將會於下一個工作天回覆您。</h3>
+                <h3>我們的營業時間為每週一到週五早上9點至晚上6點。在此時段外的信件，我們將會於下一個工作天回覆您。</h3>
             </div>
         </header>    
     </div>
     
     <div id="container">
-        <div id="" class="mybox">
-            
-            
-            
-            
-               
+        <div id="box_contact" class="mybox">
+            <div id="contact_info">
+                <h3>我們隨時提供協助</h3>
+                <p>有任何設計上的疑問或困難，歡迎隨時與我們聯繫聊聊：</p>
+                <ul>
+                    <li>聯絡窗口：吳昌學 Elmo Wu</li>
+                    <li>諮詢電話：+886-987-152-534</li>
+                    <li>電子信箱：hello@xuedesign.tw</li>
+                    <li>工作室地址：11164 台北市士林區社中街156巷49號2樓</li>
+                    <li>營業時間：每週一~週五 09:00am - 18:00 pm</li>
+                    <li>線上客服：
+                        <a href="https://line.me/R/ti/p/%40shv5946p"><img class="btn_line" alt="加入Line@好友" src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"></a>
+                        <a href="https://www.messenger.com/t/xuedesigntw/"><img class="btn_facebook" alt="利用Messenger與我聯絡" src="images/btn_messenger.png"></a>    
+                    </li>
+                </ul>
+                <div id="contact-map">
+                    <script src="https://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAA8ShUY49xenkbNahhNq58qhRDW1JK7uYJy83pVOTiluu5kpmTBxTbPmLwnoYIxLW5xJR_1i_1IqMwhw"></script>
+                    <script src="script/googlemap.js"></script>    
+                </div>
+            </div>
+            <div id="contact_form">
+                <h3>與我們的設計師聊聊</h3>
+                <p>您好！如有任何對本公司的產品有任何提問或建議，請留下您的訊息及聯絡資訊，我們會儘快與您回覆，謝謝。</p>
+                <form action="https://formspree.io/hello@xuedesign.tw" method="POST">
+                    <label class="forms_title" for="your-name">姓名</label>
+                        <input id="your-name" type="text" name="姓名" placeholder="如何稱呼">
+                    <label class="forms_title" for="your-company">公司單位</label>
+                        <input id="your-company" type="text" name="公司單位" placeholder="請輸入公司單位(個人免填)">
+                    <label class="forms_title" for="your-phone">聯絡電話</label>
+                        <input id="your-phone" type="tel" name="電話" placeholder="請輸入聯絡電話">
+                    <label class="forms_title" for="your-email">聯絡信箱</label>
+                        <input id="your-email" type="email" name="電子郵件" placeholder="請輸入聯絡信箱">
+                    <label class="forms_title" for="your-message">諮詢內容</label>
+                        <textarea id="your-message" rows="4" cols="50" name="諮詢內容" placeholder="請告訴我們您的目標與需求" style="font-size:15px"></textarea>
+                    <input id="btn_sent" type="submit" value="確認送出">
+                    <input type="hidden" name="_next" value="thanks.html" />
+                    <input type="hidden" name="_subject" value="【來信通知】開始設計客服表單" />
+                </form>
+            </div>  
+            <br class="clean">         
         </div>
     </div>
     

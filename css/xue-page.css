@@ -333,6 +333,8 @@ h1 a{
     vertical-align: middle}
 #slogan>h3,
 #project-title>h3{
+    width: 76%;
+    margin: 0 auto;
     font-size: 2.2rem;
     line-height: 2.8rem;
     font-weight: 400;
@@ -576,7 +578,6 @@ h1 a{
 觀點分享
 =====================================
 */
-#box_blog{}
 #box_blog li{
     display: block;
     width: 100%;
@@ -707,19 +708,22 @@ h1 a{
     width: 100%;
     margin: 30px 0 50px}
 #blog-main h3,
-#project-main h3{
+#project-main h3,
+#box_contact h3{
     font-size: 2.5rem;
     line-height: 3.8rem;
     letter-spacing: 1px}
 #blog-main p,
-#project-main p{
+#project-main p,
+#box_contact p{
     font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: justify;
     /*text-shadow: 1px 1px 1px #fff;*/
     margin-bottom: 20px}
 #blog-main ul,
-#blog-main ol{
+#blog-main ol,
+#box_contact ul{
     width: 90%;
     margin: 0 auto;
     font-size: 1.6rem;
@@ -764,7 +768,55 @@ h1 a{
 聯絡諮詢
 =====================================
 */
-.contact_subtitle{
+#contact_info,
+#contact_form {
+	display: block;
+    float: left;
+    width: 50%;
+    padding: 0 30px}
+#box_contact li{
+    padding: 15px 0;
+    border-bottom: 1px dashed #a7a7a7}
+#box_contact img{
+    vertical-align: middle;
+    margin: 0 5px}
+#contact-map{
     display: block;
-    width: 75%;
+    width:100%;
+    height: 380px}
+.btn_line,
+.btn_facebook{
+    height: 36px;
+    border: 0}
+#contact_form input,
+#contact_form textarea{
+    display: block;
+    width: 85%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #a3a3a3;
+    font-size: 1.5rem;
+    line-height: 2.2rem}
+#contact_form input:focus,
+#contact_form textarea:focus{
+    border: 1px solid #8457aa;
+    -webkit-box-shadow: 0 0 10px #b69dcb;
+    -moz-box-shadow:0 0 10px #b69dcb;
+    box-shadow: 0 0 10px #b69dcb;}
+.icon_mail{
+    display: block;
+    width: 254px;
     margin: 0 auto}
+#contact_form h5{
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 4rem}
+#contact_form p{
+    font-size: 1.5rem;
+    line-height: 2.2rem}
+
+
