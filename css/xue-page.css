@@ -3,7 +3,7 @@
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
 * @copyright  2016 xuedesign studio
-* @version    v1.0 - 201606
+* @version    v1.0 - 201612
 *
 *=====================================
 * 1. 通用設定
@@ -15,6 +15,7 @@
 * 7. 案例展示
 * 8. 觀點分享
 * 9. 聯絡諮詢
+*10. 錯誤頁提醒
 *=====================================
 **/
 
@@ -840,4 +841,24 @@ h1 a{
     font-size: 1.6rem;
     line-height: 2.2rem}
 
-
+/*
+=====================================
+錯誤頁提醒
+=====================================
+*/
+#box_error{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center}
+#box_error h3{
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    letter-spacing: 1px;
+    color: #eb5555}
+#box_error p{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: 8px 0}
+#box_error a{
+    margin-top: 25px}

@@ -4,7 +4,7 @@
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
 * @copyright  2016 xuedesign studio
-* @version    v1.0 - 201610
+* @version    v1.0 - 201612
 *
 *=====================================
 * 1. 首頁作品展示
@@ -69,6 +69,10 @@
 .cover_bloglist{ /*觀察分享*/
     background: url(../images/banner/pic_blog.jpg) no-repeat}
 .cover_contact{ /*聯絡諮詢*/
+    background: url(../images/banner/pic_contact.jpg) no-repeat}
+.cover_error403{ /*403錯誤*/
+    background: url(../images/banner/pic_contact.jpg) no-repeat}
+.cover_error404{ /*404錯誤*/
     background: url(../images/banner/pic_contact.jpg) no-repeat}
 
 
