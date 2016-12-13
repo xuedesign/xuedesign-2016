@@ -75,6 +75,84 @@
 .cover_error404{ /*404錯誤*/
     background: url(../images/banner/pic_contact.jpg) no-repeat}
 
+/*
+=====================================
+作品列表頁
+=====================================
+*/
+.pitem{
+    display: block;
+    position:relative;
+    width: 335px;
+    height: auto;
+    background-color: #dedede}
+.pitem img{
+    width: 100%;
+    height: auto}
+.ptitle,
+.pcover{
+    width: 335px;
+    position:absolute;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out}
+.ptitle{
+    display: table;
+    top:5;
+    opacity: 0;
+    background:rgba(0,0,0,.7)}
+.ptitle:hover{ opacity: 1}
+.ptitle h4{
+    display: table-cell;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+    vertical-align: middle;
+    padding: 0 25px}
+.pitem,
+.pitem img,
+.ptitle{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+
+.child-01,
+.pitem:nth-child(1) { height: 440px}
+
+.child-02,
+.pitem:nth-child(2) { height: 490px}
+
+.child-03,
+.pitem:nth-child(3){ height: 450px}
+
+.child-04,
+.pitem:nth-child(4){ height: 430px}
+
+.child-05,
+.pitem:nth-child(5){ height: 480px}
+
+.child-06,
+.pitem:nth-child(6){ height: 450px}
+
+.child-07,
+.pitem:nth-child(7){ height: 440px}
+
+.child-08,
+.pitem:nth-child(8){ height: 490px}
+
+.child-09,
+.pitem:nth-child(9){ height: 450px}
+
+.child-10,
+.pitem:nth-child(10){ height: 430px}
+
+.child-11,
+.pitem:nth-child(11){ height: 480px}
+
+.child-12,
+.pitem:nth-child(12){ height: 480px}
+
 
 /*
 =====================================

@@ -584,13 +584,12 @@ h1 a{
 /*卡片排列*/
 .project-list {
     width: 100%;
-    max-width: 1070px;
     margin: 0 auto;
     text-align: center}
-.pitem {
+/*.pitem {
     display: block;
     position:relative;
-    width: 270px;
+    width: 335px;
     height: auto;
     background-color: #F25D9C}
 .pitem img{
@@ -598,7 +597,7 @@ h1 a{
     height: auto}
 .ptitle,
 .pcover{
-    width: 270px;
+    width: 335px;
     position:absolute;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
@@ -613,30 +612,18 @@ h1 a{
     color: #fff}
 .ptitle:hover{ opacity: 1}
 
-/* Set some height to cards */
-.pitem:nth-child(1) {
-  height: 440px;
-}
-
-.pitem:nth-child(2) {
-  height: 490px;
-}
-
-.pitem:nth-child(3) {
-  height: 410px;
-}
-
-.pitem:nth-child(4) {
-  height: 430px;
-}
-
-.pitem:nth-child(5) {
-  height: 480px;
-}
-
-.pitem:nth-child(6) {
-  height: 400px;
-}
+/*.pitem:nth-child(1){ height: 440px}
+.pitem:nth-child(2){ height: 490px}
+.pitem:nth-child(3){ height: 450px}
+.pitem:nth-child(4){ height: 430px}
+.pitem:nth-child(5){ height: 480px}
+.pitem:nth-child(6){ height: 450px}
+.pitem:nth-child(7){ height: 440px}
+.pitem:nth-child(8){ height: 490px}
+.pitem:nth-child(9){ height: 450px}
+.pitem:nth-child(10){ height: 430px}
+.pitem:nth-child(11){ height: 480px}
+.pitem:nth-child(12){ height: 480px}*/
 
 /*
 =====================================
