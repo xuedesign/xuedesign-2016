@@ -532,6 +532,42 @@ h1 a{
 #our_sop p{
 	padding: 0 30px 40px 32px}
 
+#my-project-step{
+    display: block;
+    text-align: center}
+#my-project-step li{
+    display: inline-block;
+    width: 188px;
+    vertical-align: top;
+    margin: 0 30px}
+#my-project-step p{
+    line-height: 24px;
+    padding: 0}
+.icon_step{
+    display: block;
+    width: 188px;
+    height: 188px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;   
+    background: url(../images/pic_projectstep.png) no-repeat}
+.step-01{
+    background-position: 0 0}
+.step-02{
+    background-position: 0 -188px}
+.step-03{
+    background-position: 0 -376px}
+.step-04{
+    background-position: 0 -564px}
+.percent{
+    font-size: 1.8rem;
+    color: #386390;
+    font-weight: bold;
+    margin: 20px 0 8px}
+.step-note{
+    font-size: 1.5rem;
+    text-align: left}
+
 
 /*
 =====================================
