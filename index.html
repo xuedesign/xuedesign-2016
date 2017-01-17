@@ -25,6 +25,7 @@
 <link rel="stylesheet" href="css/pointy-slider.css">
 <link rel="stylesheet" href="css/xueresponsive.css?201611"/>
 <link rel="stylesheet" href="css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="css/overlay-menu.css" />
 <script src="https://s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-42818.js"></script>
 <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -58,6 +59,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 </div>
 
+<div class="overlay overlay-scale">
+    <button type="button" class="overlay-close">Close</button>
+    <nav>
+        <ul>
+            <li><a href="profile.html" title="服務介紹">服務介紹</a></li>
+            <li><a href="projects.html" title="案例展示">案例展示</a></li>
+            <li><a href="blogs.html" title="觀察分享">觀察分享</a></li>
+            <li><a href="contact.html" title="聯絡諮詢">聯絡諮詢</a></li>
+        </ul>
+    </nav>
+</div>
+
 
 <div id="wrap">
     <div id="main-vision">
@@ -71,6 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <li><a class="hvr-bounce" href="contact.html" title="聯絡諮詢">聯絡諮詢</a></li>
                 </ul>
             </nav>
+            <button id="trigger-overlay" type="button">Open Overlay</button>
             <div id="slogan">
                 <h2>量身規劃 <span>◆</span> 簡而不凡</h2>
                 <h3>我們專注於商業視覺設計，豐富顧客與品牌之間的關係</h3>
@@ -87,7 +101,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <div id="my-service">
         <div class="pic_city"></div>
-        <div class="service-info"><!--class="mybox"-->
+        <div id="service-info" class="service-info"><!--class="mybox"-->
             <h2 class="txt-blue">協助您搭起與市場對話的橋樑</h2>
             <h3>我們是開始設計工作室，提供品牌識別、網站開發及平面文宣等商業設計服務，我們專注在消費市場上，為您的服務建構良好視覺，傳遞您企業的美好價值，豐富顧客與品牌之間的關係。</h3>
             <img src="images/icon_my-service.png" alt="我們是開始設計工作室，提供平面、網站等整合型商業設計服務">
@@ -247,6 +261,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script async defer src="https://assets.modernapp.co/assets/js/embed.js"></script>
 <script src="script/website.js"></script>
 <script src="script/jquery.retina.js"></script>
+<script src="script/overlay.modernizr.custom.js"></script>
+<script src="script/overlay-classie.js"></script>
+<script src="script/overlay-demo1.js"></script>
 <script type="application/ld+json">
   { 「@context" : 「https://schema.org",
 	「@type" : 「Organization", 

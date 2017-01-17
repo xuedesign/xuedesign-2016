@@ -4,7 +4,7 @@
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
 * @copyright  2016 xuedesign studio
-* @version    v1.0 - 201606
+* @version    v1.0 - 201701
 *
 **/
 
@@ -13,8 +13,35 @@
 Large devices / Desktops 960
 =====================================
 */
-@media screen and (min-width:960px) and (max-width:1239px){
-
+@media screen and (min-width:960px) and (max-width:1110px){
+    #wrap{
+        width: 94%;
+        margin: 3% auto}
+    header,
+    .mybox,
+    #blog_index,
+    #top-menu{
+        display: block;
+        width: 100%;
+        margin: 30px auto}
+    #main-nav{ display: none}
+    #top-menu{
+        margin: 0 auto;
+        padding-left: 4%}
+    #btn_totop{ margin-right: 35px}
+    #trigger-overlay{
+        display: block}
+    .box_blog{
+        width: 90%;
+        margin: 0 auto 50px}
+    #contact-map{ height: 420px}
+    .box_copyright{
+        width: 30%}
+    .box_copyright:nth-child(1){
+        margin-left: 10%}
+    .box_copyright:nth-child(2){
+        width: 25%;
+        margin-left: 5%}
 }
 
 /*

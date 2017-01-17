@@ -108,6 +108,7 @@ header{ padding: 0 20px}
 選單設定
 =====================================
 */
+#trigger-overlay{ display: none}
 #main-nav{
     display: block;
     float: right}
@@ -377,7 +378,8 @@ h1 a{
 .service-info img{
     display: block;
     margin: 30px auto 50px auto}
-.service-info h3{
+#service-info h3{
+    display: block;
     width: 80%;
     margin: 0 auto}
 /*.service_item{
