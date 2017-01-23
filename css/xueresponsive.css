@@ -10,10 +10,10 @@
 
 /*
 =====================================
-Large devices / Desktops 960
+for-desktop-down
 =====================================
 */
-@media screen and (min-width:960px) and (max-width:1110px){
+@media (max-width:1110px) { 
     #wrap{
         width: 94%;
         margin: 3% auto}
@@ -24,16 +24,22 @@ Large devices / Desktops 960
         display: block;
         width: 100%;
         margin: 30px auto}
-    #main-nav{ display: none}
     #top-menu{
         margin: 0 auto;
         padding-left: 4%}
     #btn_totop{ margin-right: 35px}
-    #trigger-overlay{
-        display: block}
+    #main-vision{
+        background-position: center}
+    #slogan>h2{ font-size: 8rem}
+    #slogan>h3{ font-size: 2.9rem}
+    .service-info img{
+        display: block;
+        width: 90%;
+        margin: 30px auto}
     .box_blog{
         width: 90%;
         margin: 0 auto 50px}
+    #box_info{ width: 85%}
     #contact-map{ height: 420px}
     .box_copyright{
         width: 30%}
@@ -44,41 +50,68 @@ Large devices / Desktops 960
         margin-left: 5%}
 }
 
+@media (max-width:980px) {
+    #slogan>h2{ 
+        font-size: 7rem;
+        line-height: 6.5rem}
+    #slogan>h3{ font-size: 2.5rem}
+    #my-service h2{ line-height: 3.5rem}
+}
+
 /*
 =====================================
-Medium devices / Tablets 768
+for-tablet-landscape-up
 =====================================
 */
-@media screen and (min-width:768px) and (max-width:959px){
+@media (max-width:794px) {
+    #main-vision{
+        background-position: center}
+    #main-nav{ display: none}
+    #trigger-overlay{ display: block}
+    #slogan>h2{ 
+        font-size: 7rem;
+        padding-bottom: 20px;
+        margin: 0 30px}
+    #slogan>h3{ 
+        font-size: 2.5rem;
+        padding: 30px 0 60px 0}
+    #my-service h2,
+    #show-case h2,
+    #my-blog h2,
+    #my-contact h2{ 
+        font-size: 2.9rem;
+        font-weight: 500;
+        line-height: 2.1rem;
+        text-align: center;
+        padding-bottom: 2rem}
+    #my-service h3,
+    #show-case h3,
+    #my-blog h3,
+    #my-contact h3{ width: 80%}
+    #show-case h3{ margin-bottom: 20px}
+    .cd-slider-wrapper{
+       width: 95%;
+       height: 550px;
+        margin: 0 auto 20px auto}
+}
+
+
+/*
+=====================================
+for-tablet-portrait-up
+=====================================
+*/
+@media (min-width: 600px) {
    
 }
 
 /*
 =====================================
-Small devices / Small Tablets &　Phone
+for-phone-only
 =====================================
 */
-@media screen and (min-width:480px) and (max-width: 767px) {
+@media (max-width: 599px) { 
  
-}
-
-
-/*
-=====================================
-Extra small devices / Small Phone
-=====================================
-*/
-@media screen and (min-width:321px) and (max-width: 480px){
-        
-}
-
-/*
-=====================================
-Extra small devices / old Small Phone
-=====================================
-*/
-@media screen and (min-width:1px) and (max-width:350px){
-  
 }
 
 
