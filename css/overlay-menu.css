@@ -61,6 +61,7 @@
     text-decoration: none;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
+    padding-bottom: 10px
 }
 
 .overlay ul li a:hover,
