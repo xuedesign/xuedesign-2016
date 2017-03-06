@@ -1,22 +1,20 @@
 // JavaScript Document
-//<![CDATA[
+// 2017/03/06 更新 Google Api v3
 
-var map = new GMap(document.getElementById("contact-map"));
+function initMap() {
+        var myLatLng = {lat: 25.091855, lng: 121.508938};
 
-//設定要顯示的控制項
-//決定你 Google 地圖的中心點位置和縮放大小
-//map.setCenter(new GLatLng(25.0626261256243, 121.58074736595154), 16);
-  map.setCenter(new GLatLng(25.091855, 121.508938), 16);
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('contact-map'), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 16,
+        });
 
-//標記在 Google 地圖上的經緯度
-//var point = new GLatLng(25.0626261256243, 121.58074736595154);
-  var point = new GLatLng(25.091855, 121.508938);
-  var marker = new GMarker(point);
-  map.addOverlay(marker);
-
-//在地圖上放置標點說明
-  var html = "【開始設計工作室】<br>一個友善的設計工作室<br>專職 網頁設計/平面設計。";
-  map.openInfoWindowHtml (map.getCenter(), html);
-  map.addControl(new GLargeMapControl());
-  map.addControl(new GMapTypeControl()); 
- //]]>
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: '開始設計工作室'
+        });
+      }
