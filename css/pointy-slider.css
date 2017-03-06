@@ -179,7 +179,7 @@ Slider
     vertical-align: middle;
   }
   .cd-slider .btn {
-    padding: 1.4em 2em;
+    padding: 1.4em 2rem;
     font-size: 1.4rem;
   }
   .cd-slider p {
@@ -223,15 +223,15 @@ Slider Navigation
 .cd-slider-navigation li {
   display: inline-block;
   margin: 0 .25em;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .cd-slider-navigation li.selected a {
   background-color: #ffffff;
 }
 .cd-slider-navigation a {
   display: block;
-  height: 8px;
-  width: 8px;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   color: transparent;
   /* image replacement */

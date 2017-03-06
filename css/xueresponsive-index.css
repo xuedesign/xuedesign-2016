@@ -3,14 +3,14 @@
 *
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
-* @copyright  2016 xuedesign studio
-* @version    v1.0 - 201701
+* @copyright  2017 xuedesign studio
+* @version    v1.2 - 201703
 *
 **/
 
 /*
 =====================================
-for-desktop-down
+桌上型電腦 for-desktop-down
 =====================================
 */
 @media (max-width:1110px) { 
@@ -60,10 +60,13 @@ for-desktop-down
 
 /*
 =====================================
-for-tablet-landscape-up
+平板裝置(寬>長) for-tablet-landscape-up
 =====================================
 */
-@media (max-width:794px) {
+@media (max-width:800px) {
+    #show-case,
+    #my-blog{
+        padding: 50px 0 15px}
     #main-vision{
         background-position: center}
     #main-nav{ display: none}
@@ -81,7 +84,8 @@ for-tablet-landscape-up
     .sub-overlay li{
         display: block;
         float: left;
-        margin: 0 15px}
+        margin: 0 15px;
+        padding: 0}
     .overlay .sub-overlay a:hover{
         color: rgb(247, 49, 178)}
     .hvr-underline-from-left {
@@ -107,18 +111,22 @@ for-tablet-landscape-up
         transition-duration: 0.3s;
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out}
-    .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    .hvr-underline-from-left:hover:before, 
+    .hvr-underline-from-left:focus:before, 
+    .hvr-underline-from-left:active:before {
         right: 0}
+    #top-bar{
+	    height: 46px}
     .menu-list li{
-        margin: 0 22px;
+        margin: 0 18px;
         padding-left: 0}
     
     #slogan>h2{ 
-        font-size: 7rem;
-        padding-bottom: 20px;
+        font-size: 6rem;
+        padding-bottom: 10px;
         margin: 0 30px}
     #slogan>h3{ 
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         padding: 30px 0 60px 0}
     #my-service h2,
     #show-case h2,
@@ -138,16 +146,86 @@ for-tablet-landscape-up
        width: 95%;
        height: 550px;
         margin: 0 auto 20px auto}
+    .pic_city{ 
+        display: none}
+    .service-info{
+        float: none;
+        width: 100%;
+        margin: 80px 0 50px 0}
+    .service-info img{
+        max-width: 527px}
+    .box_blog{
+        width: 90%;
+        height: 553px;
+        margin: 0 auto 50px}
+    .blog_foreword{
+        width: 100%;
+        left: 0;
+        bottom: 0}
+    #contact-map{
+        height: 530px}
+    #box_info{ width: 95%}
+    #box_info ul{
+        padding-left: 40px}
+    #box_info li{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        letter-spacing: 0;
+        padding-bottom: 10px}
+    .box_copyright{
+        width: 30%}
+    .box_copyright:nth-child(1){
+        width: 25%;
+        margin-left: 5%}
+    .box_copyright:nth-child(2){
+        width: 25%;
+        margin-left: 2%}
+    .box_copyright:nth-child(3){
+        width: 40%;
+        margin-left: 2%}
+    .box_copyright li a{
+        font-size: 2.2em;
+        margin-right: 15px}   
 }
 
 
 /*
 =====================================
-for-tablet-portrait-up
+平板裝置(長>寬) for-tablet-portrait-up
 =====================================
 */
-@media (min-width: 600px) {
-   
+@media (max-width: 600px) {
+    #my-blog{
+        padding: 50px 0 0}
+    #slogan>h2{ 
+        font-size: 5rem;
+        padding-bottom: 0;
+        margin: 0 30px}
+    #slogan>h3{ 
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+        padding: 8px 0 60px 0}
+    .menu-list li{
+        margin: 0 10px;
+        padding-left: 0}
+    #contact-info{
+        float: none;
+        width: 90%;
+        margin: 0 auto}
+    #box_info{ 
+        width: 100%;
+        padding: 50px 0}
+    #box_info ul{ margin-left: 13px}
+    #contact-map{ display: none}
+    .box_copyright:nth-child(1){
+        width: 45%;
+        margin-left: 5%}
+    .box_copyright:nth-child(2){
+        width: 45%;
+        margin-left: 2%}
+    .box_copyright:nth-child(3){
+        width: 94%;
+        margin: 3% 0 0 5%}
 }
 
 /*
@@ -156,8 +234,56 @@ for-phone-only
 =====================================
 */
 @media (max-width: 599px) { 
- 
-}
+    h1 a{
+        width: 193px;
+        height: 65px;
+        background-size: cover;
+        margin-top: 11px}
+    #slogan>h2{ 
+        line-height: 5rem;
+        padding-bottom: 8px}
+    #slogan span{ 
+        display: block;
+        line-height: 2rem}
+    #slogan>h3{ 
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 15px 0 60px 0}
+    .menu-list{ display: none}
+    @keyframes mousemove {
+    0%   { margin-top: 40px }
+    50%  { margin-top: 55px }
+    100% { margin-top: 39px }
+    }
+    @-webkit-keyframes mousemove {
+    0%   { margin-top: 40px }
+    50%  { margin-top: 55px }
+    100% { margin-top: 39px }
+    }
+    .icon-mouse{ margin: 40px auto 0 auto}
+    
+    #my-service h2,
+    #show-case h2,
+    #my-blog h2,
+    #my-contact h2{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        line-height: 3rem}
+    .cd-slider-wrapper{ height: 700px}
+    .box_blog{
+        margin: 0 auto 100px}
+    .blog_foreword{
+        bottom: -75px;
+        height: 320px}
+    #trigger-02{ 
+        display: block;
+        float: right;
+        border: none;
+        background: none;
+        font-size: 2.3rem;
+        color: #fff;
+        margin: 7px 15px 0 0}
 
 
 /*

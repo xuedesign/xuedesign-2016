@@ -3,8 +3,8 @@
 *
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
-* @copyright  2016 xuedesign studio
-* @version    v1.0 - 201612
+* @copyright  2017 xuedesign studio
+* @version    v1.1 - 201702
 *
 *=====================================
 * 1. 通用設定
@@ -301,6 +301,7 @@ header{ padding: 0 20px}
 	animation-duration: 1800ms/*2375ms*/;/*動畫演譯時間*/
     animation-iteration-count: infinite;/*動畫循環的次數，無限循環用infinite*/
    /* animation-direction: alternate;/*動畫在0%到100%之間往復執行*/}
+#trigger-02{ display: none}
 
 /*
 =====================================
@@ -337,7 +338,7 @@ h1 a{
     letter-spacing: 1px;
     color: #fff;
     text-shadow: 0 0 15px #868686;
-    padding: 30px 0 60px 0}
+    padding: 30px 0 30px 0}
 #my-service h2,
 #show-case h2,
 #my-blog h2,
@@ -423,7 +424,7 @@ h1 a{
     width: 50%}
 #box_info{
     display: block;
-    width: 65%;
+    width: 67%;
     margin: 60px auto 0 auto}
 #box_info>h2,
 #box_info>h3{
@@ -441,7 +442,7 @@ h1 a{
     display: block;
     float: right;
     width: 50%;
-    height: 380px}
+    height: 390px}
 
 /*版權列*/
 #copyright{

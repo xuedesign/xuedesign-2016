@@ -22,8 +22,7 @@
 	text-indent: 200%;
 	color: transparent;
 	outline: none;
-	z-index: 100;
-}
+	z-index: 100}
 
 /* Menu style */
 .overlay nav {
@@ -32,35 +31,34 @@
 	top: 50%;
 	height: 60%;
 	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
+	transform: translateY(-50%)}
 
 .overlay ul {
 	list-style: none;
 	padding: 0;
 	margin: 0 auto;
 	display: inline-block;
-	height: 100%;
-	position: relative;
-}
+	height: 80%;
+	position: relative}
 
 .overlay ul li {
 	display: block;
-	height: 20%;
+	height: 15%;
 	height: calc(100% / 5);
-	min-height: 54px;
+	min-height: 70px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
 .overlay ul li a {
 	font-size: 4rem;
-	font-weight: 300;
+	font-weight: 500;
 	display: block;
 	color: #fff;
     text-decoration: none;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
+    text-shadow: 0 0 10px #a0a0a0;
     padding-bottom: 10px
 }
 
