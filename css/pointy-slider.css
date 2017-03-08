@@ -230,10 +230,11 @@ Slider Navigation
 }
 .cd-slider-navigation a {
   display: block;
-  height: 12px;
-  width: 12px;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
   color: transparent;
+  margin: 0 8px;    
   /* image replacement */
   white-space: nowrap;
   text-indent: 100%;

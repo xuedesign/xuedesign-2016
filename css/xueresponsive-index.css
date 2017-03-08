@@ -64,6 +64,7 @@
 =====================================
 */
 @media (max-width:800px) {
+    #slogan{ padding-top: 30%}
     #show-case,
     #my-blog{
         padding: 50px 0 15px}
@@ -195,6 +196,7 @@
 =====================================
 */
 @media (max-width: 600px) {
+    #slogan{ padding-top: 30%}
     #my-blog{
         padding: 50px 0 0}
     #slogan>h2{ 
@@ -233,7 +235,8 @@
 for-phone-only
 =====================================
 */
-@media (max-width: 599px) { 
+@media (max-width: 599px) {
+    #slogan{ padding-top: 30%}
     h1 a{
         width: 193px;
         height: 65px;
@@ -284,7 +287,27 @@ for-phone-only
         font-size: 2.3rem;
         color: #fff;
         margin: 7px 15px 0 0}
+    .mybtn-l{ 
+        width: 150px;
+        padding: 8px 10px}
+    .cd-slider .content p{
+        height: 150px;
+        overflow: hidden;
+        border-bottom: none}
+    .cd-slider-navigation{
+        width: 90%;
+        left: 67%;
+        right: auto;}
+}
 
+/*
+=====================================
+for-phone-only (small screen)
+=====================================
+*/
+@media (max-width: 321px) {
+    
+}
 
 /*
 =====================================
