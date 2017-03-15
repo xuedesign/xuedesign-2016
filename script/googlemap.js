@@ -8,7 +8,7 @@ function initMap() {
         var map = new google.maps.Map(document.getElementById('contact-map'), {
           center: myLatLng,
           scrollwheel: false,
-          zoom: 16,
+          zoom: 14,
           styles: [
                 {
                     "featureType": "administrative",

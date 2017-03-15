@@ -235,7 +235,7 @@
 for-phone-only
 =====================================
 */
-@media (max-width: 599px) {
+@media (max-width: 420px) {
     #slogan{ padding-top: 30%}
     h1 a{
         width: 193px;
@@ -273,7 +273,22 @@ for-phone-only
         width: 80%;
         margin: 0 auto;
         line-height: 3rem}
-    .cd-slider-wrapper{ height: 700px}
+    .cd-slider-wrapper{ 
+        height: 700px}
+     .cd-slider-navigation {
+        display: none;
+        left: 0}
+    .cd-slider-navigation {
+        display: block;
+        width: 75%;
+        /*margin: 0 auto;*/
+        left: 62%}
+    .cd-slider-navigation li {
+        margin: 0 .25em}
+   .cd-slider .content p{
+        height: 150px;
+        overflow: hidden;
+        border-bottom: none}
     .box_blog{
         margin: 0 auto 100px}
     .blog_foreword{
@@ -290,14 +305,6 @@ for-phone-only
     .mybtn-l{ 
         width: 150px;
         padding: 8px 10px}
-    .cd-slider .content p{
-        height: 150px;
-        overflow: hidden;
-        border-bottom: none}
-    .cd-slider-navigation{
-        width: 90%;
-        left: 67%;
-        right: auto;}
 }
 
 /*

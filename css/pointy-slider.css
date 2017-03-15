@@ -221,7 +221,8 @@ Slider Navigation
   bottom: 30px;
 }
 .cd-slider-navigation li {
-  display: inline-block;
+  display: block;
+  float: left;
   margin: 0 .25em;
   font-size: 1.8rem;
 }
@@ -230,8 +231,8 @@ Slider Navigation
 }
 .cd-slider-navigation a {
   display: block;
-  height: 16px;
-  width: 16px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   color: transparent;
   margin: 0 8px;    
@@ -239,8 +240,8 @@ Slider Navigation
   white-space: nowrap;
   text-indent: 100%;
   overflow: hidden;
-  border: 1px solid #ffffff;
-}
+  border: 1px solid #ffffff;}
+
 @media only screen and (min-width: 900px) {
   .cd-slider-navigation {
     padding: 0.5em 1em;
