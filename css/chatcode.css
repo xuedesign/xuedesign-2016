@@ -1,6 +1,6 @@
 /* 網站多重聯絡方式  WhatsHelp.io widget */
 #wh-widget-send-button.wh-widget-right{right: 50px}
 
-@media (max-width: 599px) { 
-    #wh-widget-send-button.wh-widget-right{right: 20px}
+@media (max-width: 770px) { 
+    #wh-widget-send-button.wh-widget-right{right: 10px}
 }
