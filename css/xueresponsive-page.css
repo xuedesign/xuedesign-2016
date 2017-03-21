@@ -64,9 +64,6 @@
 =====================================
 */
 @media (max-width:800px) {
-    h1 a{
-        background: url(../images/logo@2x.png) no-repeat;
-        background-size: cover}
     #slogan{ padding-top: 30%}
     #show-case,
     #my-blog{
@@ -199,9 +196,6 @@
 =====================================
 */
 @media (max-width: 600px) {
-    h1 a{
-        background: url(../images/logo@2x.png) no-repeat;
-        background-size: cover}
     #slogan{ padding-top: 30%}
     #my-blog{
         padding: 50px 0 0}
@@ -372,10 +366,6 @@
 for-retina-photo
 =====================================
 */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){
-   .foot-logo,
-    #top-menu h2 a{
-        background: url(../images/logo-footer@2x.png) no-repeat;
-        background-size: cover} 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
     
 }
