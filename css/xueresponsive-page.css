@@ -367,5 +367,9 @@ for-retina-photo
 =====================================
 */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
+    .foot-logo,
+    #top-menu h2 a{
+        background: url(../images/logo-footer@2x.png) no-repeat;
+        background-size: cover} 
     
 }

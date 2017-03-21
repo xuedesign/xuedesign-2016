@@ -3,7 +3,7 @@
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
 * @copyright  2016 xuedesign studio
-* @version    v1.0 - 201612
+* @version    v1.1 - 201703
 *
 *=====================================
 * 1. 通用設定
@@ -299,6 +299,7 @@ header{ padding: 0 20px}
 	animation-duration: 1800ms/*2375ms*/;/*動畫演譯時間*/
     animation-iteration-count: infinite;/*動畫循環的次數，無限循環用infinite*/
    /* animation-direction: alternate;/*動畫在0%到100%之間往復執行*/}
+#trigger-02{ display: none}
 
 /*
 =====================================
