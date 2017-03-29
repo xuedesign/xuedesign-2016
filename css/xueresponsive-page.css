@@ -19,7 +19,6 @@
         margin: 3% auto}
     header,
     .mybox,
-    #blog_index,
     #top-menu{
         display: block;
         width: 100%;
@@ -28,19 +27,11 @@
         margin: 0 auto;
         padding-left: 4%}
     #btn_totop{ margin-right: 35px}
+    .menu-list li{ margin: 0 15px}
     #main-vision{
         background-position: center}
-    #slogan>h2{ font-size: 8rem}
-    #slogan>h3{ font-size: 2.9rem}
-    .service-info img{
-        display: block;
-        width: 90%;
-        margin: 30px auto}
-    .box_blog{
-        width: 90%;
-        margin: 0 auto 50px}
-    #box_info{ width: 85%}
-    #contact-map{ height: 420px}
+    #slogan>h2{ font-size: 5rem}
+    #slogan>h3{ font-size: 2.2rem}
     .box_copyright{
         width: 30%}
     .box_copyright:nth-child(1){
@@ -48,15 +39,24 @@
     .box_copyright:nth-child(2){
         width: 25%;
         margin-left: 5%}
+    #container{
+        width: 90%;
+        margin: 0 auto}
+    /*服務介紹*/
+    .service_item li{ margin-right: 35px}
+    #my-project-step li{
+        width: 155px;
+        margin: 0 15px}
+    .icon_step{
+        width: 155px;
+        height: 155px;
+        background: url(../images/pic_projectstep@2x.png) no-repeat;
+        background-size: cover}
+    .step-02{ background-position: 0 -155px}
+    .step-03{ background-position: 0 -310px}
+    .step-04{ background-position: 0 -465px}
 }
 
-@media (max-width:980px) {
-    #slogan>h2{ 
-        font-size: 7rem;
-        line-height: 6.5rem}
-    #slogan>h3{ font-size: 2.5rem}
-    #my-service h2{ line-height: 3.5rem}
-}
 
 /*
 =====================================
@@ -64,12 +64,19 @@
 =====================================
 */
 @media (max-width:800px) {
-    #slogan{ padding-top: 30%}
-    #show-case,
-    #my-blog{
-        padding: 50px 0 15px}
-    #main-vision{
-        background-position: center}
+    h1 a{
+        background: url(../images/logo@2x.png) no-repeat;
+        background-size: cover}
+    #sub-vision{
+        height: 420px}
+    #slogan{ padding-top: 10%}
+    #slogan>h2{
+        line-height: 5.3rem;
+        padding-bottom: 10px;
+        margin: 0 30px}
+    #slogan>h3{ 
+        font-size: 2.4rem;
+        padding: 15px 0 0}
     #main-nav{ display: none}
     #trigger-overlay{ 
         display: block;
@@ -119,60 +126,8 @@
     #top-bar{
 	    height: 46px}
     .menu-list li{
-        margin: 0 18px;
+        margin: 0 12px;
         padding-left: 0}
-    
-    #slogan>h2{ 
-        font-size: 6rem;
-        padding-bottom: 10px;
-        margin: 0 30px}
-    #slogan>h3{ 
-        font-size: 2.4rem;
-        padding: 30px 0 60px 0}
-    #my-service h2,
-    #show-case h2,
-    #my-blog h2,
-    #my-contact h2{ 
-        font-size: 2.9rem;
-        font-weight: 500;
-        line-height: 2.1rem;
-        text-align: center;
-        padding-bottom: 2rem}
-    #my-service h3,
-    #show-case h3,
-    #my-blog h3,
-    #my-contact h3{ width: 80%}
-    #show-case h3{ margin-bottom: 20px}
-    .cd-slider-wrapper{
-       width: 95%;
-       height: 550px;
-        margin: 0 auto 20px auto}
-    .pic_city{ 
-        display: none}
-    .service-info{
-        float: none;
-        width: 100%;
-        margin: 80px 0 50px 0}
-    .service-info img{
-        max-width: 527px}
-    .box_blog{
-        width: 90%;
-        height: 553px;
-        margin: 0 auto 50px}
-    .blog_foreword{
-        width: 100%;
-        left: 0;
-        bottom: 0}
-    #contact-map{
-        height: 530px}
-    #box_info{ width: 95%}
-    #box_info ul{
-        padding-left: 40px}
-    #box_info li{
-        font-size: 1.6rem;
-        line-height: 2.2rem;
-        letter-spacing: 0;
-        padding-bottom: 10px}
     .box_copyright{
         width: 30%}
     .box_copyright:nth-child(1){
@@ -186,7 +141,51 @@
         margin-left: 2%}
     .box_copyright li a{
         font-size: 2.2em;
-        margin-right: 15px}   
+        margin-right: 15px}
+    /*服務介紹*/
+    .logomean-left,
+    .logomean-right {
+	    float: none;
+        width: 90%;
+        margin: 0 auto}
+    .logomean-left{ margin-top: 20px}
+    #logo-change{ margin: 0 auto}
+    .service_item li{
+        width: 180px;
+        height: 101px;
+        background: url(../images/icon_service-sub@2x.png) no-repeat;
+        background-size: cover;
+        margin-right: 8px;
+        padding-top: 75px;
+        font-size: 1.4rem;
+        letter-spacing: 2px}
+    .service_item li:nth-child(3){ 
+        margin-right: 0}
+    .service_item .service-01{
+        background-position: 0 0}
+    .service_item .service-02{
+        background-position: 0 -101px}
+    .service_item .service-03{
+        background-position: 0 -202px}
+    .service_item .service-04{
+        background-position: 0 -303px}
+    .service_item .service-05{
+        background-position: 0 -404px}
+    .service_item .service-06{
+        background-position: 0 -505px}
+    #my-project-step li{
+        width: 200px;
+        margin: 0 15px}
+    .icon_step{
+        width: 200px;
+        height: 200px;
+        background: url(../images/pic_projectstep@2x.png) no-repeat;
+        background-size: cover}
+    .step-02{ background-position: 0 -200px}
+    .step-03{ background-position: 0 -400px}
+    .step-04{ background-position: 0 -600px}
+    .step-03,
+    .step-04{ margin-top: 30px}
 }
 
 
@@ -196,38 +195,50 @@
 =====================================
 */
 @media (max-width: 600px) {
-    #slogan{ padding-top: 30%}
-    #my-blog{
-        padding: 50px 0 0}
-    #slogan>h2{ 
-        font-size: 5rem;
-        padding-bottom: 0;
-        margin: 0 30px}
-    #slogan>h3{ 
+    #slogan>h2{
+        line-height: 4.8rem}
+    #service-info h3{
+        line-height: 3.5rem}
+    .menu-list{ display: none}
+    #trigger-02{ 
+        display: block;
+        float: right;
+        border: none;
+        background: none;
         font-size: 2.3rem;
-        line-height: 2.5rem;
-        padding: 8px 0 60px 0}
-    .menu-list li{
-        margin: 0 10px;
-        padding-left: 0}
-    #contact-info{
-        float: none;
-        width: 90%;
-        margin: 0 auto}
-    #box_info{ 
-        width: 100%;
-        padding: 50px 0}
-    #box_info ul{ margin-left: 13px}
-    #contact-map{ display: none}
+        color: #fff;
+        margin: 7px 15px 0 0}
     .box_copyright:nth-child(1){
-        width: 45%;
+        width: 25%;
         margin-left: 5%}
     .box_copyright:nth-child(2){
-        width: 45%;
+        width: 32%;
         margin-left: 2%}
     .box_copyright:nth-child(3){
-        width: 94%;
-        margin: 3% 0 0 5%}
+        width: 33%;
+        margin-left: 2%}
+    .box_copyright li a{
+        margin-bottom: 15px}
+    /*服務介紹*/
+    .service_item li{
+        width: 135px;
+        height: 76px;
+        margin-right: 8px;
+        padding-top: 54px}
+    .service_item li:nth-child(3){ 
+        margin-right: 0}
+    .service_item .service-01{
+        background-position: 0 0}
+    .service_item .service-02{
+        background-position: 0 -76px}
+    .service_item .service-03{
+        background-position: 0 -152px}
+    .service_item .service-04{
+        background-position: 0 -228px}
+    .service_item .service-05{
+        background-position: 0 -304px}
+    .service_item .service-06{
+        background-position: 0 -380px}
 }
 
 /*
@@ -243,7 +254,8 @@
             background: url(../images/logo@2x.png) no-repeat;
             background-size: cover;
             margin-top: 11px}
-    #slogan>h2{ 
+    #slogan>h2{
+        font-size: 4.5rem;
         line-height: 5rem;
         padding-bottom: 8px}
     #slogan span{ 
@@ -253,59 +265,54 @@
         font-size: 2rem;
         line-height: 2.5rem;
         padding: 15px 0 60px 0}
-    .menu-list{ display: none}
-    @keyframes mousemove {
-    0%   { margin-top: 40px }
-    50%  { margin-top: 55px }
-    100% { margin-top: 39px }
-    }
-    @-webkit-keyframes mousemove {
-    0%   { margin-top: 40px }
-    50%  { margin-top: 55px }
-    100% { margin-top: 39px }
-    }
-    .icon-mouse{ margin: 40px auto 0 auto}
-    
-    #my-service h2,
-    #show-case h2,
-    #my-blog h2,
-    #my-contact h2{
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-        line-height: 3rem}
-    .cd-slider-wrapper{ 
-        height: 700px}
-     .cd-slider-navigation {
-        display: none;
-        left: 0}
-    .cd-slider-navigation {
-        display: block;
-        width: 75%;
-        /*margin: 0 auto;*/
-        left: 62%}
-    .cd-slider-navigation li {
-        margin: 0 .25em}
-   .cd-slider .content p{
-        height: 150px;
-        overflow: hidden;
-        border-bottom: none}
-    .box_blog{
-        margin: 0 auto 100px}
-    .blog_foreword{
-        bottom: -75px;
-        height: 320px}
-    #trigger-02{ 
-        display: block;
-        float: right;
-        border: none;
-        background: none;
-        font-size: 2.3rem;
-        color: #fff;
-        margin: 7px 15px 0 0}
     .mybtn-l{ 
         width: 150px;
         padding: 8px 10px}
+    .box_copyright:nth-child(1){
+        width: 45%;
+        margin-left: 5%}
+    .box_copyright:nth-child(2){
+        width: 45%;
+        margin-left: 2%}
+    .box_copyright:nth-child(3){
+        width: 94%;
+        margin: 3% 0 0 5%}
+    /*服務介紹*/
+    #logo-change{
+        display: block;
+        width: 95%;
+        margin: 0 auto}
+    #logo-change img{ 
+        width: 100%;
+        height: auto}
+    .logomean-left{
+        padding: 50px 0}
+    .logomean-right{
+        margin-top: 20px}
+    #service-info>section{
+        margin-bottom: 20px}
+    #our_doit h4{ display: none}
+    .service_item { text-align: center}
+    .service_item li{
+        width: 250px;
+        height: 141px;
+        margin: 0 auto 28px auto;
+        padding-top: 100px;
+        font-size: 1.8rem}
+    .service_item li:nth-child(6){ 
+        margin-bottom: 50px}
+    .service_item .service-01{
+        background-position: 0 0}
+    .service_item .service-02{
+        background-position: 0 -141px}
+    .service_item .service-03{
+        background-position: 0 -282px}
+    .service_item .service-04{
+        background-position: 0 -423px}
+    .service_item .service-05{
+        background-position: 0 -564px}
+    .service_item .service-06{
+        background-position: 0 -705px}
 }
 
 /*
@@ -322,43 +329,39 @@
         margin-top: 20px}
     #trigger-overlay{ 
         margin: 20px 0 0 0}
-    #slogan>h2{ 
-        font-size: 4rem;
-        line-height: 5rem;
-        padding-bottom: 8px}
-    #slogan>h3{ 
-        font-size: 1.7rem;
-        line-height: 2rem;
-        padding: 15px 0 30px 0}
-    .cd-slider-navigation {
-        left: 52%}
-    #my-service h2,
-    #show-case h2,
-    #my-blog h2,
-    #my-contact h2{
-        font-size: 2.5rem;
-        line-height: 2.8rem}
-    #my-service h3,
-    #show-case h3,
-    #my-blog h3,
-    #my-contact h3{ line-height: 2rem}
-    .mybox{ margin: 0 auto}
-    .blog_foreword{
-        bottom: -125px;
-        height: 360px}
-    .box_blog{
-        margin: 0 auto 170px}
-    #box_info ul{ padding-left: 15px}
-    .box_copyright{ margin-top: 15px}
+    #container{ padding: 20px 0 50px}
     .box_copyright:nth-child(1){
         width: 95%;
-        margin-left: 5%}
+        margin: 0 0 10px 5%}
     .box_copyright:nth-child(2){
         width: 95%;
         margin-left: 5%}
     .box_copyright:nth-child(3){
         margin-bottom: 5%}
-    /*.fa-phone-square{ display: block; width: 100%}*/
+    /*服務介紹*/
+    #service-info h3{
+        font-size: 2.2rem;
+        line-height: 2.4rem}
+    #our_doit p,
+    #our_sop p{ padding: 0 0 40px 0}
+    .service_item li{
+        width: 180px;
+        height: 101px;
+        margin: 0 auto 28px auto;
+        padding-top: 74px;
+        font-size: 1.5rem}
+    .service_item .service-01{
+        background-position: 0 0}
+    .service_item .service-02{
+        background-position: 0 -101px}
+    .service_item .service-03{
+        background-position: 0 -202px}
+    .service_item .service-04{
+        background-position: 0 -303px}
+    .service_item .service-05{
+        background-position: 0 -404px}
+    .service_item .service-06{
+        background-position: 0 -505px}
 }
 
 /*

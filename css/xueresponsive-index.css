@@ -199,9 +199,15 @@
 =====================================
 */
 @media (max-width: 600px) {
-    h1 a{
-        background: url(../images/logo@2x.png) no-repeat;
-        background-size: cover}
+    .menu-list{ display: none}
+    #trigger-02{ 
+        display: block;
+        float: right;
+        border: none;
+        background: none;
+        font-size: 2.3rem;
+        color: #fff;
+        margin: 7px 15px 0 0}
     #slogan{ padding-top: 30%}
     #my-blog{
         padding: 50px 0 0}
@@ -259,7 +265,6 @@
         font-size: 2rem;
         line-height: 2.5rem;
         padding: 15px 0 60px 0}
-    .menu-list{ display: none}
     @keyframes mousemove {
     0%   { margin-top: 40px }
     50%  { margin-top: 55px }
@@ -301,14 +306,6 @@
     .blog_foreword{
         bottom: -75px;
         height: 320px}
-    #trigger-02{ 
-        display: block;
-        float: right;
-        border: none;
-        background: none;
-        font-size: 2.3rem;
-        color: #fff;
-        margin: 7px 15px 0 0}
     .mybtn-l{ 
         width: 150px;
         padding: 8px 10px}
@@ -364,7 +361,6 @@
         margin-left: 5%}
     .box_copyright:nth-child(3){
         margin-bottom: 5%}
-    /*.fa-phone-square{ display: block; width: 100%}*/
 }
 
 /*
