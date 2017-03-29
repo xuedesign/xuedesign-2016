@@ -148,7 +148,7 @@
 	    float: none;
         width: 90%;
         margin: 0 auto}
-    .logomean-left{ margin-top: 20px}
+    .logomean-left{ margin: 20px auto 40px}
     #logo-change{ margin: 0 auto}
     .service_item li{
         width: 180px;
@@ -281,6 +281,7 @@
     #logo-change{
         display: block;
         width: 95%;
+        height: auto;
         margin: 0 auto}
     #logo-change img{ 
         width: 100%;
