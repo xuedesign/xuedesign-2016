@@ -284,7 +284,7 @@
         display: block;
         width: 80%;
         margin: 0 auto;
-        line-height: 3rem}
+        line-height: 3.2rem}
     .cd-slider-wrapper{ 
         height: 700px}
      .cd-slider-navigation {
@@ -340,7 +340,7 @@
     #my-blog h2,
     #my-contact h2{
         font-size: 2.5rem;
-        line-height: 2.8rem}
+        line-height: 3rem}
     #my-service h3,
     #show-case h3,
     #my-blog h3,

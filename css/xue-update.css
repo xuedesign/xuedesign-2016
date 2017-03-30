@@ -66,7 +66,7 @@
     background: url(../images/banner/pic_portfile.jpg)
     no-repeat top center}
 .cover_project{ /*案例展示*/
-    background: url(../images/banner/pic_project.jpg) no-repeat}
+    background: url(../images/banner/pic_project.jpg) no-repeat top center}
 .cover_bloglist{ /*觀察分享*/
     background: url(../images/banner/pic_blog.jpg) no-repeat top center}
 .cover_contact{ /*聯絡諮詢*/
@@ -84,15 +84,16 @@
 .pitem{
     display: block;
     position:relative;
-    width: 335px;
-    height: auto;
+    width: 280px;
+    height: 358px;
     background-color: #dedede}
 .pitem img{
     width: 100%;
     height: auto}
 .ptitle,
 .pcover{
-    width: 335px;
+    width: 280px;/*335px*/
+    height: 358px/*428px*/;
     position:absolute;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
@@ -118,7 +119,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px}
 
-.child-01,
+/*.child-01,
 .pitem:nth-child(1) { height: 440px}
 
 .child-02,
@@ -152,7 +153,7 @@
 .pitem:nth-child(11){ height: 480px}
 
 .child-12,
-.pitem:nth-child(12){ height: 480px}
+.pitem:nth-child(12){ height: 480px}*/
 
 
 /*

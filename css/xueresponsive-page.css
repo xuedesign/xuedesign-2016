@@ -128,6 +128,7 @@
     .menu-list li{
         margin: 0 12px;
         padding-left: 0}
+    #container{ padding: 20px 0 40px}
     .box_copyright{
         width: 30%}
     .box_copyright:nth-child(1){
@@ -142,6 +143,7 @@
     .box_copyright li a{
         font-size: 2.2em;
         margin-right: 15px}
+    
     /*服務介紹*/
     .logomean-left,
     .logomean-right {
@@ -186,6 +188,8 @@
     .step-04{ background-position: 0 -600px}
     .step-03,
     .step-04{ margin-top: 30px}
+    
+    /*案例展示*/
 }
 
 
@@ -330,7 +334,6 @@
         margin-top: 20px}
     #trigger-overlay{ 
         margin: 20px 0 0 0}
-    #container{ padding: 20px 0 50px}
     .box_copyright:nth-child(1){
         width: 95%;
         margin: 0 0 10px 5%}
@@ -363,6 +366,13 @@
         background-position: 0 -404px}
     .service_item .service-06{
         background-position: 0 -505px}
+    
+    /*案例展示*/
+    .pitem,
+    .ptitle,
+    .pcover{
+        width: 230px;
+        height: 294px}
 }
 
 /*
