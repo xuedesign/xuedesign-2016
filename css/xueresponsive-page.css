@@ -30,6 +30,8 @@
     .menu-list li{ margin: 0 15px}
     #main-vision{
         background-position: center}
+    #blog-title,
+    #project-title{ padding-top: 10%}
     #slogan>h2{ font-size: 5rem}
     #slogan>h3{ font-size: 2.2rem}
     .box_copyright{
@@ -69,12 +71,18 @@
         background-size: cover}
     #sub-vision{
         height: 420px}
-    #slogan{ padding-top: 10%}
-    #slogan>h2{
+    #slogan,
+    #blog-title,
+    #project-title{ padding-top: 10%}
+    #slogan>h2,
+    #blog-title>h2,
+    #project-title>h2{
         line-height: 5.3rem;
         padding-bottom: 10px;
         margin: 0 30px}
-    #slogan>h3{ 
+    #slogan>h3,
+    #blog-title>h3,
+    #project-title>h3{ 
         font-size: 2.4rem;
         padding: 15px 0 0}
     #main-nav{ display: none}
@@ -199,10 +207,16 @@
 =====================================
 */
 @media (max-width: 600px) {
-    #slogan>h2{
+    #slogan>h2,
+    #blog-title>h2,
+    #project-title>h2{
         line-height: 4.8rem}
-    #service-info h3{
+    #slogan>h3,
+    #blog-title>h3{
         line-height: 3.5rem}
+    #project-title>h3{
+        font-size: 2.2rem;
+        line-height: 2.6rem}
     .menu-list{ display: none}
     #trigger-02{ 
         display: block;
@@ -223,6 +237,7 @@
         margin-left: 2%}
     .box_copyright li a{
         margin-bottom: 15px}
+    
     /*服務介紹*/
     .service_item li{
         width: 135px;
@@ -243,6 +258,23 @@
         background-position: 0 -304px}
     .service_item .service-06{
         background-position: 0 -380px}
+    
+    /*案例展示*/
+    #project-info ul{
+        width: 100%;
+        margin: 0;
+        padding-top: 20px}
+    #project-info li{
+        padding-left: 15px}
+    #project-info li:nth-child(1){
+        width: 20%}
+    #project-info li:nth-child(2){
+        width: 48%}
+    #project-info li:nth-child(3){
+        width: 31%}
+    #bar_PageNext a:link{
+        min-height: 120px;
+        overflow: hidden}
 }
 
 /*
@@ -252,23 +284,39 @@
 */
 @media (max-width: 420px) {
     #slogan{ padding-top: 30%}
-        h1 a{
-            width: 193px;
-            height: 65px;
-            background: url(../images/logo@2x.png) no-repeat;
-            background-size: cover;
-            margin-top: 11px}
-    #slogan>h2{
+    #blog-title,
+    #project-title{ padding-top: 10%}
+    h1 a{
+        width: 193px;
+        height: 65px;
+        background: url(../images/logo@2x.png) no-repeat;
+        background-size: cover;
+        margin-top: 11px}
+    #slogan>h2,
+    #blog-title>h2,
+    #project-title>h2{
         font-size: 4.5rem;
         line-height: 5rem;
         padding-bottom: 8px}
     #slogan span{ 
         display: block;
         line-height: 2rem}
-    #slogan>h3{ 
+    #blog-tag span,
+    #project-tag span{
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        text-shadow: 1px 1px 1px #fff;
+        margin: 0 5px; 
+        padding: 8px 15px}
+    #slogan>h3,
+    #blog-title>h3,
+    #project-title>h3{ 
         font-size: 2rem;
-        line-height: 2.5rem;
-        padding: 15px 0 60px 0}
+        line-height: 2.5rem}
+    #slogan>h3{ padding: 15px 0 60px 0}
+    #blog-title>h3,
+    #project-title>h3{
+        padding: 15px 0}
     .mybtn-l{ 
         width: 150px;
         padding: 8px 10px}
