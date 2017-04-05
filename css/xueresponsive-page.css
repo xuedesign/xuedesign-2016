@@ -4,7 +4,7 @@
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
 * @copyright  2017 xuedesign studio
-* @version    v1.2 - 201703
+* @version    v1.3 - 201704
 *
 **/
 
@@ -57,6 +57,16 @@
     .step-02{ background-position: 0 -155px}
     .step-03{ background-position: 0 -310px}
     .step-04{ background-position: 0 -465px}
+    
+    /*觀點分享*/
+    .article_summary{
+        width: 48.5%}
+    .article_summary P{
+        display: block;
+        max-height: 60px;
+        overflow: hidden}
+    .btn_read{
+        padding-top: 20px}
 }
 
 
@@ -197,7 +207,23 @@
     .step-03,
     .step-04{ margin-top: 30px}
     
-    /*案例展示*/
+    /*觀點分享*/
+    #box_blog li{
+        display: inline-block;
+        width: 45%;
+        margin: 2%}
+    #box_blog img,
+    .article_summary,
+    .btn_read{ float: none}
+    #box_blog img{
+        width: 100%;
+        height: auto}
+    .article_summary{ 
+        width: 100%}
+    .article_summary p{ 
+        display: block;
+        max-height: 90px}
+    .btn_read{ text-align: right}            
 }
 
 
@@ -278,6 +304,10 @@
     #bar_PageNext a:nth-child(2){
         padding-top: 5%;
         line-height: 20px}
+    
+    /*觀點分享*/
+    #bar_PageNumber a:link{
+        padding: 0 25px}
 }
 
 /*
@@ -379,7 +409,8 @@
         width: 100%}
     #project-info h4{
         font-size: 1.5rem}
-    #bar_PageNext a:link{
+    #bar_PageNext a:link,
+    #bar_PageTruner a:link{
         display: inline-block;
         width: 50px;
         max-width: 50px;
@@ -388,9 +419,11 @@
         white-space: nowrap;
         overflow: hidden;
         font-size: 0;
-        margin: 0 15px;
         border: none}
-    #bar_PageNext a:nth-child(1){
+    #bar_PageNext a:link{ margin: 0 15px}
+    #bar_PageTruner a:link{ margin: 0 15%}
+    #bar_PageNext a:nth-child(1),
+    #bar_PageTruner a:nth-child(1){
         background: url(../images/icon_arrow_left.svg) no-repeat;
         background-size: cover;
         opacity: .7}
@@ -398,10 +431,22 @@
         background: url(../images/icon_list.svg) no-repeat;
         background-size: cover;
         opacity: .7}
-    #bar_PageNext a:nth-child(3){
+    #bar_PageNext a:nth-child(3),
+    #bar_PageTruner a:nth-child(2){
         background: url(../images/icon_arrow_right.svg) no-repeat;
         background-size: cover;
         opacity: .7}
+    
+    /*觀點分享*/
+    #box_blog li{
+        display: inline-block;
+        width: 100%;
+        margin: 2% 0}
+    #bar_PageNumber{ display: none}
+    #bar_PageTruner{ display: block}
+    #bar_PageTruner a:link{
+        
+    }
 }
 
 /*

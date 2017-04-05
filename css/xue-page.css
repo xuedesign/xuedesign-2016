@@ -589,7 +589,8 @@ h1 a{
 #box_blog img{
     display: block;
     float: left;
-    width: 435px}
+    width: 435px;
+    height: auto}
 .article_summary{
     display: block;
     float: right;
@@ -623,13 +624,15 @@ h1 a{
 
 
 #bar_PageNumber,
-#bar_PageNext{
+#bar_PageNext,
+#bar_PageTruner{
     display: block;
     width: 100%;
     border-top: 1px solid #bfbfbf;
     border-bottom: 1px solid #bfbfbf;
     padding: 30px 0;
     text-align: center}
+#bar_PageTruner{ display: none}
 #bar_PageNumber a:link{
     font-size: 1.6rem;
     line-height: 2.2rem;
