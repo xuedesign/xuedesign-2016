@@ -322,8 +322,10 @@ h1 a{
     padding-top: 156px;
     text-align: center}
 #slogan>h2{
-    font-size: 8.6rem;
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
     font-weight: 700;
+    font-size: 8.6rem;
+    /*font-weight: 700;*/
     color: #fff;
     text-shadow: 0 0 15px #868686;
     padding-bottom: 30px;
@@ -342,9 +344,11 @@ h1 a{
 #my-service h2,
 #show-case h2,
 #my-blog h2,
-#my-contact h2{ 
+#my-contact h2{
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-weight: 600;
     font-size: 3.5rem;
-    font-weight: 500;
+    /*font-weight: 500;*/
     line-height: 2.1rem;
     text-align: center;
     padding-bottom: 2rem}
