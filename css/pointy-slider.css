@@ -57,8 +57,10 @@ Slider
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-slider .content h4{
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
     color: rgb(10,121,210);
     padding-bottom: 15px}
 .cd-slider .content p{
