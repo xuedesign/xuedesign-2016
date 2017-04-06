@@ -51,8 +51,9 @@
 }
 
 .overlay ul li a {
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
 	font-size: 4rem;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	color: #fff;
     text-decoration: none;

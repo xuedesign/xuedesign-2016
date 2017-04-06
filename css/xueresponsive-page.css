@@ -316,7 +316,7 @@
 =====================================
 */
 @media (max-width: 420px) {
-    #slogan{ padding-top: 30%}
+    #slogan{ padding-top: 20%}
     #blog-title,
     #project-title{ padding-top: 10%}
     h1 a{
@@ -475,7 +475,7 @@
     /*服務介紹*/
     #service-info h3{
         font-size: 2.2rem;
-        line-height: 2.4rem}
+        line-height: 2.6rem}
     #our_doit p,
     #our_sop p{ padding: 0 0 40px 0}
     .service_item li{
