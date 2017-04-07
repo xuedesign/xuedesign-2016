@@ -67,6 +67,11 @@
         overflow: hidden}
     .btn_read{
         padding-top: 20px}
+    
+    /*聯絡諮詢*/
+    #contact_info img{
+        display: block;
+        margin: 5px 5px 10px}
 }
 
 
@@ -308,6 +313,26 @@
     /*觀點分享*/
     #bar_PageNumber a:link{
         padding: 0 25px}
+    
+    /*聯絡諮詢*/
+    #contact_info,
+    #contact_form {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 0 30px}
+    #contact_info{ margin-bottom: 30px}
+    #box_contact ul{
+        width: 95%;
+        padding-bottom: 30px}
+    #contact_info img{
+        display: inline-block;
+        margin: 0 5px}
+    #contact_form img{
+        display: block;
+        width: 230px;
+        height: auto;
+        margin: 20px auto}
 }
 
 /*
@@ -444,6 +469,12 @@
         margin: 2% 0}
     #bar_PageNumber{ display: none}
     #bar_PageTruner{ display: block}
+    
+    /*聯絡諮詢*/
+    #contact_info img{
+        display: inline-block;
+        margin: 8px 5px 0}
+    #my_form{ width: 100%}
 }
 
 /*
@@ -513,7 +544,15 @@
     #bar_social{
         text-align: left;
         padding-top: 15px}
-
+    
+    /*案例展示*/
+    #box_contact h3{ font-size: 2.3rem}
+    #box_contact ul{ width: 100%}
+    #contact_form img{
+        width: 190px;
+        height: auto;
+        margin: 20px auto}
+}
 /*
 =====================================
 for-retina-photo

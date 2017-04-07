@@ -727,7 +727,7 @@ h1 a{
     font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
-    line-height: 3.8rem;
+    line-height: 3rem;
     letter-spacing: 1px}
 #blog-main p,
 #project-main p,
@@ -796,7 +796,7 @@ h1 a{
 #box_contact li{
     padding: 15px 0;
     border-bottom: 1px dashed #a7a7a7}
-#box_contact img{
+#contact_info img{
     vertical-align: middle;
     margin: 0 5px}
 #contact-map{
@@ -844,10 +844,12 @@ h1 a{
 #contact_form h4{
     width: 90%;
     margin: 0 auto;
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-weight: 600;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1px;
-    line-height: 2.5rem}
+    line-height: 2.3rem}
 #contact_form p{
     font-size: 1.6rem;
     line-height: 2.2rem}
