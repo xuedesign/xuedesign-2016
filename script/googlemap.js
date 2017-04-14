@@ -310,7 +310,7 @@ function initMap() {
             position: myLatLng,
             title: '開始設計工作室',
             icon: {
-		      url: "../images/icon-maker96.png",
+		      url: "https://case.xuedesign.tw/xuedesign.2016/images/icon-maker96.png",
 		      scaledSize: new google.maps.Size(48, 48)}
         });
       }
