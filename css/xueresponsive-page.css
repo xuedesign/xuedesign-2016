@@ -154,6 +154,7 @@
     #container{ padding: 20px 0 40px}
     .box_copyright{
         width: 30%}
+    .box_copyright p{ line-height: 1.8rem}
     .box_copyright:nth-child(1){
         width: 25%;
         margin-left: 5%}

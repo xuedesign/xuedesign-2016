@@ -537,7 +537,7 @@ h1 a{
     padding-bottom: 30px}
 #project-main img{
     display: block;
-    width: 90%;
+    width: 85%;
     height: auto;
     margin: 10px auto}
 #project-main section{
@@ -550,7 +550,7 @@ h1 a{
     font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
     font-weight: 600;
     /*font-weight: normal;*/
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 2rem;
     letter-spacing: 2px;
     color: #2358be}
