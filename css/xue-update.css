@@ -22,9 +22,9 @@
 =====================================
 */
 .cd-slider li:first-of-type .image {
-    background-image: url(../images/project/xue086_shotindex.jpg)}
+    background-image: url(../images/project/xue086/aindex-shot.jpg)}
 .cd-slider .content {
-    background-color: rgba(198,121,103,1);}
+    background-color: #eda7b3}
 
 .cd-slider li:nth-of-type(2) .image {
     background-image: url(../images/pic_project-01.jpg)}
@@ -85,7 +85,7 @@
     display: block;
     position:relative;
     width: 280px;
-    height: 358px;
+    height: 410px;/*358*/
     background-color: #dedede}
 .pitem img{
     width: 100%;
@@ -93,7 +93,7 @@
 .ptitle,
 .pcover{
     width: 280px;/*335px*/
-    height: 358px/*428px*/;
+    height: 410px/*428px*/;
     position:absolute;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
@@ -164,7 +164,9 @@
 =====================================
 */
 .cover_p20161128{
-    background: url(../images/blog/pic_sample.jpg) no-repeat}
+    background: url(../images/blog/pic_sample.jpg)}
+.cover_p086{
+    background: url(../images/project/xue086/banner.jpg)}
 
 /*
 =====================================
@@ -172,4 +174,4 @@
 =====================================
 */
 .cover_b20161103{
-    background: url(../images/blog/pic_sample.jpg) no-repeat}
+    background: url(../images/blog/pic_sample.jpg)}
