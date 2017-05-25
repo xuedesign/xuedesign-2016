@@ -427,6 +427,7 @@
         background-position: 0 -705px}
     
     /*案例展示*/
+    #project-main img{ width: 95%}
     #project-info li:nth-child(1){
         width: 49%}
     #project-info li:nth-child(2){
