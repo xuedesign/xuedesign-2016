@@ -27,9 +27,9 @@
     background-color: #eda7b3}
 
 .cd-slider li:nth-of-type(2) .image {
-    background-image: url(../images/pic_project-01.jpg)}
+    background-image: url(../images/project/xue090_bluetears/aindex-shot.jpg)}
 .cd-slider li:nth-of-type(2) .content {
-    background-color: #ccd0c1;}
+    background-color: #bdcbf6;}
 
 .cd-slider li:nth-of-type(3) .image {
     background-image: url(../images/pic_project-01.jpg)}
@@ -167,6 +167,8 @@
     background: url(../images/blog/pic_sample.jpg)}
 .cover_p086{
     background: url(../images/project/xue086-spreadcourier/banner.jpg)}
+.cover_p090{
+    background: url(../images/project/xue090_bluetears/banner.jpg)}
 
 /*
 =====================================
