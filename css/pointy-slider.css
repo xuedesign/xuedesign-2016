@@ -69,8 +69,8 @@ Slider
     color: #626262;
     padding: 20px 0;
     margin-bottom: 20px;
-    border-top: 1px solid rgba(64, 64, 64, 0.5);
-    border-bottom: 1px solid rgba(64, 64, 64, 0.5)}
+    border-top: 1.5px solid rgba(64, 64, 64, 0.3);
+    border-bottom: 1.5px solid rgba(64, 64, 64, 0.3)}
 .cd-slider .content  .btn_redmore{
     font-size: 1.5rem;
     line-height: 1.5rem;
