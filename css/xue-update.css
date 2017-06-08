@@ -32,19 +32,19 @@
     background-color: #bdcbf6;}
 
 .cd-slider li:nth-of-type(3) .image {
-    background-image: url(../images/pic_project-01.jpg)}
+    background-image: url(../images/project/xue084-twinble/aindex-shot.jpg)}
 .cd-slider li:nth-of-type(3) .content {
-    background-color: #f3b96c;}
+    background-color: #9ed6f7;}
 
 .cd-slider li:nth-of-type(4) .image {
-    background-image: url(../images/pic_project-01.jpg)}
+    background-image: url(../images/project/xue087-practicelove/aindex-shot.jpg)}
 .cd-slider li:nth-of-type(4) .content {
-    background-color: #f46c6a;}
+    background-color: #d1f2df;}
 
 .cd-slider li:nth-of-type(5) .image {
-    background-image: url(../images/pic_project-01.jpg)}
+    background-image: url(../images/project/xue089-jiahe/aindex-shot.jpg)}
 .cd-slider li:nth-of-type(5) .content {
-    background-color: #f46c6a;}
+    background-color: #cdd9e5;}
 
 /*
 =====================================
@@ -85,15 +85,14 @@
     display: block;
     position:relative;
     width: 280px;
-    height: 410px;/*358*/
-    background-color: #dedede}
+    height: 385px}
 .pitem img{
     width: 100%;
     height: auto}
 .ptitle,
 .pcover{
-    width: 280px;/*335px*/
-    height: 410px/*428px*/;
+    width: 280px;
+    height: 385px;
     position:absolute;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
@@ -121,52 +120,20 @@
     -moz-border-radius: 5px;
     border-radius: 5px}
 
-/*.child-01,
-.pitem:nth-child(1) { height: 440px}
-
-.child-02,
-.pitem:nth-child(2) { height: 490px}
-
-.child-03,
-.pitem:nth-child(3){ height: 450px}
-
-.child-04,
-.pitem:nth-child(4){ height: 430px}
-
-.child-05,
-.pitem:nth-child(5){ height: 480px}
-
-.child-06,
-.pitem:nth-child(6){ height: 450px}
-
-.child-07,
-.pitem:nth-child(7){ height: 440px}
-
-.child-08,
-.pitem:nth-child(8){ height: 490px}
-
-.child-09,
-.pitem:nth-child(9){ height: 450px}
-
-.child-10,
-.pitem:nth-child(10){ height: 430px}
-
-.child-11,
-.pitem:nth-child(11){ height: 480px}
-
-.child-12,
-.pitem:nth-child(12){ height: 480px}*/
-
 
 /*
 =====================================
 作品說明頁Banner
 =====================================
 */
-.cover_p20161128{
-    background: url(../images/blog/pic_sample.jpg)}
+.cover_p055{
+    background: url(../images/project/xue055-soar/banner.jpg)}
 .cover_p086{
     background: url(../images/project/xue086-spreadcourier/banner.jpg)}
+.cover_p087{
+    background: url(../images/project/xue087-practicelove/banner.jpg)}
+.cover_p089{
+    background: url(../images/project/xue089-jiahe/banner.jpg)}
 .cover_p090{
     background: url(../images/project/xue090_bluetears/banner.jpg)}
 
