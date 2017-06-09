@@ -126,8 +126,16 @@
 作品說明頁Banner
 =====================================
 */
+.cover_p005{
+    background: url(../images/project/xue005-maxviv/banner.jpg)}
 .cover_p055{
     background: url(../images/project/xue055-soar/banner.jpg)}
+.cover_p067{
+    background: url(../images/project/xue067-THAC15th/banner.jpg)}
+.cover_p084{
+    background: url(../images/project/xue084-twinble/banner.jpg)}
+.cover_p085{
+    background: url(../images/project/xue085-Formosaroyal/banner.jpg)}
 .cover_p086{
     background: url(../images/project/xue086-spreadcourier/banner.jpg)}
 .cover_p087{

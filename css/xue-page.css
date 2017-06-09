@@ -321,7 +321,7 @@ h1 a{
 #blog-title,
 #project-title{
     clear: both;
-    padding-top: 156px;
+    padding-top: 11%/*156px*/;
     text-align: center}
 #slogan>h2,
 #blog-title>h2,
