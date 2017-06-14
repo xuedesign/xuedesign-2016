@@ -214,6 +214,8 @@
     .step-04{ margin-top: 30px}
     
     /*觀點分享*/
+    #blog-main{
+        width: 90%}
     #box_blog li{
         display: inline-block;
         width: 45%;
