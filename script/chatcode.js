@@ -6,7 +6,7 @@
             email: "hello@xuedesign.tw", // Email
             call: "+886-987-152-534", // Call phone number
             company_logo_url: "//www.xuedesign.tw/logo-01.png", // URL of company logo (png, jpg, gif)
-            greeting_message: "你好! 歡迎來到開始設計工作室\n需要協助嗎? 發訊息給我們吧", // Text of greeting message
+            greeting_message: "你好! 歡迎來到開始設計工作室\n需要協助嗎? 發個訊息給我們吧", // Text of greeting message
             button_color: "#FF1C45", // Color of button #129BF4 #12D1C7
             position: "right", // Position may be 'right' or 'left'
             order: "facebook,line,call,email" // Order of buttons

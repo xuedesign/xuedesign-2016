@@ -52,7 +52,7 @@
 =====================================
 */
 .photo_left{
-    background: url(../images/pic_blogcover-index-01.jpg) top left no-repeat;
+    background: url(../images/blog/20170614_officesite-01/list-shot.jpg) top left no-repeat;
     margin-bottom: 50px}
 .photo_right{
     background: url(../images/pic_blogcover-index-02.jpg) top right no-repeat}
@@ -150,5 +150,5 @@
 文章內容頁Banner
 =====================================
 */
-.cover_b20161103{
-    background: url(../images/blog/pic_sample.jpg)}
+.cover_b20170614{
+    background: url(../images/blog/20170614_officesite-01/banner.jpg) no-repeat top center}

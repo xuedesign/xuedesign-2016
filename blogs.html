@@ -20,11 +20,12 @@
 <link rel="apple-touch-icon" href="images/icon@2x.png">
 <title>觀點分享│開始設計工作室，位於台北，提供品牌識別、網站開發及平面文宣等商業設計服務</title>
 <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/xue-page.css?201606"/>
-<link rel="stylesheet" href="css/xue-update.css?201606">
+<link rel="stylesheet" href="css/xue-page.css"/>
+<link rel="stylesheet" href="css/xue-update.css">
 <link rel="stylesheet" href="css/xueresponsive-page.css"/>
 <link rel="stylesheet" href="css/animate.css"/>
 <link rel="stylesheet" href="css/overlay-menu.css" />
+<script src="script/justfonts.js"></script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -39,6 +40,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF94T45"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ 
+<div id="loading">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
 
  <div id="top-bar">
 	<div id="top-menu">
@@ -101,17 +112,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="box_blog" class="mybox">
             <ul>
                 <li class="wow wow fadeIn">
-                    <a href="blog/20161102-sample.html">   
-                    <img src="images/pic_blogcover-index-01.jpg" alt="*">
+                    <a href="blog/20170614_Official-website-revision.html">   
+                    <img src="images/blog/20170614_officesite-01/list-shot.jpg" alt="*">
                     <div class="article_summary">
-                        <h4>塑造品牌形象─看賓士如何經營高階市場</h4>
-                        <p>我們這個舞台，留給真心願意幫助台灣品牌升級轉型的夥伴，與我們並肩作戰！台灣傳統的經濟模式已經行不通，唯有新思維新方法才可以迎接品牌時代的來臨。改變才有機會...</p>
+                        <h4>開始設計工作室-2017改版紀錄(上)</h4>
+                        <p>距離上個官網改版時間已是四年前的事了，也因為當初設計得宜，並不覺得需要跟隨潮流時常改版，但使用久了總會覺得哪邊可以再改進、做得更好...</p>
                         <p class="btn_read">[閱讀全文]</p>
                     </div>
                     <br class="clean">
                     </a>
                 </li>
-                <li class="wow wow fadeIn">
+                <!--<li class="wow wow fadeIn">
                     <a href="#">
                     <img src="images/pic_blogcover-index-02.jpg" alt="*">
                     <div class="article_summary">
@@ -209,10 +220,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <br class="clean">
                     </a>
-                </li>
+                </li>-->
             </ul>
             
-            <div id="bar_PageNumber" class="wow fadeInUp">
+            <!--<div id="bar_PageNumber" class="wow fadeInUp">
                 <a href="#" title="上一頁">&lt;</a>
                 <a href="#" title="第1頁">1</a>
                 <a href="#" title="第2頁">2</a>
@@ -224,7 +235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div id="bar_PageTruner" class="wow fadeInUp">
                 <a href="#">上一頁</a>
                 <a href="#">上一頁</a>    
-            </div>        
+            </div>-->        
         </div>
     </div>
     
@@ -258,8 +269,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 
-<script src="script/justfonts.js"></script>
 <script src="https://code.jquery.com/jquery.min.js"></script>
+<script>jQuery(document).ready(function(){jQuery("#loading").fadeOut(5e3)});</script>
 <script src="script/scrollTo.js"></script>
 <script src="https://use.fontawesome.com/7b7fd6d88b.js"></script>
 <script src="script/wow.min.js"></script>
