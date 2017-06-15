@@ -534,13 +534,14 @@ h1 a{
 */
 #project-main{
     display: block;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     padding-bottom: 30px}
 #project-main img{
     display: block;
     width: 85%;
     height: auto;
-    margin: 10px auto}
+    margin: 10px auto 20px}
 #project-main section{
     display: block;
     margin-bottom: 40px}
