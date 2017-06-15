@@ -43,15 +43,13 @@ img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-.jf-loading body { /*載入中不顯示*/
-    opacity: 0;
-    visibility: hidden}
-.jf-active body { /*如果處理成功，直接顯示*/
-    opacity: 1;
-    visibility: visible}
-.jf-inactive body { /*如果處理失敗，直接顯示*/
-    opacity: 1;
-    visibility: visible}
+.jf-active *, 
+.jf-inactive *{ /*處理成功或失敗，都以漸變顯示*/
+    transition: opacity 2s ease-out;
+	-moz-transition: opacity 2s ease-out;
+	-webkit-transition: opacity 2s ease-out;
+	-ms-transition: opacity 2s ease-out;
+	-o-webkit-transition: opacity 2s ease-out}
 .txt-blue{ color: #21abd4}
 .txt-white{ color: #fff}
 
@@ -70,7 +68,7 @@ img::-moz-selection { background: transparent}
     display:block;
 	max-width:100vw;
 	height:100vh;
-    background:url(../images/banner/pic_index-02.jpg) no-repeat;
+    background:url(../images/banner/pic_index-04.jpg) top center no-repeat;
     background-size: cover;
 	overflow: hidden}
 #my-service,
