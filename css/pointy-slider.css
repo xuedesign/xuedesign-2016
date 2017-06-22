@@ -44,7 +44,7 @@ Slider
 }
 .cd-slider .cd-half-block {
   height: 50%;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat}
 
 .cd-slider .image {
