@@ -52,10 +52,10 @@
 =====================================
 */
 .photo_left{
-    background: url(../images/blog/20170614_officesite-01/list-shot.jpg) top left no-repeat;
+    background: url(../images/blog/20170623_officesite-02/list-shot.jpg) top left no-repeat;
     margin-bottom: 50px}
 .photo_right{
-    background: url(../images/blog/20170623_officesite-02/list-shot.jpg) top right no-repeat}
+    background: url(../images/blog/20170629_officesite-03/list-shot.jpg) top right no-repeat}
 
 /*
 =====================================
@@ -154,3 +154,5 @@
     background: url(../images/blog/20170614_officesite-01/banner.jpg) no-repeat top center}
 .cover_b20170623{
     background: url(../images/blog/20170623_officesite-02/banner.jpg) no-repeat top center}
+.cover_b20170629{
+    background: url(../images/blog/20170629_officesite-03/banner.jpg) no-repeat top center}
