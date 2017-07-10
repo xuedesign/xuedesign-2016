@@ -738,6 +738,12 @@ h1 a{
     font-size: 2.5rem;
     line-height: 3rem;
     letter-spacing: 1px}
+#blog-main h3,
+#project-main h3{
+    padding: 20px 0 10px}
+#blog-main h3:first-child,
+#project-main h3:first-child{
+    padding: 0 0 10px}
 #blog-main h4,
 #project-main h4{
     font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
