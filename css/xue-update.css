@@ -52,10 +52,10 @@
 =====================================
 */
 .photo_left{
-    background: url(../images/blog/20170713-TPCP/list-shot.jpg) top left no-repeat;
+    background: url(../images/blog/20170720_TRIT/list-shot.jpg) top left no-repeat;
     margin-bottom: 50px}
 .photo_right{
-    background: url(../images/blog/20170706_Indexpage-Redesign/list-shot.jpg) top right no-repeat}
+    background: url(../images/blog/20170713-TPCP/list-shot.jpg) top right no-repeat}
 
 /*
 =====================================
@@ -164,3 +164,5 @@
     background: url(../images/blog/20170706_Indexpage-Redesign/banner.jpg) no-repeat top center}
 .cover_b20170713{
     background: url(../images/blog/20170713-TPCP/banner.jpg) no-repeat top center}
+.cover_b20170720{
+    background: url(../images/blog/20170720_TRIT/banner.jpg) no-repeat top center}
