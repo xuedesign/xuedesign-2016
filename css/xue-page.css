@@ -16,6 +16,9 @@
 * 8. 觀點分享
 * 9. 聯絡諮詢
 *10. 錯誤頁提醒
+*11. ChatCode
+*12. animate
+*13. overlay-menu
 *=====================================
 **/
 
@@ -910,3 +913,265 @@ h1 a{
     padding: 8px 0}
 #box_error a{
     margin-top: 25px}
+
+/*
+=====================================
+ChatCode 
+=====================================
+*/
+/* 網站多重聯絡方式  WhatsHelp.io widget */
+#wh-widget-send-button.wh-widget-right{right: 50px}
+
+@media (max-width: 770px) { 
+    #wh-widget-send-button.wh-widget-right{right: 10px}
+}
+
+/*
+=====================================
+animate
+=====================================
+*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s}
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0}
+  to {
+    opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0}
+  to {
+    opacity: 1}
+}
+.fadeIn {    
+-webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+-webkit-animation-delay:.5s;
+        animation-delay:.5s;	
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+     animation-duration: 1s}
+
+
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+         animation-duration: 1s}
+
+
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+.fadeInLeft {
+-webkit-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+-webkit-animation-delay: .5s;
+        animation-delay: .5s;	
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+     animation-duration: 1s}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)}
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+    -webkit-animation-delay: .5s;
+        animation-delay: .5s;	
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+            animation-duration: 1s
+}
+
+
+/*
+=====================================
+overlay-menu 
+=====================================
+*/
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+    z-index: 9999;
+	background: rgba(29,183,255,0.85);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../images/btn_cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 80%;
+	position: relative}
+
+.overlay ul li {
+	display: block;
+	height: 15%;
+	height: calc(100% / 5);
+	min-height: 70px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.overlay ul li a {
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+	font-size: 4rem;
+	font-weight: 600;
+	display: block;
+	color: #fff;
+    text-decoration: none;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+    text-shadow: 0 0 10px #a0a0a0;
+    padding-bottom: 10px
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #f0f0f0;
+}
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}

@@ -13,6 +13,10 @@
 * 4. 按鈕設定
 * 5. 首頁設定
 * 6. 等待載入動畫
+* 7. ChatCode
+* 8. 作品圖片輪播
+* 9. animate
+*10. overlay-menu
 *=====================================
 **/
 
@@ -547,4 +551,559 @@ h1 a{
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
+}
+
+/*
+=====================================
+ChatCode 
+=====================================
+*/
+/* 網站多重聯絡方式  WhatsHelp.io widget */
+#wh-widget-send-button.wh-widget-right{right: 50px}
+
+@media (max-width: 770px) { 
+    #wh-widget-send-button.wh-widget-right{right: 10px}
+}
+
+/*
+=====================================
+作品圖片輪播 
+=====================================
+*/
+/* -------------------------------- 
+
+Slider
+
+-------------------------------- */
+.cd-slider-wrapper {
+  position: relative;
+  height: 450px/*100vh*/;
+  padding: 10px;
+}
+@media only screen and (min-width: 900px) {
+  .cd-slider-wrapper {
+    padding: 30px;
+  }
+}
+
+.cd-slider {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+}
+.cd-slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  transition: transform 0.6s;
+}
+.cd-slider li.is-visible {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.cd-slider .cd-half-block {
+  height: 50%;
+  background-position: top center;
+  background-repeat: no-repeat}
+
+.cd-slider .image {
+  background-size: cover;
+}
+.cd-slider .content {
+  padding: 30px;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-slider .content h4{
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: rgb(10,121,210);
+    padding-bottom: 15px}
+.cd-slider .content p{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #626262;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-top: 1.5px solid rgba(64, 64, 64, 0.3);
+    border-bottom: 1.5px solid rgba(64, 64, 64, 0.3)}
+.cd-slider .content  .btn_redmore{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: rgb(4,110,160);
+    text-decoration: none}
+.cd-slider .content  .btn_redmore:hover{
+    color: #f50;
+    text-decoration: none}
+
+/*.cd-slider .light-bg {
+  color: rgba(17,91,150,.6);
+}
+.cd-slider .btn {
+  display: inline-block;
+  background: rgba(254,236,1,.5);
+  padding: 1em 1.6em;
+  margin-top: 1em;
+  font-size: 1.3rem;
+  color: #ffffff;
+  border-radius: 50em;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.no-touch .cd-slider .btn:hover {
+  background: rgba(254,236,1, .5);
+}*/
+.cd-slider h2 {
+  font-size: 2.2rem;
+  margin-bottom: .4em;
+}
+.cd-slider p {
+  font-size: 1.4rem;
+}
+.cd-slider h2, .cd-slider p {
+  line-height: 1.4;
+}
+@media only screen and (min-width: 900px) {
+  .cd-slider li {
+    pointer-events: none;
+    z-index: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: z-index 0s 0.6s;
+    -moz-transition: z-index 0s 0.6s;
+    transition: z-index 0s 0.6s;
+  }
+  .cd-slider li.is-visible {
+    pointer-events: auto;
+    z-index: 3;
+    -webkit-transition: z-index 0s 0s;
+    -moz-transition: z-index 0s 0s;
+    transition: z-index 0s 0s;
+  }
+  .cd-slider li.is-visible.covered {
+    /* list item still there, but covered by the list item entering the viewport (.is-visible) */
+    z-index: 2;
+  }
+  .cd-slider .cd-half-block {
+    height: 100%;
+    width: 50%;
+    float: right;
+  }
+  .cd-slider .cd-half-block.content {
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    transform: translateX(200%);
+    -webkit-transition: -webkit-transform 0.6s 0s ease-in-out;
+    -moz-transition: -moz-transform 0.6s 0s ease-in-out;
+    transition: transform 0.6s 0s ease-in-out;
+  }
+  .cd-slider .cd-half-block.image {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0s 0.3s;
+    -moz-transition: -moz-transform 0s 0.3s;
+    transition: transform 0s 0.3s;
+  }
+  .cd-slider li.is-visible .cd-half-block.content,
+  .cd-slider li.is-visible .cd-half-block.image {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .cd-slider li.is-visible .cd-half-block.content {
+    -webkit-transition: -webkit-transform 0.6s 0s ease-in-out;
+    -moz-transition: -moz-transform 0.6s 0s ease-in-out;
+    transition: transform 0.6s 0s ease-in-out;
+  }
+  .cd-slider .content {
+    /* vertically align its content */
+    display: table;
+    padding: 0 40px;
+  }
+  .cd-slider .content > div {
+    /* vertically align <div> inside div.content */
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .cd-slider .btn {
+    padding: 1.4em 2rem;
+    font-size: 1.4rem;
+  }
+  .cd-slider p {
+    font-size: 1.6rem;
+  }
+  .cd-slider h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  .cd-slider h2, .cd-slider p {
+    line-height: 2;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-slider .content {
+    padding: 0 90px;
+  }
+  .cd-slider h2 {
+    font-weight: 300;
+  }
+}
+
+/* -------------------------------- 
+
+Slider Navigation
+
+-------------------------------- */
+.cd-slider-navigation {
+  /* you won't see this element in the html but it will be created using jQuery */
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+.cd-slider-navigation li {
+  display: block;
+  float: left;
+  margin: 0 .25em;
+  font-size: 1.8rem;
+}
+.cd-slider-navigation li.selected a {
+  background-color: #ffffff;
+}
+.cd-slider-navigation a {
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  color: transparent;
+  margin: 0 8px;    
+  /* image replacement */
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  border: 1px solid #ffffff;}
+
+@media only screen and (min-width: 900px) {
+  .cd-slider-navigation {
+    padding: 0.5em 1em;
+    background-color: rgba(30,50,65,.8);
+    /* fixes a bug on Firefox with ul.cd-slider-navigation z-index */
+    -webkit-transform: translateZ(2px) translateX(-50%);
+    -moz-transform: translateZ(2px) translateX(-50%);
+    -ms-transform: translateZ(2px) translateX(-50%);
+    -o-transform: translateZ(2px) translateX(-50%);
+    transform: translateZ(2px) translateX(-50%);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .cd-slider-navigation.slider-animating {
+    /* fixes a bug on Firefox with ul.cd-slider-navigation z-index */
+    -webkit-transform: translateX(-50%) scale(1);
+    -moz-transform: translateX(-50%) scale(1);
+    -ms-transform: translateX(-50%) scale(1);
+    -o-transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) scale(1);
+  }
+  .cd-slider-navigation a {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    /* reset style */
+    text-indent: 0;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .cd-slider-navigation li.selected a {
+    background-color: transparent;
+    color: rgb(86,196,248) /*#f3b96c*/;
+  }
+}
+
+
+/*
+=====================================
+animate
+=====================================
+*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s}
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0}
+  to {
+    opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0}
+  to {
+    opacity: 1}
+}
+.fadeIn {    
+-webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+-webkit-animation-delay:.5s;
+        animation-delay:.5s;	
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+     animation-duration: 1s}
+
+
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+         animation-duration: 1s}
+
+
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+.fadeInLeft {
+-webkit-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+-webkit-animation-delay: .5s;
+        animation-delay: .5s;	
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+     animation-duration: 1s}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)}
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none}
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+    -webkit-animation-delay: .5s;
+        animation-delay: .5s;	
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+            animation-duration: 1s
+}
+
+
+/*
+=====================================
+overlay-menu 
+=====================================
+*/
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+    z-index: 9999;
+	background: rgba(29,183,255,0.85);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../images/btn_cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 80%;
+	position: relative}
+
+.overlay ul li {
+	display: block;
+	height: 15%;
+	height: calc(100% / 5);
+	min-height: 70px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.overlay ul li a {
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+	font-size: 4rem;
+	font-weight: 600;
+	display: block;
+	color: #fff;
+    text-decoration: none;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+    text-shadow: 0 0 10px #a0a0a0;
+    padding-bottom: 10px
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #f0f0f0;
+}
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
 }
