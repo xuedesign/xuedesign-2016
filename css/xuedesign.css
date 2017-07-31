@@ -17,6 +17,7 @@
 * 8. 作品圖片輪播
 * 9. animate
 *10. overlay-menu
+*11. 自訂scrollbar
 *=====================================
 **/
 
@@ -1107,3 +1108,27 @@ overlay-menu
 		min-height: 34px;
 	}
 }
+
+/*
+=====================================
+自訂scrollbar
+=====================================
+*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0}
+::-webkit-scrollbar-thumb {
+  background: #1C45FF;
+  border: 0px none #fff;
+  border-radius: 60px;	
+  behavior: url(PIE.htc)}
+::-webkit-scrollbar-thumb:hover {
+  background: #1C45FF}
+::-webkit-scrollbar-track {
+  background: #1CB7FF;
+  border: 0px none #fff;
+  border-radius: 0;
+  behavior: url(PIE.htc)}
