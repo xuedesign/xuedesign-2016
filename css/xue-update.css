@@ -52,10 +52,10 @@
 =====================================
 */
 .photo_left{
-    background: url(../images/blog/20170720_TRIT/list-shot.jpg) top left no-repeat;
+    background: url(../images/blog/20170804-WOW/list-shot.jpg) top left no-repeat;
     margin-bottom: 50px}
 .photo_right{
-    background: url(../images/blog/20170713-TPCP/list-shot.jpg) top right no-repeat}
+    background: url(../images/blog/20170720_TRIT/list-shot.jpg) top right no-repeat}
 
 /*
 =====================================
@@ -157,14 +157,16 @@
 =====================================
 */
 .cover_b20170614{
-    background: url(../images/blog/20170614_officesite-01/banner.jpg) no-repeat top center}
+    background: url(../images/blog/20170614_officesite-01/banner.jpg)}
 .cover_b20170623{
-    background: url(../images/blog/20170623_officesite-02/banner.jpg) no-repeat top center}
+    background: url(../images/blog/20170623_officesite-02/banner.jpg)}
 .cover_b20170629{
-    background: url(../images/blog/20170629_officesite-03/banner.jpg) no-repeat top center}
+    background: url(../images/blog/20170629_officesite-03/banner.jpg)}
 .cover_b20170706{
-    background: url(../images/blog/20170706_Indexpage-Redesign/banner.jpg) no-repeat top center}
+    background: url(../images/blog/20170706_Indexpage-Redesign/banner.jpg)}
 .cover_b20170713{
-    background: url(../images/blog/20170713-TPCP/banner.jpg) no-repeat top center}
+    background: url(../images/blog/20170713-TPCP/banner.jpg)}
 .cover_b20170720{
-    background: url(../images/blog/20170720_TRIT/banner.jpg) no-repeat top center}
+    background: url(../images/blog/20170720_TRIT/banner.jpg)}
+.cover_b20170804{
+    background: url(../images/blog/20170804-WOW/banner.jpg)}
