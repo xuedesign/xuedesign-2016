@@ -63,7 +63,7 @@
         width: 48.5%}
     .article_summary P{
         display: block;
-        max-height: 60px;
+        max-height: 70px;
         overflow: hidden}
     .btn_read{
         padding-top: 20px}
@@ -229,9 +229,12 @@
         height: auto}
     .article_summary{ 
         width: 100%}
+    .article_summary h4{
+        display: block;
+        min-height: 80px}    
     .article_summary p{ 
         display: block;
-        max-height: 90px}
+        max-height: 115px}
     .btn_read{ text-align: right}            
 }
 
@@ -474,6 +477,9 @@
         margin: 2% 0}
     #bar_PageNumber{ display: none}
     #bar_PageTruner{ display: block}
+    .article_summary h4{
+        display: block;
+        min-height: 0}  
     
     /*聯絡諮詢*/
     #contact_info img{

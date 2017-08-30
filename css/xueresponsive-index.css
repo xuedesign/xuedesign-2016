@@ -256,7 +256,7 @@
             background-size: cover;
             margin-top: 11px}
     #slogan>h2{ 
-        line-height: 5rem;
+        line-height: 5.5rem;
         padding-bottom: 8px}
     #slogan span{ 
         display: block;
@@ -265,7 +265,8 @@
         font-size: 2rem;
         line-height: 2.5rem;
         padding: 15px 0 60px 0}
-    @keyframes mousemove {
+    #mouse-move{ display: none}
+    /*@keyframes mousemove {
     0%   { margin-top: 40px }
     50%  { margin-top: 55px }
     100% { margin-top: 39px }
@@ -275,7 +276,7 @@
     50%  { margin-top: 55px }
     100% { margin-top: 39px }
     }
-    .icon-mouse{ margin: 40px auto 0 auto}
+    .icon-mouse{ margin: 40px auto 0 auto}*/
     
     #my-service h2,
     #show-case h2,

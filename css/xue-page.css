@@ -1192,7 +1192,7 @@ overlay-menu
   width: 0;
   height: 0}
 ::-webkit-scrollbar-thumb {
-  background: #1C45FF;
+  background: #1C45FF;   
   border: 0px none #fff;
   border-radius: 60px;	
   behavior: url(PIE.htc)}
