@@ -23,7 +23,7 @@ body{
 	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
     font-weight: 400;
 	font-size: 1rem; /* 1rem=10px */
-	color: #585858}
+	color: #fff}
 form{margin:0; padding:0}
 image{border:0}
 ::selection { background: #126db4; color: #fff}
@@ -41,17 +41,6 @@ img::-moz-selection { background: transparent}
 .jf-inactive #wrap {
       opacity: 1;
       visibility: visible}
-/*.jf-active *, 
-.jf-inactive *{ 
-    transition: opacity 5s linear;
-	-moz-transition: opacity 5s linear;
-	-webkit-transition: opacity 5s linear;
-	-ms-transition: opacity 5s linear;
-	-o-webkit-transition: opacity 5s linear}*/
-.txt-blue{ color: #21abd4}
-.txt-white{ color: #fff}
-
-
 /*
 =====================================
 全站結構
@@ -60,25 +49,25 @@ img::-moz-selection { background: transparent}
 #wrap{
     display: block;
     width: 80%;
-    margin: 3% auto}
+    margin: 2% auto}
 h1{
     display: block;
     float: left;
-    width: 500px;
-    height: 101px;
+    width: 300px;
+    height: 61px;
     background: url(../images/xuedesign-logo-v2.svg) no-repeat;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
 h2{
     display: block;
-    float: right;
-    text-align: right;
+    float: left;
+    /*text-align: right;*/
     vertical-align: bottom;
     font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-size: 4rem;
+    font-size: 2.5rem;
     letter-spacing: 3px;
-    padding-top: 40px;
+    padding-top: 25px;
     color: #fff}
 #box_link{
     clear: both;
@@ -94,10 +83,10 @@ h2{
     text-decoration: none;
     color: rgb(75, 255, 130)}
 .item_link{
-    width: 20%;
-    margin: 2.5%;
+    width: 22%;
+    margin: 1.5%;
     min-height: 500px;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(33, 54, 87, 0.6);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px}
@@ -124,7 +113,8 @@ h2{
     background: rgba(0, 0, 0, .4);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px}
+    border-radius: 20px;
+    color: rgb(75, 255, 130)}
 .fa{padding-right: 8px}
 .color-01{ background: #41b6d9}
 .copyright{
