@@ -1,0 +1,159 @@
+@charset "utf-8";
+/**
+*
+* @project    xuedesign studio
+* @Author     Elmo Woo <hello@xuedesign.tw>
+* @copyright  2017 xuedesign studio
+* @version    v1.0 - 201710
+*
+**/
+
+/*
+=====================================
+通用設定
+=====================================
+*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+html { font-size:62.5% }
+body{
+	margin: 0;
+	padding:0;
+    background: url(../images/bg_website.png); 
+	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+	font-size: 1rem; /* 1rem=10px */
+	color: #585858}
+form{margin:0; padding:0}
+image{border:0}
+::selection { background: #126db4; color: #fff}
+::-moz-selection { background: #126db4; color: #fff}
+img::selection { background: transparent}
+img::-moz-selection { background: transparent}
+.clean{ clear:both}
+.hidden{ display:none}
+.jf-loading #wrap { 
+      opacity: 0;
+      visibility: hidden}
+.jf-active #wrap { 
+      opacity: 1;
+      visibility: visible}
+.jf-inactive #wrap {
+      opacity: 1;
+      visibility: visible}
+/*.jf-active *, 
+.jf-inactive *{ 
+    transition: opacity 5s linear;
+	-moz-transition: opacity 5s linear;
+	-webkit-transition: opacity 5s linear;
+	-ms-transition: opacity 5s linear;
+	-o-webkit-transition: opacity 5s linear}*/
+.txt-blue{ color: #21abd4}
+.txt-white{ color: #fff}
+
+
+/*
+=====================================
+全站結構
+=====================================
+*/
+#wrap{
+    display: block;
+    width: 80%;
+    margin: 3% auto}
+h1{
+    display: block;
+    float: left;
+    width: 500px;
+    height: 101px;
+    background: url(../images/xuedesign-logo-v2.svg) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+h2{
+    display: block;
+    float: right;
+    text-align: right;
+    vertical-align: bottom;
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    padding-top: 40px;
+    color: #fff}
+#box_link{
+    clear: both;
+    display: flex;
+    padding-top: 1%}
+#box_link a{
+    text-decoration: none;
+    color: #fff}
+#box_link a:visited{
+    text-decoration: none;
+    color: #fff}
+#box_link a:hover{
+    text-decoration: none;
+    color: rgb(75, 255, 130)}
+.item_link{
+    width: 20%;
+    margin: 2.5%;
+    min-height: 500px;
+    background: rgba(0, 0, 0, .6);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px}
+.item_link h3{
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0}
+.item_link ul{
+    padding: 3% 8%}
+.item_link li{
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    padding-left: 8px}
+.item_link li:hover{
+    background: rgba(0, 0, 0, .4);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px}
+.fa{padding-right: 8px}
+.color-01{ background: #41b6d9}
+.copyright{
+    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff}
+
+
+/*
+=====================================
+自訂scrollbar
+=====================================
+*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0}
+::-webkit-scrollbar-thumb {
+  background: #1C45FF;
+  border: 0px none #fff;
+  border-radius: 60px;	
+  behavior: url(PIE.htc)}
+::-webkit-scrollbar-thumb:hover {
+  background: #1C45FF}
+::-webkit-scrollbar-track {
+  background: #1CB7FF;
+  border: 0px none #fff;
+  border-radius: 0;
+  behavior: url(PIE.htc)}
