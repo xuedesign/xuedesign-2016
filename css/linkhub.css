@@ -13,14 +13,13 @@
 通用設定
 =====================================
 */
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 html { font-size:62.5% }
 body{
 	margin: 0;
 	padding:0;
     background: url(../images/bg_website.png); 
-	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+	font-family: 'xingothic-tc', sans-serif;
     font-weight: 400;
 	font-size: 1rem; /* 1rem=10px */
 	color: #fff}
@@ -64,7 +63,7 @@ h2{
     float: left;
     /*text-align: right;*/
     vertical-align: bottom;
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan', sans-serif;
     font-size: 2.5rem;
     letter-spacing: 3px;
     padding-top: 25px;
@@ -91,7 +90,7 @@ h2{
     -moz-border-radius: 10px;
     border-radius: 10px}
 .item_link h3{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan', sans-serif;
     font-size: 2.5rem;
     line-height: 5rem;
     text-align: center;
@@ -105,7 +104,7 @@ h2{
 .item_link ul{
     padding: 3% 8%}
 .item_link li{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan', sans-serif;
     font-size: 1.8rem;
     line-height: 3.5rem;
     padding-left: 8px}
@@ -118,7 +117,7 @@ h2{
 .fa{padding-right: 8px}
 .color-01{ background: #41b6d9}
 .copyright{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan', sans-serif;
     font-size: 1.5rem;
     text-align: center;
     color: #fff}
