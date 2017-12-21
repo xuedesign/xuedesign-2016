@@ -28,15 +28,14 @@
 通用設定
 =====================================
 */
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 html { font-size:62.5% }
 body{
 	margin: 0;
 	padding:0;
 	background: rgb(29,183,255);
-	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
-    font-weight: 400;
+    font-family: 'xingothic-tc', sans-serif;
+    font-weight: 300;
 	font-size: 1rem; /* 1rem=10px */
 	color: #585858}
 /*a:link {text-decoration:none; color:#b76727}
@@ -61,11 +60,11 @@ img::-moz-selection { background: transparent}
       visibility: visible}*/
 .jf-active *, 
 .jf-inactive *{ 
-    transition: opacity 5s linear;
-	-moz-transition: opacity 5s linear;
-	-webkit-transition: opacity 5s linear;
-	-ms-transition: opacity 5s linear;
-	-o-webkit-transition: opacity 5s linear}
+    transition: opacity 0s linear;
+	-moz-transition: opacity 0s linear;
+	-webkit-transition: opacity 0s linear;
+	-ms-transition: opacity 0s linear;
+	-o-webkit-transition: opacity 0s linear}
 .txt-blue{ color: #21abd4}
 .txt-white{ color: #fff}
 
@@ -273,7 +272,7 @@ header{ padding: 0 20px}
     color: #5e98d4;
     border-color: #5e98d4}
 .btn_sent{
-    font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+    font-family: 'xingothic-tc', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -338,8 +337,8 @@ h1 a{
 #slogan>h2,
 #blog-title>h2,
 #project-title>h2{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     color: #fff;
     border-bottom: 1px solid #fff;
     text-shadow: 0 0 15px #868686;
@@ -429,8 +428,8 @@ h1 a{
 #service-info>section{
     margin-bottom: 80px}
 #service-info h3{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     font-size: 3rem;
     line-height: 3.5rem;
     color: #21abd4;
@@ -561,8 +560,8 @@ h1 a{
     font-weight: normal}
 
 #project-info h4{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     /*font-weight: normal;*/
     font-size: 1.4rem;
     line-height: 2rem;
@@ -617,8 +616,8 @@ h1 a{
     width: 57%;
     padding: 30px}
 .article_summary h4{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     font-size: 2.2rem;
     line-height: 2.8rem;
     color: #383838;
@@ -738,8 +737,8 @@ h1 a{
 #blog-main h3,
 #project-main h3,
 #box_contact h3{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     font-size: 2.5rem;
     line-height: 3rem;
     letter-spacing: 1px}
@@ -751,8 +750,8 @@ h1 a{
     padding: 0 0 10px}
 #blog-main h4,
 #project-main h4{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: normal;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     font-size: 1.9rem;
     line-height: 3rem;
     letter-spacing: 1px}
@@ -805,8 +804,8 @@ h1 a{
     margin: 35px auto;
     border-bottom: 1px solid #b5b5b5}
 #blog-main>.my_blockquote p{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 3rem;
@@ -868,7 +867,7 @@ h1 a{
     -moz-border-radius: 8px;
     border-radius: 8px;
     border: 1px solid #a3a3a3;
-    font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+    font-family: 'xingothic-tc', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.2rem}
@@ -886,8 +885,8 @@ h1 a{
 #contact_form h4{
     width: 90%;
     margin: 0 auto;
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1px;
@@ -1134,9 +1133,9 @@ overlay-menu
 }
 
 .overlay ul li a {
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan', sans-serif;
 	font-size: 4rem;
-	font-weight: 600;
+	font-weight: 500;
 	display: block;
 	color: #fff;
     text-decoration: none;

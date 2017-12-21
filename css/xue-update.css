@@ -106,8 +106,8 @@
 .ptitle:hover{ opacity: 1}
 .ptitle h4{
     display: table-cell;
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan', sans-serif;
+    font-weight: 500;
     font-size: 2rem;
     line-height: 2.4rem;
     color: #fff;
