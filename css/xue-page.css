@@ -979,6 +979,15 @@ animate
 -moz-animation-duration: 1s;
      animation-duration: 1s}
 
+.fadeIn-title {    
+-webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+-webkit-animation-delay:0;
+        animation-delay:0;	
+-webkit-animation-duration: 5s;
+-moz-animation-duration: 5s;
+     animation-duration: 5s}
+
 
 
 @-webkit-keyframes fadeInUp {
