@@ -32,7 +32,8 @@ body{
 	margin: 0;
 	padding:0;
 	background: rgb(29,183,255);
-	font-family: 'xingothic-tc', sans-serif;
+	font-family: 'xingothic-tc','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
+    /*Microsoft JhengHei：微軟正黑體；PingFangSC-Regular：蘋方TC*/
     font-weight: 300;
 	font-size: 1rem; /* 1rem=10px */
 	color: #585858}
@@ -334,7 +335,7 @@ h1 a{
     padding-top: 156px;
     text-align: center}
 #slogan>h2{
-    font-family: 'jf-jinxuan', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
     font-weight: 500;
     font-size: 8.6rem;
     color: #fff;
@@ -356,7 +357,7 @@ h1 a{
 #show-case h2,
 #my-blog h2,
 #my-contact h2{
-    font-family: 'jf-jinxuan', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
     font-weight: 500;
     font-size: 3.5rem;
     line-height: 2.1rem;
@@ -413,7 +414,7 @@ h1 a{
 .foreword_left{
     left: 0}
 .blog_foreword h4{
-    font-family: 'jf-jinxuan', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.4rem;
@@ -629,7 +630,7 @@ Slider
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-slider .content h4{
-    font-family: 'jf-jinxuan', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.4rem;
@@ -638,7 +639,7 @@ Slider
 .cd-slider .content p{
     font-size: 1.5rem;
     line-height: 2.2rem;
-    color: #626262;
+    color: #4d4d4d;/*#626262*/
     padding: 20px 0;
     margin-bottom: 20px;
     border-top: 1.5px solid rgba(64, 64, 64, 0.3);
@@ -1062,7 +1063,7 @@ overlay-menu
 }
 
 .overlay ul li a {
-    font-family: 'jf-jinxuan', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
 	font-size: 4rem;
 	font-weight: 500;
 	display: block;
