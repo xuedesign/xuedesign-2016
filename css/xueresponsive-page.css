@@ -350,18 +350,21 @@
 @media (max-width: 420px) {
     #slogan{ padding-top: 20%}
     #blog-title,
-    #project-title{ padding-top: 10%}
+    #project-title{ padding-top: 18%}
     h1 a{
         width: 193px;
         height: 65px;
         background: url(../images/logo@2x.png) no-repeat;
         background-size: cover;
         margin-top: 11px}
-    #slogan>h2,
-    #blog-title>h2,
-    #project-title>h2{
+    #slogan>h2{
         font-size: 4.5rem;
         line-height: 5rem;
+        padding-bottom: 8px}
+    #blog-title>h2,
+    #project-title>h2{
+        font-size: 3.5rem;
+        line-height: 3.8rem;
         padding-bottom: 8px}
     #slogan span{ 
         display: block;
@@ -373,11 +376,13 @@
         text-shadow: 1px 1px 1px #fff;
         margin: 0 5px 8px; 
         padding: 8px 10px}
-    #slogan>h3,
-    #blog-title>h3,
-    #project-title>h3{ 
+    #slogan>h3{
         font-size: 2rem;
         line-height: 2.5rem}
+    #blog-title>h3,
+    #project-title>h3{ 
+        font-size: 1.8rem;
+        line-height: 2rem}
     #slogan>h3{ padding: 15px 0 60px 0}
     #blog-title>h3,
     #project-title>h3{
