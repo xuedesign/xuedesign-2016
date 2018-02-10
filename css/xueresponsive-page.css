@@ -484,7 +484,9 @@
     #bar_PageTruner{ display: block}
     .article_summary h4{
         display: block;
-        min-height: 0}  
+        min-height: 0} 
+    .pic_note{
+        line-height: 2.2rem}
     
     /*聯絡諮詢*/
     #contact_info img{
