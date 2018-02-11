@@ -487,6 +487,9 @@
         min-height: 0} 
     .pic_note{
         line-height: 2.2rem}
+    .item-row2,
+    .item-row3{ 
+        width: 100%; margin: .5%}
     
     /*聯絡諮詢*/
     #contact_info img{
