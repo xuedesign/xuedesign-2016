@@ -52,10 +52,10 @@
 =====================================
 */
 .photo_left{
-    background: url(../images/blog/20180309_design-trends-01/list-shot.jpg) top left no-repeat;
+    background: url(../images/blog/20180316_design-trends-02/list-shot.jpg) top left no-repeat;
     margin-bottom: 50px}
 .photo_right{
-    background: url(../images/blog/20170804-WOW/list-shot.jpg) top right no-repeat}
+    background: url(../images/blog/20180309_design-trends-01/list-shot.jpg) top right no-repeat}
 
 /*
 =====================================
@@ -175,4 +175,6 @@
 .cover_b20170804{
     background: url(../images/blog/20170804-WOW/banner.jpg)}
 .cover_b20180309{
-    background: url(../images/blog/20180309_design-trends-01/banner.jpg)}3
+    background: url(../images/blog/20180309_design-trends-01/banner.jpg)}
+.cover_b20180316{
+    background: url(../images/blog/20180316_design-trends-02/banner.jpg)}
