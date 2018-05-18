@@ -4,7 +4,7 @@
             facebook: "973910065972990", // Facebook page ID
             line: "//line.me/R/ti/p/%40shv5946p", // Line QR code URL
             email: "hello@xuedesign.tw", // Email
-            call: "+886-987-152-534", // Call phone number
+            call: "0987-152-534", // Call phone number
             company_logo_url: "//www.xuedesign.tw/images/logo-chat.png", // URL of company logo (png, jpg, gif)
             greeting_message: "你好! 歡迎來到開始設計工作室\n需要協助嗎? 發訊息給我們吧", // Text of greeting message
             button_color: "#FF1C45", // Color of button #129BF4 #12D1C7
