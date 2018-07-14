@@ -34,9 +34,9 @@ body{
 	background: rgb(29,183,255);
 	font-family: 'xingothic-tc','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
     /*Microsoft JhengHei：微軟正黑體；PingFangSC-Regular：蘋方TC*/
-    font-weight: 300;
+    font-weight: 400;
 	font-size: 1rem; /* 1rem=10px */
-	color: #585858}
+	color: #363535/*#585858*/}
 /*a:link {text-decoration:none; color:#b76727}
 a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#F50}*/
@@ -369,7 +369,7 @@ h1 a{
 #my-contact h3{
     width: 760px;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: normal;
     line-height: 2.2rem;
     text-align: center}
@@ -420,7 +420,7 @@ h1 a{
     line-height: 2.4rem;
     padding-bottom: 24px}
 .blog_foreword p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     padding-bottom: 20px}
 .blog_foreword a{
@@ -449,7 +449,7 @@ h1 a{
 #box_info>h3{ padding-bottom: 2rem}
 #box_info ul{ padding-bottom: 40px}
 #box_info li{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 2rem;
     color: #fff;
@@ -637,15 +637,15 @@ Slider
     color: rgb(10,121,210);
     padding-bottom: 15px}
 .cd-slider .content p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
-    color: #4d4d4d;/*#626262*/
+    color: #363535;/*#626262*/
     padding: 20px 0;
     margin-bottom: 20px;
     border-top: 1.5px solid rgba(64, 64, 64, 0.3);
     border-bottom: 1.5px solid rgba(64, 64, 64, 0.3)}
 .cd-slider .content  .btn_redmore{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5rem;
     color: rgb(4,110,160);
     text-decoration: none}
@@ -1002,6 +1002,32 @@ animate
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
             animation-duration: 1s
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);}
+  50% {
+    opacity: 1}
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5)}
+  50% {
+    opacity: 1}
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    animation-duration: 10s
 }
 
 
