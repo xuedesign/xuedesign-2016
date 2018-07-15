@@ -52,10 +52,10 @@
 =====================================
 */
 .photo_left{
-    background: url(../images/blog/20180316_design-trends-02/list-shot.jpg) top left no-repeat;
+    background: url(../images/blog/20180719_app-store-10years-design-evolution/list-shot.jpg) top left no-repeat;
     margin-bottom: 50px}
 .photo_right{
-    background: url(../images/blog/20180309_design-trends-01/list-shot.jpg) top right no-repeat}
+    background: url(../images/blog/20180316_design-trends-02/list-shot.jpg) top right no-repeat}
 
 /*
 =====================================
@@ -178,3 +178,5 @@
     background: url(../images/blog/20180309_design-trends-01/banner.jpg)}
 .cover_b20180316{
     background: url(../images/blog/20180316_design-trends-02/banner.jpg)}
+.cover_b20180719{
+    background: url(../images/blog/20180719_app-store-10years-design-evolution/banner.jpg)}
