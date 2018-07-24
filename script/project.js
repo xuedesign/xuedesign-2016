@@ -1,15 +1,8 @@
 //justfont
 loadjs('script/lib/justfonts.js');
 
-//專案排列
-loadjs('script/lib/minigrid.min.js', function() {
-    if($(window).width() < 1280)
-{
-    !function(){function n(){e=new Minigrid({container:".project-list",item:".pitem",gutter:15}),e.mount()}function t(){e.mount()}var e;document.addEventListener("DOMContentLoaded",n),window.addEventListener("resize",t)}();
-} else {
-    !function(){function n(){e=new Minigrid({container:".project-list",item:".pitem",gutter:50}),e.mount()}function t(){e.mount()}var e;document.addEventListener("DOMContentLoaded",n),window.addEventListener("resize",t)}();
-}    
-});
+//justfont
+loadjs('https://code.jquery.com/jquery.min.js');
 
 //返回頂端
 loadjs('script/lib/scrollTo.js', function() {

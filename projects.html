@@ -198,9 +198,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>    
 </div>
 
-<script src="https://code.jquery.com/jquery.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery.min.js"></script>-->
+<script src="script/lib/minigrid.min.js"></script>
+<script>
+    if($(window).width() < 1280)
+{
+    !function(){function n(){e=new Minigrid({container:".project-list",item:".pitem",gutter:15}),e.mount()}function t(){e.mount()}var e;document.addEventListener("DOMContentLoaded",n),window.addEventListener("resize",t)}();
+} else {
+    !function(){function n(){e=new Minigrid({container:".project-list",item:".pitem",gutter:50}),e.mount()}function t(){e.mount()}var e;document.addEventListener("DOMContentLoaded",n),window.addEventListener("resize",t)}();
+}    
+</script>
 <script src="https://cdn.rawgit.com/muicss/loadjs/3.5.4/dist/loadjs.min.js"></script>
 <script src="script/project.js"></script>
+
 <script src="script/lib/overlay.modernizr.custom.js"></script>
 <script src="script/lib/overlay-classie.js"></script>
 <script src="script/lib/overlay-demo1.js"></script>
