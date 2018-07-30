@@ -198,26 +198,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>    
 </div>
 
-<script src="script/lib/justfonts.js"></script>
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="script/lib/minigrid.min.js"></script>
 <script>
-if($(window).width() < 1280)
-{
-    !function(){function n(){e=new Minigrid({container:".project-list",item:".pitem",gutter:15}),e.mount()}function t(){e.mount()}var e;document.addEventListener("DOMContentLoaded",n),window.addEventListener("resize",t)}();
-} else {
-    !function(){function n(){e=new Minigrid({container:".project-list",item:".pitem",gutter:50}),e.mount()}function t(){e.mount()}var e;document.addEventListener("DOMContentLoaded",n),window.addEventListener("resize",t)}();
-}    
+$(window).width()<1280?function(){var n;document.addEventListener("DOMContentLoaded",function(){(n=new Minigrid({container:".project-list",item:".pitem",gutter:15})).mount()}),window.addEventListener("resize",function(){n.mount()})}():function(){var n;document.addEventListener("DOMContentLoaded",function(){(n=new Minigrid({container:".project-list",item:".pitem",gutter:50})).mount()}),window.addEventListener("resize",function(){n.mount()})}();
 </script>
-<script src="script/lib/scrollTo.js"></script>
-<script src="https://use.fontawesome.com/7b7fd6d88b.js"></script>
-<script src="script/lib/wow.min.js"></script>
-<script>new WOW().init();</script>
-<script src="script/lib/jquery.lazyload.js"></script>
-<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js"></script>
-<script> retinajs();</script>
-<script src="script/lib/chatcode.js"></script>
-<script src="script/lib/website.js"></script>
+<script src="https://cdn.rawgit.com/muicss/loadjs/3.5.4/dist/loadjs.min.js"></script>
+<script src="script/project.js"></script>
 <script src="script/lib/overlay.modernizr.custom.js"></script>
 <script src="script/lib/overlay-classie.js"></script>
 <script src="script/lib/overlay-demo1.js"></script>

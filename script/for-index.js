@@ -1,6 +1,13 @@
 //justfont
 loadjs('script/lib/justfonts.js');
 
+//google map
+loadjs('https://maps.googleapis.com/maps/api/js?key=AIzaSyB1SdPebAPswNZfePSNDoGGSlh1ZPUP3Ok&callback=initMap');
+loadjs('script/lib/googlemap.js');
+
+//專案輪播
+loadjs('script/lib/pointy-slider.js');
+
 //返回頂端
 loadjs('script/lib/scrollTo.js', function() {
       $(function(){
@@ -68,3 +75,4 @@ function externalLinks() {
  } 
 } 
 window.onload = externalLinks;
+
