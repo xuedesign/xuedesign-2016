@@ -4,9 +4,16 @@
 * @project    xuedesign studio
 * @Author     Elmo Woo <hello@xuedesign.tw>
 * @copyright  2017 xuedesign studio
-* @version    v1.0 - 201710
+* @version    v1.6 - 201807
 *
 **/
+
+/*
+=====================================
+Reset重置
+=====================================
+*/
+@import url("reset.css");
 
 /*
 =====================================
