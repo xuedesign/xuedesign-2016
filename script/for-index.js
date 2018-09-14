@@ -30,11 +30,11 @@ loadjs('script/lib/wow.min.js', function() {
 });
 
 //圖片延遲載入
-loadjs('script/lib/jquery.lazyload.js', function() {
-  $(function() {
-    $("img").lazyload({placeholder : "../images/grey.gif",effect: "fadeIn"});
-      });
-});
+//loadjs('script/lib/jquery.lazyload.js', function() {
+//  $(function() {
+//    $("img").lazyload({placeholder : "../images/grey.gif",effect: "fadeIn"});
+//      });
+//});
 
 //高解析圖片切換
 loadjs('https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js', function() {
