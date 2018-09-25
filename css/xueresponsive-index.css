@@ -310,6 +310,15 @@
     .mybtn-l{ 
         width: 150px;
         padding: 8px 10px}
+    .box_copyright:nth-child(1){
+        width: 40%;
+        margin-left: 5%}
+    .box_copyright:nth-child(2){
+        width: 50%;
+        margin-left: 2%}
+    .box_copyright:nth-child(3){
+        width: 94%;
+        margin: 3% 0 0 5%}
 }
 
 /*
