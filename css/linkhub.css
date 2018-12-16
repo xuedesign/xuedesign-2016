@@ -79,6 +79,7 @@ h2{
 #box_link{
     clear: both;
     display: flex;
+    flex-wrap: wrap;
     padding-top: 1%}
 #box_link a{
     text-decoration: none;
