@@ -58,22 +58,11 @@ img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-/*.jf-loading #wrap { 
-      opacity: 0;
-      visibility: hidden}
-.jf-active #wrap { 
-      opacity: 1;
-      visibility: visible}
-.jf-inactive #wrap {
-      opacity: 1;
-      visibility: visible}*/
-.jf-active *, 
-.jf-inactive *{ 
-    transition: opacity 0s linear;
-	-moz-transition: opacity 0s linear;
-	-webkit-transition: opacity 0s linear;
-	-ms-transition: opacity 0s linear;
-	-o-webkit-transition: opacity 0s linear}
+.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
+      -webkit-transition: opacity 1s ease-out; 
+      -moz-transition: opacity 1s ease-out; 
+      -o-transition: opacity 1s ease-out; 
+      transition: opacity 1s ease-out}
 .txt-blue{ color: #21abd4}
 .txt-white{ color: #fff}
 
