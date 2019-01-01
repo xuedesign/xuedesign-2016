@@ -15,7 +15,7 @@ loadjs('../script/lib/scrollTo.js', function() {
 });
 
 //icon文字
-loadjs('https://pro.fontawesome.com/releases/v5.6.1/css/all.css');
+loadjs('https://use.fontawesome.com/7b7fd6d88b.js');
 
 //wow載入動畫
 loadjs('../script/lib/wow.min.js', function() {
