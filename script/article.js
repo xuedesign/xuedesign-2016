@@ -37,7 +37,7 @@ loadjs('https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js', function() {
 //chatcode
 loadjs('../script/lib/chatcode.js');
 
-//icon文字
+//分享按鈕
 loadjs('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-583a5e74fc646174');
 
 //頂端隱藏選單
