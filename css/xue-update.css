@@ -18,62 +18,29 @@
 
 /*
 =====================================
-首頁作品展示
-=====================================
-*/
-.cd-slider .content {
-    background-color: #eda7b3}
-
-.cd-slider li:nth-of-type(2) .content {
-    background-color: #bdcbf6;}
-
-.cd-slider li:nth-of-type(3) .content {
-    background-color: #9ed6f7;}
-
-.cd-slider li:nth-of-type(4) .content {
-    background-color: #d1f2df;}
-
-.cd-slider li:nth-of-type(5) .content {
-    background-color: #cdd9e5;}
-
-/*
-=====================================
-首頁文章
-=====================================
-*/
-.photo_left{
-    background-position:  top left;
-    background-repeat:  no-repeat;
-    margin-bottom: 50px}
-.photo_right{
-    background-position:  top right;
-    background-repeat:  no-repeat;}
-
-/*
-=====================================
 頁面Banner
 =====================================
 */
-.cover_profile{ /*服務介紹*/
+/*.cover_profile{ /*服務介紹
     background: url(../images/banner/pic_portfile.jpg)
     no-repeat top center}
-.cover_project{ /*案例展示*/
+.cover_project{ /*案例展示
     background: url(../images/banner/pic_project.jpg) no-repeat top center}
-.cover_bloglist{ /*觀點分享*/
+.cover_bloglist{ /*觀點分享
     background: url(../images/banner/pic_blog.jpg) no-repeat top center}
-.cover_contact{ /*聯絡諮詢*/
+.cover_contact{ /*聯絡諮詢
     background: url(../images/banner/pic_contact.jpg) no-repeat top center}
-.cover_error403{ /*403錯誤*/
+.cover_error403{ /*403錯誤
     background: url(../images/banner/pic_403.jpg) no-repeat top center}
-.cover_error404{ /*404錯誤*/
-    background: url(../images/banner/pic_404.jpg) no-repeat top center}
+.cover_error404{ /*404錯誤
+    background: url(../images/banner/pic_404.jpg) no-repeat top center}*/
 
 /*
 =====================================
 作品列表頁
 =====================================
 */
-.pitem{
+/*.pitem{
     display: block;
     position:relative;
     width: 280px;
@@ -110,7 +77,7 @@
 .ptitle{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px}
+    border-radius: 5px}*/
 
 
 /*

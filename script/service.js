@@ -1,6 +1,3 @@
-//justfont
-loadjs('script/lib/justfonts.js');
-
 //返回頂端
 loadjs('script/lib/scrollTo.js', function() {
       $(function(){
@@ -23,11 +20,11 @@ loadjs('script/lib/wow.min.js', function() {
 });
 
 //圖片延遲載入
-loadjs('script/lib/jquery.lazyload.js', function() {
-  $(function() {
-    $("img").lazyload({placeholder : "../images/grey.gif",effect: "fadeIn"});
-      });
+loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
+    const observer = lozad();
+    observer.observe();
 });
+
 
 //高解析圖片切換
 loadjs('https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js', function() {

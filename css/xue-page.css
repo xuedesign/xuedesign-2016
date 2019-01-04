@@ -385,6 +385,14 @@ h1 a{
     font-weight: normal;
     line-height: 2.2rem;
     text-align: center}
+.cover_profile,
+.cover_project,
+.cover_bloglist,
+.cover_contact,
+.cover_error403,
+.cover_error404{
+    background-position: top center;
+    background-repeat: no-repeat}
 
 /*版權列*/
 #copyright{
@@ -601,6 +609,44 @@ h1 a{
     width: 100%;
     margin: 0 auto;
     text-align: center}
+.pitem{
+    display: block;
+    position:relative;
+    width: 280px;
+    height: 385px}
+.pitem img{
+    width: 100%;
+    height: auto}
+.ptitle,
+.pcover{
+    width: 280px;
+    height: 385px;
+    position:absolute;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out}
+.ptitle{
+    display: table;
+    top:5;
+    opacity: 0;
+    background:rgba(0,0,0,.7)}
+.ptitle:hover{ opacity: 1}
+.ptitle h4{
+    display: table-cell;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #fff;
+    vertical-align: middle;
+    padding: 0 25px}
+.pitem,
+.pitem img,
+.ptitle{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
 
 /*
 =====================================
