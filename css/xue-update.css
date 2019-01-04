@@ -21,28 +21,18 @@
 首頁作品展示
 =====================================
 */
-.cd-slider li:first-of-type .image {
-    background-image: url(../images/project/xue086-spreadcourier/aindex-shot.jpg)}
 .cd-slider .content {
     background-color: #eda7b3}
 
-.cd-slider li:nth-of-type(2) .image {
-    background-image: url(../images/project/xue090-bluetears/aindex-shot.jpg)}
 .cd-slider li:nth-of-type(2) .content {
     background-color: #bdcbf6;}
 
-.cd-slider li:nth-of-type(3) .image {
-    background-image: url(../images/project/xue084-twinble/aindex-shot.jpg)}
 .cd-slider li:nth-of-type(3) .content {
     background-color: #9ed6f7;}
 
-.cd-slider li:nth-of-type(4) .image {
-    background-image: url(../images/project/xue087-practicelove/aindex-shot.jpg)}
 .cd-slider li:nth-of-type(4) .content {
     background-color: #d1f2df;}
 
-.cd-slider li:nth-of-type(5) .image {
-    background-image: url(../images/project/xue089-jiahe/aindex-shot.jpg)}
 .cd-slider li:nth-of-type(5) .content {
     background-color: #cdd9e5;}
 
@@ -52,11 +42,12 @@
 =====================================
 */
 .photo_left{
-    background: url(../images/blog/20180719_app-store-10years-design-evolution/list-shot.jpg) top left no-repeat;
+    background-position:  top left;
+    background-repeat:  no-repeat;
     margin-bottom: 50px}
 .photo_right{
-    /*background: url(../images/blog/20180316_design-trends-02/list-shot.jpg) top right no-repeat*/
-    background: url(../images/blog/20180309_design-trends-01/list-shot.jpg) top right no-repeat}
+    background-position:  top right;
+    background-repeat:  no-repeat;}
 
 /*
 =====================================
