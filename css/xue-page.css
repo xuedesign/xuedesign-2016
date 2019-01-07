@@ -393,6 +393,10 @@ h1 a{
 .cover_error404{
     background-position: top center;
     background-repeat: no-repeat}
+.cover_error403{ /*403錯誤*/
+    background: url(../images/banner/pic_403.jpg)}
+.cover_error404{ /*404錯誤*/
+    background: url(../images/banner/pic_404.jpg)}
 
 /*版權列*/
 #copyright{
@@ -466,6 +470,10 @@ h1 a{
     width: 42%;
     padding-left: 0}
 #logo-change{
+    display: block;
+    width: 374px;
+    height: 326px}
+#logo-change img{
     display: block;
     width: 374px;
     height: 326px}
