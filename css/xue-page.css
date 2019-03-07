@@ -741,14 +741,17 @@ h1 a{
     color: #8e8e8e;
     text-decoration: none}
 #bar_PageNumber a:hover,
-#bar_PageNext a:hover{
+#bar_PageNext a:hover,
+#bar_PageNumber a.nowin{
     color: #fff;
-    background: #0d4d80;
     text-decoration: none;
     padding: 0 30px;
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s}
+#bar_PageNumber a:hover,
+#bar_PageNext a:hover{background: #0d4d80}
+#bar_PageNumber a.nowin{background: #1DB7FF}
 
 
 #blog-tag,
