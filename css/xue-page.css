@@ -852,7 +852,11 @@ h1 a{
 .pic_group-row3{
     width: 90%;
     margin: 25px auto}
-.pic_group{ display: block}
+.pic_group-project{
+    width: 100%;
+    margin: 25px auto}
+.pic_group,
+.pic_group-project{ display: block}
 .pic_group-row2,
 .pic_group-row3{ 
     display: flex;
@@ -867,6 +871,7 @@ h1 a{
 .item-row2{ width: 49%; margin: 0 .5%}
 .item-row3{ width: 32%; margin: 0 .5%}
 .pic_group img,
+.pic_group-project img,
 .pic_group-row2 img,
 .pic_group-row3 img{
     width: 100%;
