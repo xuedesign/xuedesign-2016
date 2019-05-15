@@ -5,19 +5,6 @@ loadjs('script/lib/googlemap.js');
 //專案輪播
 loadjs('script/lib/pointy-slider.js');
 
-//返回頂端
-loadjs('script/lib/scrollTo.js', function() {
-      $(function(){
-      $("#top-menu").scrollTo(700)
-    });
-    $(function(){
-      $("#mouse-move").scrollTo(700)
-    });
-    $(function(){
-      $("#btn-first").scrollTo(700)
-    });
-});
-
 //icon文字
 loadjs('https://use.fontawesome.com/7b7fd6d88b.js');
 

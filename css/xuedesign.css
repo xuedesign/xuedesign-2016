@@ -34,7 +34,7 @@ Reset重置
 =====================================
 */
 
-html { font-size:62.5% }
+html { font-size:62.5%; scroll-behavior: smooth}
 body{
 	margin: 0;
 	padding:0;
@@ -403,15 +403,15 @@ h1 a{
 
 /*作品展示*/
 .cd-slider .content {
-    background-color: #bafce8}
+    background-color: #eda7b3}
 .cd-slider li:nth-of-type(2) .content {
-    background-color: #eda7b3;}
-.cd-slider li:nth-of-type(3) .content {
     background-color: #bdcbf6;}
-.cd-slider li:nth-of-type(4) .content {
+.cd-slider li:nth-of-type(3) .content {
     background-color: #9ed6f7;}
-.cd-slider li:nth-of-type(5) .content {
+.cd-slider li:nth-of-type(4) .content {
     background-color: #d1f2df;}
+.cd-slider li:nth-of-type(5) .content {
+    background-color: #bafce8;}
 
 /*設計觀察*/
 .box_blog{

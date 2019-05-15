@@ -1,16 +1,3 @@
-//返回頂端
-loadjs('../script/lib/scrollTo.js', function() {
-      $(function(){
-      $("#top-menu").scrollTo(700)
-    });
-    $(function(){
-      $("#mouse-move").scrollTo(700)
-    });
-    $(function(){
-      $("#btn-first").scrollTo(700)
-    });
-});
-
 //icon文字
 loadjs('https://use.fontawesome.com/7b7fd6d88b.js');
 
@@ -35,6 +22,9 @@ loadjs('../script/lib/chatcode.js');
 
 //分享按鈕
 loadjs('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-583a5e74fc646174');
+
+//Fancybox
+loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js']);
 
 //頂端隱藏選單
 $(function(){
@@ -67,4 +57,3 @@ function externalLinks() {
  } 
 } 
 window.onload = externalLinks;
-

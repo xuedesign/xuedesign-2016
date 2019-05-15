@@ -2,19 +2,6 @@
 loadjs(['https://maps.googleapis.com/maps/api/js?key=AIzaSyB1SdPebAPswNZfePSNDoGGSlh1ZPUP3Ok&callback=initMap', 
         'script/lib/googlemap.js']);
 
-//返回頂端
-loadjs('script/lib/scrollTo.js', function() {
-      $(function(){
-      $("#top-menu").scrollTo(700)
-    });
-    $(function(){
-      $("#mouse-move").scrollTo(700)
-    });
-    $(function(){
-      $("#btn-first").scrollTo(700)
-    });
-});
-
 //icon文字
 loadjs('https://use.fontawesome.com/7b7fd6d88b.js');
 

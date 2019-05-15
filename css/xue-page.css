@@ -37,7 +37,7 @@ Reset重置
 =====================================
 */
 
-html { font-size:62.5% }
+html { font-size:62.5%; scroll-behavior: smooth}
 body{
 	margin: 0;
 	padding:0;
