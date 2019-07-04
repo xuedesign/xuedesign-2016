@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://www.hyii.com.tw/sitemap.xml
