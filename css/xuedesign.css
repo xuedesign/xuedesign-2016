@@ -403,15 +403,15 @@ h1 a{
 
 /*作品展示*/
 .cd-slider li:nth-of-type(1) .content {
-    background-color: #eda7b3}
+    background-color: #fff}
 .cd-slider li:nth-of-type(2) .content {
-    background-color: #e5d9cf}
+    background-color: #fff}
 .cd-slider li:nth-of-type(3) .content {
-    background-color: #bdcbf6}
+    background-color: #fff}
 .cd-slider li:nth-of-type(4) .content {
-    background-color: #9ed6f7}
+    background-color: #e5d9cf}
 .cd-slider li:nth-of-type(5) .content {
-    background-color: #d1f2df}
+    background-color: #9ed6f7}
 
 /*設計觀察*/
 .box_blog{
