@@ -809,6 +809,13 @@ h1 a{
 #blog-main h3,
 #project-main h3{
     padding: 20px 0 10px}
+#blog-main h3::after,
+#project-main h3::after{
+    content: "";
+    display: block;
+    border-top: 4px solid #1db7ff;
+    width: 8.5rem;
+    margin: 10px 0 20px}
 #blog-main h3:first-child,
 #project-main h3:first-child{
     padding: 0 0 10px}
