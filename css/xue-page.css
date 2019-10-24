@@ -664,8 +664,13 @@ h1 a{
 #box_blog li{
     display: block;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     background: #fff}
+#box_blog li::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both}
 #box_blog img{
     display: block;
     float: left;
