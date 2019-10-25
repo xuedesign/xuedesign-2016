@@ -112,6 +112,10 @@ header,
     display: block;
     width: 1070px;
     margin: 30px auto}
+.mybox2{
+    display: block;
+    width: 85%;
+    margin: 30px auto}
 header{ padding: 0 20px}
 
 /*

@@ -8,6 +8,7 @@
 *
 **/
 
+
 /*
 =====================================
 平板裝置(寬>長)  for-tablet-landscape-up
@@ -19,6 +20,7 @@
         margin: 3% auto}
     header,
     .mybox,
+    .mybox2,
     #top-menu{
         display: block;
         width: 100%;
