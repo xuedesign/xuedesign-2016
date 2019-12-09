@@ -237,7 +237,15 @@
     .article_summary p{ 
         display: block;
         max-height: 115px}
-    .btn_read{ text-align: right}            
+    .btn_read{ text-align: right}
+    
+    #project-main img{
+        width: 100%;
+        margin: 8px auto}
+    .pic_group,
+    .pic_group-row2,
+    .pic_group-row3{
+        width: 100%}
 }
 
 
