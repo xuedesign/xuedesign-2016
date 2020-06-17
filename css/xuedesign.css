@@ -38,7 +38,9 @@ html { font-size:62.5%; scroll-behavior: smooth}
 body{
 	margin: 0;
 	padding:0;
-	background: rgb(29,183,255);
+  background: -webkit-linear-gradient(180deg, rgb(19, 59, 209) 88%, rgb(29, 183, 255));
+  background: linear-gradient(180deg, rgb(19, 59, 209) 88%, rgb(29, 183, 255));
+  /*background: rgb(29,183,255);*/
 	font-family: 'xingothic-tc','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
     /*Microsoft JhengHei：微軟正黑體；PingFangSC-Regular：蘋方TC*/
     font-weight: 400;
@@ -49,8 +51,8 @@ a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#F50}*/
 form{margin:0; padding:0}
 image{border:0}
-::selection { background: #126db4; color: #fff}
-::-moz-selection { background: #126db4; color: #fff}
+::selection { background: rgb(19, 59, 209); color: #fff}
+::-moz-selection { background: rgb(19, 59, 209); color: #fff}
 img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
@@ -69,7 +71,7 @@ img::-moz-selection { background: transparent}
       -moz-transition: opacity 1s ease-out; 
       -o-transition: opacity 1s ease-out; 
       transition: opacity 1s ease-out}*/
-.txt-blue{ color: #21abd4}
+.txt-blue{ color: #2160d4/*#21abd4*/}
 .txt-white{ color: #fff}
 
 
@@ -172,7 +174,6 @@ header{ padding: 0 20px}
     left: -3px;
     right: 0;
     bottom: 0;
-    background: #126db4/*#2098d1*/;
     text-align: center;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
@@ -187,6 +188,8 @@ header{ padding: 0 20px}
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px}
+.hvr-bounce:before{ background: rgb(19, 59, 209)/*#126db4/*#2098d1*/;}
+.hvr-bounce-sub:before{ background: rgb(8, 116, 231)}    
 .hvr-bounce:before{ 
     width: 75px;
     margin:-2px 0 0 -7px;
@@ -217,7 +220,7 @@ header{ padding: 0 20px}
 #top-bar{
     padding: 0;
 	height:40px;
-	background:rgb(29,183,255);
+	background:rgb(19,59,209);
 	position:fixed;
     top:-65px;
     z-index: 150}
@@ -248,7 +251,7 @@ header{ padding: 0 20px}
     color: #fff;
     margin-top: 8px}
 #btn_totop:hover{
-    color: #126db4}
+    color: #1db7ff}
 
 /*
 =====================================
@@ -290,7 +293,7 @@ header{ padding: 0 20px}
 .btn-blue:hover{
     color: #fff;
     border-color: #0d4d80;
-    background: #126db4;
+    background: rgb(19,59,209);
     -webkit-transition: all 0.5s ease 0s;
     /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
@@ -446,10 +449,10 @@ h1 a{
     display: block;
     font-size: 1.5rem;
     text-align: right;
-    color: #21abd4;
+    color: rgb(19, 59, 209)/*#21abd4*/;
     text-decoration: none}
 .blog_foreword a:hover{
-    color: #0d4d80;
+    color: #1db7ff;
     text-decoration: none}
 .photo_left{
     background-position:  top center;
@@ -661,7 +664,7 @@ Slider
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.4rem;
-    color: rgb(10,121,210);
+    color: rgb(19, 59, 209)/*rgb(10,121,210)*/;
     padding-bottom: 15px}
 .cd-slider .content p{
     font-size: 1.6rem;
@@ -677,7 +680,7 @@ Slider
     color: rgb(4,110,160);
     text-decoration: none}
 .cd-slider .content  .btn_redmore:hover{
-    color: #f50;
+    color: rgb(19, 59, 209);
     text-decoration: none}
 
 /*.cd-slider .light-bg {
@@ -829,7 +832,7 @@ Slider Navigation
   font-size: 1.8rem;
 }
 .cd-slider-navigation li.selected a {
-  background-color: #1db7ff;
+  background-color: rgb(19, 59, 209)/*#1db7ff*/;
 }
 .cd-slider-navigation a {
   display: block;
@@ -842,7 +845,7 @@ Slider Navigation
   white-space: nowrap;
   text-indent: 100%;
   overflow: hidden;
-  border: 1px solid #1db7ff}
+  border: 1px solid rgb(19, 59, 209)}
 
 @media only screen and (min-width: 900px) {
   .cd-slider-navigation {
@@ -881,7 +884,7 @@ Slider Navigation
   }
   .cd-slider-navigation li.selected a {
     background-color: transparent;
-    color: rgb(86,196,248) /*#f3b96c*/;
+    color: #4dc2f8/*rgb(86,196,248) /*#f3b96c*/;
   }
 }
 
@@ -1070,8 +1073,8 @@ overlay-menu
 	height: 100%;
 	top: 0;
 	left: 0;
-    z-index: 9999;
-	background: rgba(29,183,255,0.85);
+  z-index: 9999;
+	background: rgba(19,59,209,.85);
 }
 
 /* Overlay closing cross */
@@ -1124,7 +1127,7 @@ overlay-menu
     text-decoration: none;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-    text-shadow: 0 0 10px #a0a0a0;
+    /*text-shadow: 0 0 10px #a0a0a0;*/
     padding-bottom: 10px
 }
 
@@ -1174,14 +1177,14 @@ overlay-menu
   width: 0;
   height: 0}
 ::-webkit-scrollbar-thumb {
-  background: #1C45FF;
+  background: rgb(29, 183, 255);
   border: 0px none #fff;
   border-radius: 60px;	
   behavior: url(PIE.htc)}
 ::-webkit-scrollbar-thumb:hover {
-  background: #1C45FF}
+  background: rgb(29, 183, 255)}
 ::-webkit-scrollbar-track {
-  background: #1CB7FF;
+  background: rgb(19, 59, 209) ;
   border: 0px none #fff;
   border-radius: 0;
   behavior: url(PIE.htc)}

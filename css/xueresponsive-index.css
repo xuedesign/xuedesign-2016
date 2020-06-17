@@ -91,7 +91,7 @@
         margin: 0 15px;
         padding: 0}
     .overlay .sub-overlay a:hover{
-        color: rgb(247, 49, 178)}
+        color: #1db7ff/*rgb(247, 49, 178)*/}
     .hvr-underline-from-left {
         display: inline-block;
         vertical-align: middle;
@@ -107,7 +107,7 @@
         left: 0;
         right: 100%;
         bottom: 0;
-        background: rgb(247, 49, 178);
+        background: #1db7ff;
         height: 4px;
         -webkit-transition-property: right;
         transition-property: right;
