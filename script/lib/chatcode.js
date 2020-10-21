@@ -2,7 +2,7 @@
 (function () {
     var options = {
     facebook: "973910065972990", // Facebook page ID
-    line: "//line.me/R/ti/p/%40shv5946p", // Line QR code URL
+    line: "//lin.ee/mPK6XVf", // Line QR code URL
     //call_to_action: "聯絡我", // Call to action
     button_color: "#FF1C45", // Color of button
     position: "right", // Position may be 'right' or 'left'
