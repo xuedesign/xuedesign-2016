@@ -47,7 +47,7 @@ $(function(){
 });
 
 // 另開視窗
-function externalLinks() { 
+/* function externalLinks() { 
  if (!document.getElementsByTagName) return; 
  var anchors = document.getElementsByTagName("a"); 
  for (var i=0; i<anchors.length; i++) { 
@@ -57,5 +57,5 @@ function externalLinks() {
      anchor.target = "_blank"; 
  } 
 } 
-window.onload = externalLinks;
+window.onload = externalLinks; */
 
