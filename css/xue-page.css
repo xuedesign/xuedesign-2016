@@ -61,19 +61,19 @@ img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
 /*.jf-loading body { /*載入中不顯示
-      opacity: 0;
-      visibility: hidden}
+  opacity: 0;
+  visibility: hidden}
 .jf-active body { /*如果處理成功，直接顯示
-      opacity: 1;
-      visibility: visible}
+  opacity: 1;
+  visibility: visible}
 .jf-inactive body {/*如果處理失敗，直接顯示
-      opacity: 1;
-      visibility: visible}
-/*.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示
-      -webkit-transition: opacity 1s ease-out; 
-      -moz-transition: opacity 1s ease-out; 
-      -o-transition: opacity 1s ease-out; 
-      transition: opacity 1s ease-out}*/
+  opacity: 1;
+  visibility: visible}*/
+.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
+    -webkit-transition: opacity 1s ease-out; 
+    -moz-transition: opacity 1s ease-out; 
+    -o-transition: opacity 1s ease-out; 
+    transition: opacity 1s ease-out}
 .txt-blue{ color: #2160d4}
 .txt-white{ color: #fff}
 
@@ -427,6 +427,8 @@ h1 a{
     font-size: 1.5rem;
     font-weight: 500;
     padding-bottom: 5px}
+.box_copyright p{
+    line-height: 2.6rem}     
 .box_copyright li a{
     display: block;
     float: left;
