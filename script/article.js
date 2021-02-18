@@ -24,7 +24,7 @@ loadjs('../script/lib/chatcode.js');
 loadjs('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-583a5e74fc646174');
 
 //Fancybox
-loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js']); 
+loadjs(['https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js']);
 
 //頂端隱藏選單
 $(function(){
