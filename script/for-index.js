@@ -19,11 +19,6 @@ loadjs('https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', function() {
 loadjs('https://maps.googleapis.com/maps/api/js?key=AIzaSyB1SdPebAPswNZfePSNDoGGSlh1ZPUP3Ok&callback=initMap');
 loadjs('script/lib/googlemap.js');
 
-//高解析圖片切換
-loadjs('https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js', function() {
-  retinajs();
-});
-
 //chatcode
 loadjs('script/lib/chatcode.js');
 
@@ -45,17 +40,4 @@ $(function(){
 		}).scroll();
 	});
 });
-
-// 另開視窗
-/* function externalLinks() { 
- if (!document.getElementsByTagName) return; 
- var anchors = document.getElementsByTagName("a"); 
- for (var i=0; i<anchors.length; i++) { 
-   var anchor = anchors[i]; 
-   if (anchor.getAttribute("href") && 
-       anchor.getAttribute("rel") == "external") 
-     anchor.target = "_blank"; 
- } 
-} 
-window.onload = externalLinks; */
 
