@@ -764,7 +764,7 @@ h1 a{
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s}
 #bar_PageNumber a:hover,
-#bar_PageNext a:hover{background: #1db7ff/*#0d4d80*/}
+#bar_PageNext a:hover{background: rgb(19, 59, 209)/* #1db7ff *//*#0d4d80*/}
 #bar_PageNumber a.nowin{background: rgb(19, 59, 209)/*#1DB7FF*/}
 
 
