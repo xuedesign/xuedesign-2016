@@ -4,7 +4,7 @@
 * @project    xuedesign studio
 * @Author     Elmo Woo <hello@xuedesign.tw>
 * @copyright  2017 xuedesign studio
-* @version    v1.5 - 201704
+* @version    v2.0 - 202105
 *
 *=====================================
 * 1. 通用設定
@@ -23,48 +23,55 @@
 
 /*
 =====================================
+Reset重置
+=====================================
+*/
+@import 'reset';
+
+/*
+=====================================
 通用設定
 =====================================
 */
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-html { font-size:62.5% }
+html { font-size:62.5%; scroll-behavior: smooth}
 body{
 	margin: 0;
 	padding:0;
-	background: rgb(29,183,255);
-	font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+  background: -webkit-linear-gradient(180deg, rgb(19, 59, 209) 88%, rgb(29, 183, 255));
+  background: linear-gradient(180deg, rgb(19, 59, 209) 88%, rgb(29, 183, 255));
+  /*background: rgb(29,183,255);*/
+	font-family: 'xingothic-tc','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
+    /*Microsoft JhengHei：微軟正黑體；PingFangSC-Regular：蘋方TC*/
     font-weight: 400;
 	font-size: 1rem; /* 1rem=10px */
-	color: #585858}
+	color: #363535/*#585858*/}
 /*a:link {text-decoration:none; color:#b76727}
 a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#F50}*/
 form{margin:0; padding:0}
 image{border:0}
-::selection { background: #126db4; color: #fff}
-::-moz-selection { background: #126db4; color: #fff}
+::selection { background: rgb(19, 59, 209); color: #fff}
+::-moz-selection { background: rgb(19, 59, 209); color: #fff}
 img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-/*.jf-loading #wrap { 
-      opacity: 0;
-      visibility: hidden}
-.jf-active #wrap { 
-      opacity: 1;
-      visibility: visible}
-.jf-inactive #wrap {
-      opacity: 1;
-      visibility: visible}*/
-.jf-active *, 
-.jf-inactive *{ 
-    transition: opacity 5s linear;
-	-moz-transition: opacity 5s linear;
-	-webkit-transition: opacity 5s linear;
-	-ms-transition: opacity 5s linear;
-	-o-webkit-transition: opacity 5s linear}
-.txt-blue{ color: #21abd4}
+/*.jf-loading body { /*載入中不顯示
+  opacity: 0;
+  visibility: hidden}
+.jf-active body { /*如果處理成功，直接顯示
+  opacity: 1;
+  visibility: visible}
+.jf-inactive body {/*如果處理失敗，直接顯示
+  opacity: 1;
+  visibility: visible}*/
+.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
+    -webkit-transition: opacity 1s ease-out; 
+    -moz-transition: opacity 1s ease-out; 
+    -o-transition: opacity 1s ease-out; 
+    transition: opacity 1s ease-out}
+.txt-blue{ color: #2160d4/*#21abd4*/}
 .txt-white{ color: #fff}
 
 
@@ -167,7 +174,6 @@ header{ padding: 0 20px}
     left: -3px;
     right: 0;
     bottom: 0;
-    background: #126db4/*#2098d1*/;
     text-align: center;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
@@ -182,6 +188,8 @@ header{ padding: 0 20px}
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px}
+.hvr-bounce:before{ background: rgb(19, 59, 209)/*#126db4/*#2098d1*/;}
+.hvr-bounce-sub:before{ background: rgb(8, 116, 231)}    
 .hvr-bounce:before{ 
     width: 75px;
     margin:-2px 0 0 -7px;
@@ -212,7 +220,7 @@ header{ padding: 0 20px}
 #top-bar{
     padding: 0;
 	height:40px;
-	background:rgb(29,183,255);
+	background:rgb(19,59,209);
 	position:fixed;
     top:-65px;
     z-index: 150}
@@ -243,7 +251,7 @@ header{ padding: 0 20px}
     color: #fff;
     margin-top: 8px}
 #btn_totop:hover{
-    color: #126db4}
+    color: #1db7ff}
 
 /*
 =====================================
@@ -285,7 +293,7 @@ header{ padding: 0 20px}
 .btn-blue:hover{
     color: #fff;
     border-color: #0d4d80;
-    background: #126db4;
+    background: rgb(19,59,209);
     -webkit-transition: all 0.5s ease 0s;
     /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
@@ -335,7 +343,7 @@ h1 a{
     padding-top: 156px;
     text-align: center}
 #slogan>h2{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
     font-weight: 700;
     font-size: 8.6rem;
     color: #fff;
@@ -357,8 +365,8 @@ h1 a{
 #show-case h2,
 #my-blog h2,
 #my-contact h2{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
     font-size: 3.5rem;
     line-height: 2.1rem;
     text-align: center;
@@ -369,7 +377,7 @@ h1 a{
 #my-contact h3{
     width: 760px;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: normal;
     line-height: 2.2rem;
     text-align: center}
@@ -380,7 +388,9 @@ h1 a{
     float: left;
     width: 45%;
     height: 593px;
-    background: url(../images/pic_city.jpg) center center no-repeat}
+    /*background: url(../images/pic_city.jpg) center center no-repeat*/
+    background-position: center center;
+    background-repeat: no-repeat}
 .service-info{
     display: block;
     float: right;
@@ -393,6 +403,18 @@ h1 a{
     display: block;
     width: 80%;
     margin: 0 auto}
+
+/*作品展示*/
+.cd-slider li:nth-of-type(1) .content {
+    background-color: #bfe6ff}
+.cd-slider li:nth-of-type(2) .content {
+    background-color: #cbe7d1}
+.cd-slider li:nth-of-type(3) .content {
+    background-color: #e6dadc}
+.cd-slider li:nth-of-type(4) .content {
+    background-color: #e1fcf7}
+.cd-slider li:nth-of-type(5) .content {
+    background-color: #e5d9cf}
 
 /*設計觀察*/
 .box_blog{
@@ -414,24 +436,31 @@ h1 a{
 .foreword_left{
     left: 0}
 .blog_foreword h4{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2.4rem;
     padding-bottom: 24px}
 .blog_foreword p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     padding-bottom: 20px}
 .blog_foreword a{
     display: block;
     font-size: 1.5rem;
     text-align: right;
-    color: #21abd4;
+    color: rgb(19, 59, 209)/*#21abd4*/;
     text-decoration: none}
 .blog_foreword a:hover{
-    color: #0d4d80;
+    color: #1db7ff;
     text-decoration: none}
+.photo_left{
+    background-position:  top center;
+    background-repeat:  no-repeat;
+    margin-bottom: 50px}
+.photo_right{
+    background-position:  top center;
+    background-repeat:  no-repeat}
 
 /*聯絡我們*/
 #contact-info{
@@ -449,7 +478,7 @@ h1 a{
 #box_info>h3{ padding-bottom: 2rem}
 #box_info ul{ padding-bottom: 40px}
 #box_info li{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 2rem;
     color: #fff;
@@ -482,6 +511,8 @@ h1 a{
     font-size: 1.5rem;
     font-weight: 500;
     padding-bottom: 5px}
+.box_copyright p{
+  line-height: 2.6rem}    
 .box_copyright li a{
     display: block;
     float: left;
@@ -622,6 +653,7 @@ Slider
 
 .cd-slider .image {
   background-size: cover;
+  background-position: center center;
 }
 .cd-slider .content {
   padding: 30px;
@@ -630,27 +662,27 @@ Slider
   -moz-osx-font-smoothing: grayscale;
 }
 .cd-slider .content h4{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
     font-size: 2rem;
     line-height: 2.4rem;
-    color: rgb(10,121,210);
+    color: rgb(19, 59, 209)/*rgb(10,121,210)*/;
     padding-bottom: 15px}
 .cd-slider .content p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
-    color: #626262;
+    color: #363535;/*#626262*/
     padding: 20px 0;
     margin-bottom: 20px;
     border-top: 1.5px solid rgba(64, 64, 64, 0.3);
     border-bottom: 1.5px solid rgba(64, 64, 64, 0.3)}
 .cd-slider .content  .btn_redmore{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5rem;
     color: rgb(4,110,160);
     text-decoration: none}
 .cd-slider .content  .btn_redmore:hover{
-    color: #f50;
+    color: rgb(19, 59, 209);
     text-decoration: none}
 
 /*.cd-slider .light-bg {
@@ -802,7 +834,7 @@ Slider Navigation
   font-size: 1.8rem;
 }
 .cd-slider-navigation li.selected a {
-  background-color: #ffffff;
+  background-color: rgb(19, 59, 209)/*#1db7ff*/;
 }
 .cd-slider-navigation a {
   display: block;
@@ -815,7 +847,7 @@ Slider Navigation
   white-space: nowrap;
   text-indent: 100%;
   overflow: hidden;
-  border: 1px solid #ffffff;}
+  border: 1px solid rgb(19, 59, 209)}
 
 @media only screen and (min-width: 900px) {
   .cd-slider-navigation {
@@ -854,7 +886,7 @@ Slider Navigation
   }
   .cd-slider-navigation li.selected a {
     background-color: transparent;
-    color: rgb(86,196,248) /*#f3b96c*/;
+    color: #4dc2f8/*rgb(86,196,248) /*#f3b96c*/;
   }
 }
 
@@ -902,11 +934,11 @@ animate
 .fadeIn {    
 -webkit-animation-name: fadeIn;
         animation-name: fadeIn;
--webkit-animation-delay:.5s;
-        animation-delay:.5s;	
--webkit-animation-duration: 1s;
--moz-animation-duration: 1s;
-     animation-duration: 1s}
+-webkit-animation-delay:0;
+        animation-delay:0;	
+-webkit-animation-duration: 5s;
+-moz-animation-duration: 5s;
+     animation-duration: 5s}
 
 
 
@@ -1004,6 +1036,32 @@ animate
             animation-duration: 1s
 }
 
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);}
+  50% {
+    opacity: 1}
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5)}
+  50% {
+    opacity: 1}
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    animation-duration: 10s
+}
+
 
 /*
 =====================================
@@ -1017,14 +1075,14 @@ overlay-menu
 	height: 100%;
 	top: 0;
 	left: 0;
-    z-index: 9999;
-	background: rgba(29,183,255,0.85);
+  z-index: 9999;
+	background: rgba(19,59,209,.85);
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-	width: 80px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	position: absolute;
 	right: 20px;
 	top: 20px;
@@ -1063,15 +1121,15 @@ overlay-menu
 }
 
 .overlay ul li a {
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
 	font-size: 4rem;
-	font-weight: 600;
+	font-weight: 500;
 	display: block;
 	color: #fff;
     text-decoration: none;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-    text-shadow: 0 0 10px #a0a0a0;
+    /*text-shadow: 0 0 10px #a0a0a0;*/
     padding-bottom: 10px
 }
 
@@ -1121,14 +1179,21 @@ overlay-menu
   width: 0;
   height: 0}
 ::-webkit-scrollbar-thumb {
-  background: #1C45FF;
+  background: rgb(29, 183, 255);
   border: 0px none #fff;
   border-radius: 60px;	
   behavior: url(PIE.htc)}
 ::-webkit-scrollbar-thumb:hover {
-  background: #1C45FF}
+  background: rgb(29, 183, 255)}
 ::-webkit-scrollbar-track {
-  background: #1CB7FF;
+  background: rgb(19, 59, 209) ;
   border: 0px none #fff;
   border-radius: 0;
   behavior: url(PIE.htc)}
+
+/*
+=====================================
+RWD
+=====================================
+*/
+@import 'xueresponsive-index';

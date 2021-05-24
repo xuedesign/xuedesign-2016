@@ -3,7 +3,7 @@
 * @project    xuedesign studio
 * @Author     Elmo Woo <hello@xuedesign.tw>
 * @copyright  2016 xuedesign studio
-* @version    v1.1 - 201703
+* @version    v1.6 - 201807
 *
 *=====================================
 * 1. 通用設定
@@ -23,49 +23,58 @@
 *=====================================
 **/
 
+
+/*
+=====================================
+Reset重置
+=====================================
+*/
+@import 'reset';
+
 /*
 =====================================
 通用設定
 =====================================
 */
 
-html { font-size:62.5% }
+html { font-size:62.5%; scroll-behavior: smooth}
 body{
 	margin: 0;
-	padding:0;
-	background: rgb(29,183,255);
-    font-family: 'xingothic-tc', sans-serif;
+    padding:0;
+    background: -webkit-linear-gradient(180deg, rgb(19, 59, 209) 88%, rgb(29, 183, 255));
+    background: linear-gradient(180deg, rgb(19, 59, 209) 88%, rgb(29, 183, 255));
+	/*background: rgb(29,183,255);*/
+    font-family: 'xingothic-tc','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
+    /*Microsoft JhengHei：微軟正黑體；PingFangSC-Regular：蘋方TC*/
     font-weight: 400;
 	font-size: 1rem; /* 1rem=10px */
-	color: #585858}
+	color: #363535}
 /*a:link {text-decoration:none; color:#b76727}
 a:visited {text-decoration:none; color:#8c8c8c}
 a:hover {text-decoration:underline; color:#F50}*/
 form{margin:0; padding:0}
 image{border:0}
-::selection { background: #126db4; color: #fff}
-::-moz-selection { background: #126db4; color: #fff}
+::selection { background: rgb(19, 59, 209); color: #fff}
+::-moz-selection { background: rgb(19, 59, 209); color: #fff}
 img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 .clean{ clear:both}
 .hidden{ display:none}
-/*.jf-loading #wrap { 
-      opacity: 0;
-      visibility: hidden}
-.jf-active #wrap { 
-      opacity: 1;
-      visibility: visible}
-.jf-inactive #wrap {
-      opacity: 1;
-      visibility: visible}*/
-.jf-active *, 
-.jf-inactive *{ 
-    transition: opacity 5s linear;
-	-moz-transition: opacity 5s linear;
-	-webkit-transition: opacity 5s linear;
-	-ms-transition: opacity 5s linear;
-	-o-webkit-transition: opacity 5s linear}
-.txt-blue{ color: #21abd4}
+/*.jf-loading body { /*載入中不顯示
+  opacity: 0;
+  visibility: hidden}
+.jf-active body { /*如果處理成功，直接顯示
+  opacity: 1;
+  visibility: visible}
+.jf-inactive body {/*如果處理失敗，直接顯示
+  opacity: 1;
+  visibility: visible}*/
+.jf-active *, .jf-inactive * { /*處理成功或失敗，都以漸變顯示*/
+    -webkit-transition: opacity 1s ease-out; 
+    -moz-transition: opacity 1s ease-out; 
+    -o-transition: opacity 1s ease-out; 
+    transition: opacity 1s ease-out}
+.txt-blue{ color: #2160d4}
 .txt-white{ color: #fff}
 
 
@@ -104,6 +113,10 @@ header,
 #top-menu{
     display: block;
     width: 1070px;
+    margin: 30px auto}
+.mybox2{
+    display: block;
+    width: 85%;
     margin: 30px auto}
 header{ padding: 0 20px}
 
@@ -162,7 +175,6 @@ header{ padding: 0 20px}
     left: -3px;
     right: 0;
     bottom: 0;
-    background: #126db4/*#2098d1*/;
     text-align: center;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
@@ -177,6 +189,8 @@ header{ padding: 0 20px}
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px}
+.hvr-bounce:before{ background: rgb(19, 59, 209)/*#126db4/*#2098d1*/;}
+.hvr-bounce-sub:before{ background: rgb(8, 116, 231)}      
 .hvr-bounce:before{ 
     width: 75px;
     margin:-2px 0 0 -7px;
@@ -207,7 +221,7 @@ header{ padding: 0 20px}
 #top-bar{
     padding: 0;
 	height:40px;
-	background:rgb(29,183,255);
+	background:rgb(19,59,209);
 	position:fixed;
     top:-65px;
     z-index: 150}
@@ -238,7 +252,7 @@ header{ padding: 0 20px}
     color: #fff;
     margin-top: 8px}
 #btn_totop:hover{
-    color: #126db4}
+    color: #1db7ff}
 
 /*
 =====================================
@@ -272,7 +286,7 @@ header{ padding: 0 20px}
     color: #5e98d4;
     border-color: #5e98d4}
 .btn_sent{
-    font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+    font-family: 'xingothic-tc','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -282,7 +296,7 @@ header{ padding: 0 20px}
 .btn_sent:hover{
     color: #fff;
     border-color: #0d4d80;
-    background: #126db4;
+    background: rgb(19,59,209);
     -webkit-transition: all 0.5s ease 0s;
     /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
@@ -337,8 +351,8 @@ h1 a{
 #slogan>h2,
 #blog-title>h2,
 #project-title>h2{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 700;
     color: #fff;
     border-bottom: 1px solid #fff;
     text-shadow: 0 0 15px #868686;
@@ -374,10 +388,22 @@ h1 a{
 #my-contact h3{
     width: 760px;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: normal;
     line-height: 2.2rem;
     text-align: center}
+.cover_profile,
+.cover_project,
+.cover_bloglist,
+.cover_contact,
+.cover_error403,
+.cover_error404{
+    background-position: top center;
+    background-repeat: no-repeat}
+.cover_error403{ /*403錯誤*/
+    background: url(../images/banner/pic_403.jpg)}
+.cover_error404{ /*404錯誤*/
+    background: url(../images/banner/pic_404.jpg)}
 
 /*版權列*/
 #copyright{
@@ -401,6 +427,8 @@ h1 a{
     font-size: 1.5rem;
     font-weight: 500;
     padding-bottom: 5px}
+.box_copyright p{
+    line-height: 2.6rem}     
 .box_copyright li a{
     display: block;
     float: left;
@@ -428,14 +456,14 @@ h1 a{
 #service-info>section{
     margin-bottom: 80px}
 #service-info h3{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
     font-size: 3rem;
     line-height: 3.5rem;
-    color: #21abd4;
+    color: rgb(19, 59, 209)/*#21abd4*/;
     padding-bottom: 15px}
 #service-info p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.5rem;
     padding-bottom: 40px}
 .logomean-left{
@@ -454,6 +482,10 @@ h1 a{
     display: block;
     width: 374px;
     height: 326px}
+#logo-change img{
+    display: block;
+    width: 374px;
+    height: 326px}
 
 #list_service{
     display: block}
@@ -465,7 +497,7 @@ h1 a{
     font-size: 2rem;
     font-weight: 500;
     line-height: 45px;
-    color: #21abd4;
+    color: rgb(19, 59, 209)/*#21abd4*/;
     background: url(../images/icon_cloud.png) no-repeat}
 .service_item{
     display: block;
@@ -478,7 +510,7 @@ h1 a{
     background: url(../images/icon_service-sub.png) no-repeat;
     margin-right: 140px;
     padding-top: 90px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #fff;
     text-align: center;
     letter-spacing: 1px}
@@ -534,7 +566,7 @@ h1 a{
     font-weight: bold;
     margin: 20px 0 8px}
 .step-note{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: left}
 
 
@@ -550,7 +582,7 @@ h1 a{
     padding-bottom: 30px}
 #project-main img{
     display: block;
-    width: 85%;
+    width: 90%;
     height: auto;
     margin: 10px auto 20px}
 #project-main section{
@@ -560,15 +592,15 @@ h1 a{
     font-weight: normal}
 
 #project-info h4{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
     /*font-weight: normal;*/
     font-size: 1.4rem;
     line-height: 2rem;
     letter-spacing: 2px;
     color: #2358be}
 #project-info p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.2rem}
 #project-info ul{
     width: 90%;
@@ -580,7 +612,7 @@ h1 a{
     padding-left: 40px;
     vertical-align: top}
 #project-info a{
-    color: #585858;
+    color: #363535;
     text-decoration: none}
 #project-info a:visited{
     color: #8e8e8e;
@@ -594,6 +626,44 @@ h1 a{
     width: 100%;
     margin: 0 auto;
     text-align: center}
+.pitem{
+    display: block;
+    position:relative;
+    width: 280px;
+    height: 385px}
+.pitem img{
+    width: 100%;
+    height: auto}
+.ptitle,
+.pcover{
+    width: 280px;
+    height: 385px;
+    position:absolute;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out}
+.ptitle{
+    display: table;
+    top:5;
+    opacity: 0;
+    background:rgba(18, 46, 146, 0.7)}
+.ptitle:hover{ opacity: 1}
+.ptitle h4{
+    display: table-cell;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #fff;
+    vertical-align: middle;
+    padding: 0 25px}
+.pitem,
+.pitem img,
+.ptitle{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
 
 /*
 =====================================
@@ -603,8 +673,13 @@ h1 a{
 #box_blog li{
     display: block;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     background: #fff}
+#box_blog li::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both}
 #box_blog img{
     display: block;
     float: left;
@@ -616,31 +691,31 @@ h1 a{
     width: 57%;
     padding: 30px}
 .article_summary h4{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
     font-size: 2.2rem;
     line-height: 2.8rem;
     color: #383838;
     padding-bottom: 20px}
 .article_summary p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.4rem}
 .btn_read{
     display: block;
     float: right;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     letter-spacing: 1px;
-    padding-top: 5px;
-    color: #21abd4;}
+    padding-top: 10px;
+    color: rgb(19, 59, 209)/*#21abd4*/;}
 #box_blog a:link,
 #box_blog a:hover{
-    color: #585858;
+    color: #363535;
     text-decoration: none}
 #box_blog a:visited{
     color: #8e8e8e;
     text-decoration: none}
 .btn_read:hover{
-    color: #585858;
+    color: #1db7ff/*#363535*/;
     text-decoration: none}
 
 
@@ -680,14 +755,17 @@ h1 a{
     color: #8e8e8e;
     text-decoration: none}
 #bar_PageNumber a:hover,
-#bar_PageNext a:hover{
+#bar_PageNext a:hover,
+#bar_PageNumber a.nowin{
     color: #fff;
-    background: #0d4d80;
     text-decoration: none;
     padding: 0 30px;
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s}
+#bar_PageNumber a:hover,
+#bar_PageNext a:hover{background: rgb(19, 59, 209)/* #1db7ff *//*#0d4d80*/}
+#bar_PageNumber a.nowin{background: rgb(19, 59, 209)/*#1DB7FF*/}
 
 
 #blog-tag,
@@ -721,7 +799,7 @@ h1 a{
     margin-right: 15px}
 #box_author p{
     font-size: 1.3rem;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     vertical-align: top;
     padding-top: 8px}
 #bar_social{
@@ -737,28 +815,35 @@ h1 a{
 #blog-main h3,
 #project-main h3,
 #box_contact h3{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
     font-size: 2.5rem;
     line-height: 3rem;
     letter-spacing: 1px}
 #blog-main h3,
 #project-main h3{
     padding: 20px 0 10px}
+#blog-main h3::after,
+#project-main h3::after{
+    content: "";
+    display: block;
+    border-top: 4px solid #2160d4/*#1db7ff*/;
+    width: 8.5rem;
+    margin: 10px 0 20px}
 #blog-main h3:first-child,
 #project-main h3:first-child{
     padding: 0 0 10px}
 #blog-main h4,
 #project-main h4{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: normal;
-    font-size: 1.9rem;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
     line-height: 3rem;
     letter-spacing: 1px}
 #blog-main p,
 #project-main p,
 #box_contact p{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 2.4rem;
     text-align: justify;
     /*text-shadow: 1px 1px 1px #fff;*/
@@ -768,9 +853,11 @@ h1 a{
 #box_contact ul{
     width: 90%;
     margin: 0 auto;
-    font-size: 1.6rem;
     line-height: 2.2rem;
     padding-bottom: 30px}
+#blog-main ul,
+#blog-main ol{ font-size: 1.7rem}
+#box_contact ul{ font-size: 1.6rem}
 #blog-main ul li,
 #blog-main ol li{
     padding-top: 8px;
@@ -781,17 +868,33 @@ h1 a{
 #blog-main ol li{
     list-style: decimal}
 #blog-main li>p{ margin-bottom: 10px}
-.pic_group{
-    display: block;
+.pic_group,
+.pic_group-row2,
+.pic_group-row3{
     width: 90%;
     margin: 25px auto}
+.pic_group-project{
+    width: 100%;
+    margin: 25px auto}
+.pic_group,
+.pic_group-project{ display: block}
+.pic_group-row2,
+.pic_group-row3{ 
+    display: flex;
+    flex-wrap: wrap;}
 .pic_note{
     padding: 5px 0;
+    margin: 0 auto;
     font-size: 1.5rem;
-    line-height: 1.7rem;
+    line-height: 1.2rem;
     color: #363535;
     text-align: center}
-.pic_group img{
+.item-row2{ width: 49%; margin: 0 .5%}
+.item-row3{ width: 32%; margin: 0 .5%}
+.pic_group img,
+.pic_group-project img,
+.pic_group-row2 img,
+.pic_group-row3 img{
     width: 100%;
     height: auto;
     margin: 0;
@@ -804,15 +907,15 @@ h1 a{
     margin: 35px auto;
     border-bottom: 1px solid #b5b5b5}
 #blog-main>.my_blockquote p{
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
+    font-weight: 700;
     font-size: 2.5rem;
-    font-weight: bold;
+    /*font-weight: bold;*/
     line-height: 3rem;
     color: #b5b5b5}
 #blog-main a,
 #project-main a{
-    color: #37ace3;
+    color: rgb(19, 59, 209)/*#37ace3*/;
     text-decoration: underline}
 #blog-main a:visited,
 #project-main a:visited{
@@ -820,7 +923,7 @@ h1 a{
     text-decoration: underline}
 #blog-main a:hover,
 #project-main a:hover{
-    color: #f50;
+    color: #1db7ff/*#f50*/;
     text-decoration: none}
 
 /*
@@ -853,7 +956,7 @@ h1 a{
     width: 85%;
     margin: 0 auto}
 #my_form label{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 3rem;
     font-weight: bold;
     padding-left: 15px}
@@ -867,9 +970,9 @@ h1 a{
     -moz-border-radius: 8px;
     border-radius: 8px;
     border: 1px solid #a3a3a3;
-    font-family: 'xingothic-tc', 'Noto Sans TC', sans-serif;
+    font-family: 'xingothic-tc','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 2.2rem}
 #contact_form input:focus,
 #contact_form textarea:focus{
@@ -885,8 +988,8 @@ h1 a{
 #contact_form h4{
     width: 90%;
     margin: 0 auto;
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
-    font-weight: 600;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1px;
@@ -977,6 +1080,15 @@ animate
 -webkit-animation-duration: 1s;
 -moz-animation-duration: 1s;
      animation-duration: 1s}
+
+.fadeIn-title {    
+-webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+-webkit-animation-delay:0;
+        animation-delay:0;	
+-webkit-animation-duration: 5s;
+-moz-animation-duration: 5s;
+     animation-duration: 5s}
 
 
 
@@ -1074,6 +1186,27 @@ animate
             animation-duration: 1s
 }
 
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3)}
+  50% {
+    opacity: 1}
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3)}
+  50% {
+    opacity: 1}
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn}
 
 /*
 =====================================
@@ -1088,13 +1221,13 @@ overlay-menu
 	top: 0;
 	left: 0;
     z-index: 9999;
-	background: rgba(29,183,255,0.85);
+	background: rgba(19,59,209,.85);
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-	width: 80px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	position: absolute;
 	right: 20px;
 	top: 20px;
@@ -1133,15 +1266,15 @@ overlay-menu
 }
 
 .overlay ul li a {
-    font-family: 'jf-jinxuan', 'Noto Sans TC', sans-serif;
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
 	font-size: 4rem;
-	font-weight: 600;
+	font-weight: 500;
 	display: block;
 	color: #fff;
     text-decoration: none;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-    text-shadow: 0 0 10px #a0a0a0;
+    /*text-shadow: 0 0 10px #a0a0a0;*/
     padding-bottom: 10px
 }
 
@@ -1191,14 +1324,21 @@ overlay-menu
   width: 0;
   height: 0}
 ::-webkit-scrollbar-thumb {
-  background: #1C45FF;   
+  background: rgb(29, 183, 255);   
   border: 0px none #fff;
   border-radius: 60px;	
   behavior: url(PIE.htc)}
 ::-webkit-scrollbar-thumb:hover {
-  background: #1C45FF}
+  background: rgb(29, 183, 255);}
 ::-webkit-scrollbar-track {
-  background: #1CB7FF;
+  background: rgb(19, 59, 209);
   border: 0px none #fff;
   border-radius: 0;
   behavior: url(PIE.htc)}
+
+/*
+=====================================
+RWD
+=====================================
+*/
+@import 'xueresponsive-page';
