@@ -1,8 +1,8 @@
-//專案輪播222
+//專案輪播
 loadjs('script/lib/pointy-slider.js');
 
 //icon文字
-loadjs('https://use.fontawesome.com/7b7fd6d88b.js');
+loadjs('https://kit.fontawesome.com/daece105d8.js');
 
 //wow載入動畫
 loadjs('script/lib/wow.min.js', function() {

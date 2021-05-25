@@ -3,7 +3,7 @@ loadjs(['https://maps.googleapis.com/maps/api/js?key=AIzaSyB1SdPebAPswNZfePSNDoG
         'script/lib/googlemap.js']);
 
 //icon文字
-loadjs('https://use.fontawesome.com/7b7fd6d88b.js');
+loadjs('https://kit.fontawesome.com/daece105d8.js');
 
 //wow載入動畫
 loadjs('script/lib/wow.min.js', function() {
