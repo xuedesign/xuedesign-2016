@@ -791,6 +791,23 @@ h1 a{
 #contact_form p{
     font-size: 1.6rem;
     line-height: 2.2rem}
+#box_contact h3{
+    font-family: 'jf-jinxuan','Microsoft JhengHei','PingFangTC-Medium',sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 1px}
+#box_contact p{
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-align: justify;
+    margin: 15px 0 20px }
+#box_contact ul{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding-bottom: 30px}
 
 /*
 =====================================
@@ -1010,7 +1027,7 @@ overlay-menu
 	height: 100%;
 	top: 0;
 	left: 0;
-    z-index: 9999;
+    z-index: 16000500;
 	background: rgba(19,59,209,.85);
 }
 

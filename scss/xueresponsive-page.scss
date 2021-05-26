@@ -74,6 +74,10 @@
     #contact_info img{
         display: block;
         margin: 5px 5px 10px}
+
+    /*案例展示*/
+    #project-info li:nth-child(3){
+        width: 29%}
 }
 
 
@@ -245,6 +249,14 @@
     .pic_group-row2,
     .pic_group-row3{
         width: 100%}
+
+    /*案例展示*/
+    #project-info li:nth-child(1){
+        width: 49%}
+    #project-info li:nth-child(2){
+        width: 49%}
+    #project-info li:nth-child(3){
+        width: 100%}
 }
 
 
@@ -311,14 +323,6 @@
         width: 100%;
         margin: 0;
         padding-top: 20px}
-    #project-info li{
-        padding-left: 15px}
-    #project-info li:nth-child(1){
-        width: 20%}
-    #project-info li:nth-child(2){
-        width: 48%}
-    #project-info li:nth-child(3){
-        width: 31%}
     #bar_PageNext a:link{
         min-height: 100px;
         overflow: hidden}
@@ -451,14 +455,14 @@
     
     /*案例展示*/
     #project-main img{ width: 95%}
-    #project-info li:nth-child(1){
-        width: 49%}
-    #project-info li:nth-child(2){
-        width: 50%}
-    #project-info li:nth-child(3){
+    #project-info li,
+    #project-info li:nth-child(1),
+    #project-info li:nth-child(2),
+    #project-info li:nth-child(3){ 
+        display: block;
         width: 100%}
     #project-info h4{
-        font-size: 1.5rem}
+        font-size: 1.8rem}
     #bar_PageNext a:link,
     #bar_PageTruner a:link{
         display: inline-block;
