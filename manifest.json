@@ -11,11 +11,12 @@
         {
             "src": "/images/logo-512.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "any maskable"
         }
     ],
-    "start_url": "/?utm_source=PWA&utm_medium=home_screen&utm_campaign=pwa",
-    "theme_color": "#55D8FD",
+    "start_url": "/?utm_source=PWA",
+    "theme_color": "#133bd1d9",
     "background_color": "#133bd1d9",
     "display": "standalone"
 }
