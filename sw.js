@@ -5,8 +5,11 @@ var autoCacheFile = 'letswrite-v2021.05.28'; // 存在 Cache Storage 的資料�
 // 比如 404.html、logo.svg，不會自動出現在每頁的 request 上，但當使用者是 offline 時又必要會看到的
 const assets = [
   '/?utm_source=PWA',
-  '/images/logo-192.png',
-  '/images/logo-512.png'
+  '/images/',
+  '/css/',
+  '/script/',
+  '/error403.html',
+  '/error404.html'
 ];
 
 // 限制存進 Cache Storage 的檔案數量
