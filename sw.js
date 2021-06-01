@@ -1,15 +1,13 @@
-var preCacheFile = 'xue-v2021.05.28'; // 存在 Cache Storage 的資料夾名，預存用
-var autoCacheFile = 'letswrite-v2021.05.28'; // 存在 Cache Storage 的資料夾名稱，自動存用
+var preCacheFile = 'xue-v2021.06.01'; // 存在 Cache Storage 的資料夾名，預存用
+var autoCacheFile = 'letswrite-v2021.06.01'; // 存在 Cache Storage 的資料夾名稱，自動存用
 
 // 一定要存下的檔案清單
 // 比如 404.html、logo.svg，不會自動出現在每頁的 request 上，但當使用者是 offline 時又必要會看到的
 const assets = [
   '/?utm_source=PWA',
-  '/images/',
   '/css/',
   '/script/',
-  '/error403.html',
-  '/error404.html'
+  '/images/'
 ];
 
 // 限制存進 Cache Storage 的檔案數量
